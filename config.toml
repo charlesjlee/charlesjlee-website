@@ -1,6 +1,6 @@
 baseurl = ""
 languageCode = "en-us"
-title = "My website"
+title = "Charles Lee"
 theme = "blackburn"
 author = "Charles Lee"
 copyright = "&copy; 2017. All rights reserved."
@@ -13,13 +13,13 @@ paginate = 10
 
 [params]
   # Shown in the home page
-  subtitle = "A Hugo Theme"
-  brand = "Blackburn"
+  subtitle = " "
+  brand = " "
   googleAnalytics = "Your Google Analytics tracking ID"
   disqus = "Your Disqus shortname"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
-  dateFormat = "02 Jan 2006"
+  dateFormat = "Jan 01 2000"
 
 [menu]
   # Shown in the side menu.
@@ -51,5 +51,4 @@ paginate = 10
   # Link your social networking accouns to the side menu
   # by entering your username or ID.
   github = "charlesjlee"
-  stackoverflow = "*"
   linkedin = "charlesleeonline"
