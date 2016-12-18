@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.example.com/</loc>
+    <loc>/charlesjlee.com/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/about/</loc>
+    <loc>/charlesjlee.com/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/contact/</loc>
+    <loc>/charlesjlee.com/contact/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/post/goisforlovers/</loc>
+    <loc>/charlesjlee.com/post/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/post/hugoisforlovers/</loc>
+    <loc>/charlesjlee.com/post/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/post/test%20post/</loc>
+    <loc>/charlesjlee.com/post/test%20post/</loc>
     <lastmod>2016-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/post/creating-a-new-theme/</loc>
+    <loc>/charlesjlee.com/post/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/post/migrate-from-jekyll/</loc>
+    <loc>/charlesjlee.com/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
