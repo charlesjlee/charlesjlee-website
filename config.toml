@@ -1,9 +1,9 @@
-baseurl = "https://www.example.com/"
+baseurl = "charlesjlee.com"
 languageCode = "en-us"
 title = "My website"
 theme = "blackburn"
-author = "Yoshiharu Yamashita"
-copyright = "&copy; 2016. All rights reserved."
+author = "Charles Lee"
+copyright = "&copy; 2017. All rights reserved."
 canonifyurls = false
 paginate = 10
 
@@ -19,7 +19,7 @@ paginate = 10
   disqus = "Your Disqus shortname"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
-  dateFormat = "02 Jan 2006, 15:04"
+  dateFormat = "02 Jan 2006"
 
 [menu]
   # Shown in the side menu.
