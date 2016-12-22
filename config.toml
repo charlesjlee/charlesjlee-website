@@ -19,7 +19,7 @@ paginate = 10
   disqus = "Your Disqus shortname"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
-  dateFormat = "Jan 01 2000"
+  dateFormat = "January 02, 2006"
 
 [menu]
   # Shown in the side menu.
