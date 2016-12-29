@@ -20,8 +20,8 @@ First things first, it was time to do some thinking and research. Why do I want 
 
 Reasons I want to try UM
 
- * I hadn't been sleeping well and wanted to see if changing my sleep pattern would help. I would feel groggy when waking up and lethargic for most of the day, even after exercising and/or napping. I was originally interested in the Everyman schedule (3.5 hour core and 3 x 20 mininute naps) but [Polyphasic Society](http://www.polyphasicsociety.com/polyphasic-sleep/overviews/everyman) recommends first attempting UM because, even if you fail to adapt to UM, adjusting to 20 minute naps will make subsequent attempts at any polyphasic schedule easier.
-* I wanted more time to do things. I had just finished the Organize stage of the [Gettings Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) method, in which you list out everything you want to do and determine the next physical step required. The mental lightness I felt after dumping all my recurring thoughts (and worries) onto paper was incredibly refreshing and I was eager to start tackling my list.  
+* I hadn't been sleeping well and wanted to see if changing my sleep pattern would help. I would feel groggy when waking up and lethargic for most of the day, even after exercising and/or napping. I was originally interested in the Everyman schedule (3.5 hour core and 3 x 20 minute naps) but [Polyphasic Society](http://www.polyphasicsociety.com/polyphasic-sleep/overviews/everyman) recommends first attempting UM because, even if you fail to adapt to UM, adjusting to 20 minute naps will make subsequent attempts at any polyphasic schedule easier.
+* I wanted more time to do things. I had just finished the Organize stage of the [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) method, in which you list out everything you want to do and determine the next physical step required. The mental lightness I felt after dumping all my recurring thoughts (and worries) onto paper was incredibly refreshing and I was eager to start tackling my list.  
 I realize that more time available does not always translate to more things done, and I was hoping to take advantage of the moments of mental clarity after waking from a well-timed nap to boost productivity.
 * Similarly, on the rare occasions when I can afford to, I enjoy being awake during the late night and early morning hours. I find those hours to be the most peaceful and productive ones of the whole day and wanted to experience more of them.
 
@@ -38,9 +38,9 @@ Using the recommendations on [PolyphasicSociety.com](http://polyphasicsociety.co
 I went on a lot about productivity above, but I anticipated that I would spend a lot of time just watching TV in a struggle to stay awake.
 
 ## Outcome
-{{% fluid_img src="/img/6-weeks of Uberman - daily.png" alt="Hours Slept: Planned vs Expected" %}}
+{{% fluid_img src="/img/6 weeks of Uberman - daily.png" alt="Hours Slept: Planned vs Expected" %}}
 
-You can see that I didn't follow the schedule very well and never adapted to UM. This is because excuse<sub>1</sub>, excuse<sub>2</sub>, ..., excuse<sub>99</sub>. The adjustment period was *rough*, and because I never adapted to the schedule, the entire 6 weeks was an adjustment period. I expected that my physical and mental faculties would be compromised by sleep deprivation during this experiment, but I was still surprised by the extent to which they were
+You can see that I didn't follow the schedule very well and never adapted to UM. This is because excuse<sub>1</sub>, excuse<sub>2</sub>, ..., excuse<sub>99</sub>. The adjustment period was *rough*, and because I never adapted to the schedule, the entire 6 weeks was an adjustment period. I expected that my physical and mental faculties would be compromised by sleep deprivation during this experiment, but I was still surprised by the extent to which they were.
 
 Physically, I experienced headaches, malaise, intermittent nausea, weakness, and joint pain. Mentally, I experienced impaired short and long-term memory, mental fog, and anxiety.
 
@@ -52,7 +52,7 @@ In particular, there were three events that stood out as prime examples of sleep
 
 For some reason, I naively assumed I would have enough time to get to everything on my to-do list. A moment's calculation reveals this to be ridiculous because it would have taken 527 hours or 21.9 days to watch my anime/movie/TV backlog alone.
 
-{{% fluid_img src="/img/6-weeks of Uberman - cumulative.png" alt="Hours Slept: Planned vs Expected" %}}
+{{% fluid_img src="/img/6 weeks of Uberman - cumulative.png" alt="Hours Slept: Planned vs Expected" %}}
 
 Ironically, not only did I not accomplish much work during these 6 weeks because of sleep deprivation, I actually slept more hours total than I would have normally. Woe is me.
 
@@ -73,3 +73,13 @@ I leave you with a quote from *Manhole 69*, a J.G. Ballard short story about an 
 [6]: http://qz.com/430415/i-once-tried-to-cheat-sleep-and-for-a-year-i-succeeded/
 [7]: https://www.supermemo.com/en/articles/polyphasic2010
 [8]: https://www.polyphasicsociety.com/polyphasic-sleep/overviews/uberman-2/
+
+## References
+1. http://www.businessinsider.com/this-guy-has-only-slept-45-hours-per-day-for-two-years-2013-11
+2. https://www.codeword.xyz/2016/03/03/my-experience-with-the-uberman-sleep-schedule/
+3. https://mysleepexperiment.wordpress.com/effects-of-polyphasic-sleep-on-health/
+4. http://www.lifehacker.com.au/2012/07/what-i-learned-through-completely-failing-to-master-polyphasic-sleep/
+5. http://www.stevepavlina.com/blog/2007/03/polyphasic-sleep-one-year-later/
+6. http://qz.com/430415/i-once-tried-to-cheat-sleep-and-for-a-year-i-succeeded/
+7. https://www.supermemo.com/en/articles/polyphasic2010
+8. https://www.polyphasicsociety.com/polyphasic-sleep/overviews/uberman-2/
