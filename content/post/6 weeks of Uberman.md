@@ -1,5 +1,5 @@
 +++
-title = "6-weeks of Uberman"
+title = "6 weeks of Uberman"
 description = "my experience with polyphasic sleeping"
 tags = [
     "personal",
@@ -13,7 +13,7 @@ categories = [
 +++
 
 ## Introduction
-This post is about my experience with the Uberman (UM) sleep schedule, the popularized and extreme polyphasic sleep schedule that achieves 2-3 hours of total daily sleep through periodic 20 minutes naps. The benefits are enticing. Assuming you currently sleep 8 hours/day and follow the 3 hours/day schedule, you can have 21 more hours a week to enjoy and to get stuff done. With all that extra time, surely I'd be able to get through my to-do backlog! The requirements -- a flexible work schedule and a two-week adaptation period during which you are a brain-dead zombie -- are steep though, which is why I didn't gave UM any serious consideration until recently. UM success stories[<sup>1</sup>][1] would pop up a few times a year and the idea stayed in the back of my mind. Finally a change in my job's working hours (with a 5 week break in-between the transition) gave me an opportune window to adjust to and potentially stick with the schedule.
+This post is about my experience with the Uberman (UM) sleep schedule, the popularized and extreme polyphasic sleep schedule that achieves 2-3 hours of total daily sleep through periodic 20 minutes naps. The benefits are enticing. Assuming you currently sleep 8 hours/day and follow the 3 hours/day schedule, you can have 21 more hours a week to enjoy and to get stuff done. With all that extra time, surely I'd be able to get through my to-do backlog! The requirements -- a flexible work schedule and a two-week adaptation period during which you are a brain-dead zombie -- are steep though, which is why I didn't give UM any serious consideration until recently. UM success stories[<sup>1</sup>][1] would pop up a few times a year and the idea stayed in the back of my mind. Finally a change in my job's working hours (with a 5 week break in-between the transition) gave me an opportune window to adjust to and potentially stick with the schedule.
 
 ## The Plan
 First things first, it was time to do some thinking and research. Why do I want to try the UM sleep schedule and how can I accomplish this?
