@@ -38,7 +38,7 @@ Using the recommendations on [PolyphasicSociety.com](http://polyphasicsociety.co
 I went on a lot about productivity above, but I anticipated that I would spend a lot of time just watching TV in a struggle to stay awake.
 
 ## Outcome
-{{% fluid_img src="/img/6 weeks of Uberman - daily.png" alt="Hours Slept: Planned vs Expected" %}}
+{{% fluid_img src="/img/201612 - 6 weeks of Uberman - daily.png" alt="Hours Slept: Planned vs Expected" %}}
 
 You can see that I didn't follow the schedule very well and never adapted to UM. This is because excuse<sub>1</sub>, excuse<sub>2</sub>, ..., excuse<sub>99</sub>. The adjustment period was *rough*, and because I never adapted to the schedule, the entire 6 weeks was an adjustment period. I expected that my physical and mental faculties would be compromised by sleep deprivation during this experiment, but I was still surprised by the extent to which they were.
 
@@ -52,7 +52,7 @@ In particular, there were three events that stood out as prime examples of sleep
 
 For some reason, I naively assumed I would have enough time to get to everything on my to-do list. A moment's calculation reveals this to be ridiculous because it would have taken 527 hours or 21.9 days to watch my anime/movie/TV backlog alone.
 
-{{% fluid_img src="/img/6 weeks of Uberman - cumulative.png" alt="Hours Slept: Planned vs Expected" %}}
+{{% fluid_img src="/img/201612 - 6 weeks of Uberman - cumulative.png" alt="Hours Slept: Planned vs Expected" %}}
 
 Ironically, not only did I not accomplish much work during these 6 weeks because of sleep deprivation, I actually slept more hours total than I would have normally. Woe is me.
 
