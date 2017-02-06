@@ -15,8 +15,8 @@ paginate = 10
   # Shown in the home page
   subtitle = " "
   brand = " "
-  googleAnalytics = "Your Google Analytics tracking ID"
-  disqus = "Your Disqus shortname"
+  googleAnalytics = "38182774"
+  disqus = ""
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   dateFormat = "January 02, 2006"
