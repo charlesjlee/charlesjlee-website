@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Charles Lee</title>
-    <link>charlesjlee.com/tags/personal/index.xml</link>
+    <link>/tags/personal/index.xml</link>
     <description>Recent content on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <atom:link href="charlesjlee.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>2017 Priorities - Family First</title>
-      <link>/charlesjlee.com/post/2017-Priorities-Family-First/</link>
+      <link>/post/2017-Priorities-Family-First/</link>
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/charlesjlee.com/post/2017-Priorities-Family-First/</guid>
+      <guid>/post/2017-Priorities-Family-First/</guid>
       <description>
 
 &lt;p&gt;It&amp;rsquo;s 11:30pm and I&amp;rsquo;m in the family kitchen by myself munching on a box of palmiers&lt;a href=&#34;http://www.costcobusinessdelivery.com/Sugar-Bowl-Petite-Palmiers,-32-oz.product.11756230.html&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; with a glass of milk and it dawns on me that I feel uncharacteristically good. I feel safe, calm, clear-headed, and full of food.&lt;/p&gt;
@@ -75,10 +75,10 @@ I&amp;rsquo;ll start by tackling my existing &amp;ldquo;Family To-Do&amp;rdquo; 
     
     <item>
       <title>6 weeks of Uberman</title>
-      <link>/charlesjlee.com/post/6-weeks-of-Uberman/</link>
+      <link>/post/6-weeks-of-Uberman/</link>
       <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/charlesjlee.com/post/6-weeks-of-Uberman/</guid>
+      <guid>/post/6-weeks-of-Uberman/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -116,7 +116,7 @@ I realize that more time available does not always translate to more things done
 
 
 &lt;div class=&#34;pure-u-1&#34;&gt;
-  &lt;img class=&#34;pure-img&#34; src=&#34;charlesjlee.com/img/6-weeks-of-Uberman-daily.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
+  &lt;img class=&#34;pure-img&#34; src=&#34;/img/6-weeks-of-Uberman-daily.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
 &lt;/div&gt;
 
 
@@ -136,7 +136,7 @@ I realize that more time available does not always translate to more things done
 
 
 &lt;div class=&#34;pure-u-1&#34;&gt;
-  &lt;img class=&#34;pure-img&#34; src=&#34;charlesjlee.com/img/6-weeks-of-Uberman-cumulative.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
+  &lt;img class=&#34;pure-img&#34; src=&#34;/img/6-weeks-of-Uberman-cumulative.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
 &lt;/div&gt;
 
 
