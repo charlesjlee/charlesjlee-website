@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Charles Lee</title>
-    <link>/tags/xeroc/index.xml</link>
+    <link>charlesjlee.com/tags/xeroc/index.xml</link>
     <description>Recent content on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <atom:link href="/tags/xeroc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="charlesjlee.com/tags/xeroc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Creating a Steem bot using Python, Piston, and Heroku</title>
-      <link>/post/Steem-bot/</link>
+      <link>/charlesjlee.com/post/Steem-bot/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/Steem-bot/</guid>
+      <guid>/charlesjlee.com/post/Steem-bot/</guid>
       <description>
 
 &lt;h2 id=&#34;steem-for-the-people&#34;&gt;Steem for the people&lt;/h2&gt;

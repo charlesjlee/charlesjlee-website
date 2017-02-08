@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Charles Lee</title>
-    <link>/tags/sleep/index.xml</link>
+    <link>charlesjlee.com/tags/sleep/index.xml</link>
     <description>Recent content on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <atom:link href="/tags/sleep/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="charlesjlee.com/tags/sleep/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>6 weeks of Uberman</title>
-      <link>/post/6-weeks-of-Uberman/</link>
+      <link>/charlesjlee.com/post/6-weeks-of-Uberman/</link>
       <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/6-weeks-of-Uberman/</guid>
+      <guid>/charlesjlee.com/post/6-weeks-of-Uberman/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -52,7 +52,7 @@ I realize that more time available does not always translate to more things done
 
 
 &lt;div class=&#34;pure-u-1&#34;&gt;
-  &lt;img class=&#34;pure-img&#34; src=&#34;/img/6-weeks-of-Uberman-daily.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
+  &lt;img class=&#34;pure-img&#34; src=&#34;charlesjlee.com/img/6-weeks-of-Uberman-daily.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
 &lt;/div&gt;
 
 
@@ -72,7 +72,7 @@ I realize that more time available does not always translate to more things done
 
 
 &lt;div class=&#34;pure-u-1&#34;&gt;
-  &lt;img class=&#34;pure-img&#34; src=&#34;/img/6-weeks-of-Uberman-cumulative.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
+  &lt;img class=&#34;pure-img&#34; src=&#34;charlesjlee.com/img/6-weeks-of-Uberman-cumulative.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
 &lt;/div&gt;
 
 
