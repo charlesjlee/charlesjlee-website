@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+<div class="header">
+  <h1>{{ .Title }}</h1>
+  <h2>{{ .Description }}</h2>
+</div>
+
+    <section class="main-content">
+        {{ partial "gallery/collection.html" . }}
+        {{ partial "gallery/pagination.html" . }}
+    </section>
+
+    {{ partial "gallery/js.html" . }}
+</body>
+
+{{ partial "footer.html" . }}
