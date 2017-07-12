@@ -4,7 +4,7 @@ theme = "blackburn"
 author = "Charles Lee"
 copyright = "&copy; 2017. All rights reserved."
 paginate = 10
-baseURL = "http://charlesjlee.github.io/"
+baseURL = "/"
 
 [indexes]
   tag = "tags"
