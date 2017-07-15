@@ -1,110 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Charles Lee</title>
-    <link>/tags/polyphasic/index.xml</link>
-    <description>Recent content on Charles Lee</description>
+    <title>Polyphasic on Charles Lee</title>
+    <link>http://charlesjlee.com/tags/polyphasic/</link>
+    <description>Recent content in Polyphasic on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <atom:link href="/tags/polyphasic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://charlesjlee.com/tags/polyphasic/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>6 weeks of Uberman</title>
-      <link>/post/6-weeks-of-Uberman/</link>
+      <link>http://charlesjlee.com/post/6-weeks-of-uberman/</link>
       <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/6-weeks-of-Uberman/</guid>
-      <description>
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;This post is about my experience with the Uberman (UM) sleep schedule, the popularized and extreme polyphasic sleep schedule that achieves 2-3 hours of total daily sleep through periodic 20 minutes naps. The benefits are enticing. Assuming you currently sleep 8 hours/day and follow the 3 hours/day schedule, you can have 21 more hours a week to enjoy and to get stuff done. With all that extra time, surely I&amp;rsquo;d be able to get through my to-do backlog! The requirements &amp;ndash; a flexible work schedule and a two-week adaptation period during which you are a brain-dead zombie &amp;ndash; are steep though, which is why I didn&amp;rsquo;t give UM any serious consideration until recently. UM success stories&lt;a href=&#34;http://www.businessinsider.com/this-guy-has-only-slept-45-hours-per-day-for-two-years-2013-11&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; would pop up a few times a year and the idea stayed in the back of my mind. Finally a change in my job&amp;rsquo;s working hours (with a 5 week break in-between the transition) gave me an opportune window to adjust to and potentially stick with the schedule.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-plan&#34;&gt;The Plan&lt;/h2&gt;
-
-&lt;p&gt;First things first, it was time to do some thinking and research. Why do I want to try the UM sleep schedule and how can I accomplish this?&lt;/p&gt;
-
-&lt;p&gt;Reasons I want to try UM&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I hadn&amp;rsquo;t been sleeping well and wanted to see if changing my sleep pattern would help. I would feel groggy when waking up and lethargic for most of the day, even after exercising and/or napping. I was originally interested in the Everyman schedule (3.5 hour core and 3 x 20 minute naps) but &lt;a href=&#34;http://www.polyphasicsociety.com/polyphasic-sleep/overviews/everyman&#34;&gt;Polyphasic Society&lt;/a&gt; recommends first attempting UM because, even if you fail to adapt to UM, adjusting to 20 minute naps will make subsequent attempts at any polyphasic schedule easier.&lt;/li&gt;
-&lt;li&gt;I wanted more time to do things. I had just finished the Organize stage of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Getting_Things_Done&#34;&gt;Getting Things Done&lt;/a&gt; method, in which you list out everything you want to do and determine the next physical step required. The mental lightness I felt after dumping all my recurring thoughts (and worries) onto paper was incredibly refreshing and I was eager to start tackling my list.&lt;br /&gt;
-I realize that more time available does not always translate to more things done, and I was hoping to take advantage of the moments of mental clarity after waking from a well-timed nap to boost productivity.&lt;/li&gt;
-&lt;li&gt;Similarly, on the rare occasions when I can afford to, I enjoy being awake during the late night and early morning hours. I find those hours to be the most peaceful and productive ones of the whole day and wanted to experience more of them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;After evaluating my reasons for pursuing UM, I did some reading on what other people did and their experiences with the schedule. Apparently this UM thing is a scam&amp;hellip; The majority of people fail to adapt from either lack of motivation or technique &lt;a href=&#34;https://www.codeword.xyz/2016/03/03/my-experience-with-the-uberman-sleep-schedule/&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;https://mysleepexperiment.wordpress.com/effects-of-polyphasic-sleep-on-health/&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;http://www.lifehacker.com.au/2012/07/what-i-learned-through-completely-failing-to-master-polyphasic-sleep/&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. Those that were able to successfully adapt stopped because of social obligations &lt;a href=&#34;http://www.stevepavlina.com/blog/2007/03/polyphasic-sleep-one-year-later/&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;http://qz.com/430415/i-once-tried-to-cheat-sleep-and-for-a-year-i-succeeded/&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt; or perhaps fundamental human incompatibility with the schedule&lt;a href=&#34;https://www.supermemo.com/en/articles/polyphasic2010&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Sounds like fun. Let&amp;rsquo;s do this!&lt;/p&gt;
-
-&lt;p&gt;Using the recommendations on &lt;a href=&#34;http://polyphasicsociety.com/polyphasic-sleep/overviews/&#34;&gt;PolyphasicSociety.com&lt;/a&gt;, I settled on this plan for adapting to UM and decided to stick with the UM schedule for 6 weeks then evaluate whether I wanted to continue:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Stay awake for 24-48 hours to induce REM deprivation, i.e. exaptation&lt;/li&gt;
-&lt;li&gt;Nap every 2 hours for 3 days&lt;/li&gt;
-&lt;li&gt;Nap every 3 hours until the end of 6 weeks&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I went on a lot about productivity above, but I anticipated that I would spend a lot of time just watching TV in a struggle to stay awake.&lt;/p&gt;
-
-&lt;h2 id=&#34;outcome&#34;&gt;Outcome&lt;/h2&gt;
-
-
-&lt;div class=&#34;pure-u-1&#34;&gt;
-  &lt;img class=&#34;pure-img&#34; src=&#34;/img/6-weeks-of-Uberman-daily.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;You can see that I didn&amp;rsquo;t follow the schedule very well and never adapted to UM. This is because excuse&lt;sub&gt;1&lt;/sub&gt;, excuse&lt;sub&gt;2&lt;/sub&gt;, &amp;hellip;, excuse&lt;sub&gt;99&lt;/sub&gt;. The adjustment period was &lt;em&gt;rough&lt;/em&gt;, and because I never adapted to the schedule, the entire 6 weeks was an adjustment period. I expected that my physical and mental faculties would be compromised by sleep deprivation during this experiment, but I was still surprised by the extent to which they were.&lt;/p&gt;
-
-&lt;p&gt;Physically, I experienced headaches, malaise, intermittent nausea, weakness, and joint pain. Mentally, I experienced impaired short and long-term memory, mental fog, and anxiety.&lt;/p&gt;
-
-&lt;p&gt;In particular, there were three events that stood out as prime examples of sleep deprivation&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Walking around ShopRite knowing that I needed to buy toppings to make pizza for dinner, but being unable to decide what to buy&lt;/li&gt;
-&lt;li&gt;Watching Inception for the second time and not being emotionally moved or impressed or anything. I was mind-blown the first time I saw the movie and I knew that something was off when I felt no reaction the second time&lt;/li&gt;
-&lt;li&gt;Sitting at the kitchen counter and seeing a large cockroach fly out from behind the fridge, fly into miscellaneous things next to the fridge, fall next to my hand, and then continue to drunkenly fly around and bump into things. It was bizarre seeing a cockroach &amp;ndash; the unkillable insect &amp;ndash; act so vulnerable and erratic. It was probably poisoned or otherwise dying. In any case, I was majorly spooked&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For some reason, I naively assumed I would have enough time to get to everything on my to-do list. A moment&amp;rsquo;s calculation reveals this to be ridiculous because it would have taken 527 hours or 21.9 days to watch my anime/movie/TV backlog alone.&lt;/p&gt;
-
-
-&lt;div class=&#34;pure-u-1&#34;&gt;
-  &lt;img class=&#34;pure-img&#34; src=&#34;/img/6-weeks-of-Uberman-cumulative.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;Ironically, not only did I not accomplish much work during these 6 weeks because of sleep deprivation, I actually slept more hours total than I would have normally. Woe is me.&lt;/p&gt;
-
-&lt;h2 id=&#34;concluding-thoughts&#34;&gt;Concluding thoughts&lt;/h2&gt;
-
-&lt;p&gt;These 6 weeks were a generally unpleasant time. Even so, if given the choice, I would try UM again because it satisfied a long-standing curiosity and let me feel &amp;ndash; and not just know &amp;ndash; how devastating sleep deprivation can be. I also gave myself a reminder that increasing productivity is really about effective energy management and not time management. I have enough time to do the things I want; I don&amp;rsquo;t have the habits, discipline, and energy to avoid squandering my free time.&lt;/p&gt;
-
-&lt;p&gt;At some point in the future, I will probably try that &lt;a href=&#34;http://www.polyphasicsociety.com/polyphasic-sleep/overviews/everyman&#34;&gt;Everyman schedule&lt;/a&gt; I was originally eyeing, but not too soon.&lt;/p&gt;
-
-&lt;p&gt;I leave you with a quote from &lt;em&gt;Manhole 69&lt;/em&gt;, a J.G. Ballard short story about an experimental surgery to eliminate the ability to sleep that I coincidentally happened to read during this time:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Continual consciousness is more than the brain can stand. Any signal repeated often enough eventually loses its meaning. Try saying the word &amp;ldquo;sleep&amp;rdquo; fifty times. After a point the brain&amp;rsquo;s self-awareness dulls. It&amp;rsquo;s no longer able to grasp who or why it is, and it rides adrift.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.businessinsider.com/this-guy-has-only-slept-45-hours-per-day-for-two-years-2013-11&#34;&gt;http://www.businessinsider.com/this-guy-has-only-slept-45-hours-per-day-for-two-years-2013-11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.codeword.xyz/2016/03/03/my-experience-with-the-uberman-sleep-schedule/&#34;&gt;https://www.codeword.xyz/2016/03/03/my-experience-with-the-uberman-sleep-schedule/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mysleepexperiment.wordpress.com/effects-of-polyphasic-sleep-on-health/&#34;&gt;https://mysleepexperiment.wordpress.com/effects-of-polyphasic-sleep-on-health/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.lifehacker.com.au/2012/07/what-i-learned-through-completely-failing-to-master-polyphasic-sleep/&#34;&gt;http://www.lifehacker.com.au/2012/07/what-i-learned-through-completely-failing-to-master-polyphasic-sleep/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.stevepavlina.com/blog/2007/03/polyphasic-sleep-one-year-later/&#34;&gt;http://www.stevepavlina.com/blog/2007/03/polyphasic-sleep-one-year-later/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://qz.com/430415/i-once-tried-to-cheat-sleep-and-for-a-year-i-succeeded/&#34;&gt;http://qz.com/430415/i-once-tried-to-cheat-sleep-and-for-a-year-i-succeeded/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.supermemo.com/en/articles/polyphasic2010&#34;&gt;https://www.supermemo.com/en/articles/polyphasic2010&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.polyphasicsociety.com/polyphasic-sleep/overviews/uberman-2/&#34;&gt;https://www.polyphasicsociety.com/polyphasic-sleep/overviews/uberman-2/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <guid>http://charlesjlee.com/post/6-weeks-of-uberman/</guid>
+      <description>Introduction This post is about my experience with the Uberman (UM) sleep schedule, the popularized and extreme polyphasic sleep schedule that achieves 2-3 hours of total daily sleep through periodic 20 minutes naps. The benefits are enticing. Assuming you currently sleep 8 hours/day and follow the 3 hours/day schedule, you can have 21 more hours a week to enjoy and to get stuff done. With all that extra time, surely I&amp;rsquo;d be able to get through my to-do backlog!</description>
     </item>
     
   </channel>
