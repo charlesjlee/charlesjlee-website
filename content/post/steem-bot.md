@@ -4,7 +4,7 @@ description = "a simple, random upvoter"
 tags = [
     "Steem",
     "Steemit",
-    "block chain",
+    "blockchain",
     "Python",
     "piston",
     "xeroc",
@@ -12,7 +12,7 @@ tags = [
 date = "2017-01-08"
 categories = [
     "Development",
-    "block chain",
+    "blockchain",
 ]
 +++
 
