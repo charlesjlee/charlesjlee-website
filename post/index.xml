@@ -1,62 +1,382 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Charles Lee</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Charles Lee</description>
+    <title>Post-rsses on Charles Lee</title>
+    <link>/post/index.xml</link>
+    <description>Recent content in Post-rsses on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Wed, 01 Mar 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Coursera review: Bitcoin and Cryptocurrency Technologies</title>
-      <link>/post/bitcoin-coursera-review/</link>
+      <link>/post/Bitcoin-Coursera-review/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/bitcoin-coursera-review/</guid>
-      <description>The Bitcoin and Cryptocurrency Technologies Coursera is an 11-week, 4-lecturer collaboration that gives the student an overview of the existing cryptocurrency environment and how it came to be. It begins with a history of cryptocurrency advancements leading up to Bitcoin, then goes into the technical details of how Bitcoin works, moves on to the societal impact of cryptocurrencies, and finally ends with a discussion of future developments and their feasibility.</description>
+      <guid>/post/Bitcoin-Coursera-review/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.coursera.org/learn/cryptocurrency&#34;&gt;Bitcoin and Cryptocurrency Technologies&lt;/a&gt; Coursera is an 11-week, 4-lecturer collaboration that gives the student an overview of the existing cryptocurrency environment and how it came to be. It begins with a history of cryptocurrency advancements leading up to Bitcoin, then goes into the technical details of how Bitcoin works, moves on to the societal impact of cryptocurrencies, and finally ends with a discussion of future developments and their feasibility.&lt;/p&gt;
+
+&lt;p&gt;I took this course during the 12/26/2016 - 03/20/2016 offering and was thoroughly impressed by its quality. I learned a lot from taking the course &amp;ndash; enough to pass the &lt;a href=&#34;https://cryptoconsortium.org/certifications/CBP&#34;&gt;Certified Bitcoin Professional&lt;/a&gt; exam (see &lt;a href=&#34;http://charlesjlee.com/post/C4-Bitcoin-Certified-Professional&#34;&gt;this post&lt;/a&gt; for my thoughts on Bitcoin certification). On each topic, the instructors first discuss a motivating problem, then examine a technical solution to the problem, and finally explore the real-world practicality and adoption of this solution. Far from feeding the hype, the lecturers instead examine it to produce nuggets of insights, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It has been very difficult to make money mining Bitcoin because of the fast pace of hardware evolution. Historically, miners would have been better off investing in the price of Bitcoin instead of their mining rigs.&lt;/li&gt;
+&lt;li&gt;Just because something can be decentralized doesn&amp;rsquo;t mean it ever will be. There has to be a compelling use case for decentralization &amp;ndash; usually a financial one.&lt;/li&gt;
+&lt;li&gt;Many problems that people are trying to address with new cryptocurrency ideas are fundamentally social problems not technical ones.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Coursera includes three optional homeworks. The first is to implement part of a simple cryptocurrency called Scrooge Coin. I found this exercise to be challenging and hugely rewarding. The inner-mechanics of Scrooge Coin are mostly the same as Bitcoin&amp;rsquo;s and filling in how transaction inputs and outputs function and interact cemented my understanding of how they work. I had a particularly hard time understanding what an Unspent Transaction Output (UTXO) was and actually having to use one gave me an &amp;ldquo;aha&amp;rdquo; moment. That said, some parts of the assignment could have used further explanation and I had to turn to the forums for help. Unfortunately, the instructors were not active on the forums to assist with this.&lt;/p&gt;
+
+&lt;p&gt;Sadly, the last two assignments were not as instructive as the first was. Homework #2 has you implementing a distributed consensus algorithm on a random graph with malicious nodes. Though interesting, this exercise has strangely little to do with the lectures. It was also disappointing that the simplest heuristic is sufficient to pass 80% of the test cases. Homework #3 has you revisiting the code used in #1 to implement a node to receive incoming transactions and blocks and maintain an updated block chain. Again, this exercise was only tangentially related to the lectures. I didn&amp;rsquo;t have any revelations this time around and revisiting the same code made this exercise feel like house-keeping.&lt;/p&gt;
+
+&lt;p&gt;The course ends with a lecture on the &amp;ldquo;Future of Bitcoin&amp;rdquo;. Here, the lecturer doesn&amp;rsquo;t speculate about how popular Bitcoin will become but rather offers a technical discussion of what is currently possible, what may become possible, and the societal impact of and resistance to adopting these ideas. With tempered enthusiasm, the lecturer explains how it&amp;rsquo;s possible to use block chains to de-centralize property ownership, betting, file storage, etc. but that often the primary barrier to adoption is social not technical. See &lt;a href=&#34;http://bitcoin.stanford.edu&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://crypto.stanford.edu/cs251&#34;&gt;here&lt;/a&gt; for courses on these forward-looking applications.&lt;/p&gt;
+
+&lt;p&gt;My only reservation in recommending this course is that it&amp;rsquo;s a bit dated. The majority of lectures were recorded in 2014 and some references are outdated, e.g. global hash rate, price of BTC, status of NY BitLicense, and the status of Ethereum. My lament here is not that the information is no longer up-to-date but that the authors missed an opportunity to discuss recent developments, such as the approval of the NY BitLicense and what kind of precedent it set, the current state of international regulation and its effect on block chain adoption, the proliferation of Bitcoin ATM&amp;rsquo;s and the effect of readily available BTC to physical fiat conversation, the rise of Ethereum and other altcoins, etc. Since it&amp;rsquo;s unlikely that the lecturers will record new videos that discuss these recent developments, you can instead find more up-to-date material in their &lt;a href=&#34;http://bitcoinbook.cs.princeton.edu&#34;&gt;book&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>My Thoughts on Crypto Currency Certification Consortium&#39;s (C4&#39;s) Certified Bitcoin Professional (CBP) certification</title>
-      <link>/post/c4-bitcoin-certified-professional/</link>
+      <link>/post/C4-Bitcoin-Certified-Professional/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/c4-bitcoin-certified-professional/</guid>
-      <description>What is this? The Crypto Currency Certification Consortium (C4) is a non-profit organization that issues Bitcoin certifications. Currently, the only certification they offer is the Certified Bitcoin Professional (CBP), though a more advanced version, the Certified Bitcoin Expert (CBX), is being developed. Given Bitcoin&amp;rsquo;s decentralized nature, there can be no official certifying authority &amp;ndash; anyone can issue anything. In this environment, the only thing that carries weight is reputation, and C4 has a solid roster on their board and advisors, including Andreas M.</description>
+      <guid>/post/C4-Bitcoin-Certified-Professional/</guid>
+      <description>
+
+&lt;h2 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h2&gt;
+
+&lt;p&gt;The Crypto Currency Certification Consortium (C4) is a non-profit organization that issues Bitcoin certifications. Currently, the only certification they offer is the Certified Bitcoin Professional (CBP), though a more advanced version, the Certified Bitcoin Expert (CBX), is being developed. Given Bitcoin&amp;rsquo;s decentralized nature, there can be no official certifying authority &amp;ndash; anyone can issue anything. In this environment, the only thing that carries weight is reputation, and C4 has a &lt;a href=&#34;https://cryptoconsortium.org/about&#34;&gt;solid roster&lt;/a&gt; on their board and advisors, including Andreas M. Antonopoulos (prominent Bitcoin evangelist) and Vitalik Buterin (co-founder of Ethereum).&lt;/p&gt;
+
+&lt;h2 id=&#34;how-did-i-prepare&#34;&gt;How did I prepare?&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s worthwhile reading through the &lt;a href=&#34;https://cryptoconsortium.org/cbp/CBPStudyGuide.pdf&#34;&gt;study guide&lt;/a&gt; to get a feel for the scope and because it&amp;rsquo;s actually an accurate outline of what is tested. My primary test preparation method though was spending 25 hours working through the &lt;a href=&#34;https://www.coursera.org/learn/cryptocurrency&#34;&gt;Bitcoin Coursera&lt;/a&gt;. This is a great class: every lecturer is engaging and covers both the technical and social sides of their topics &amp;ndash; no dry re-hashing of definitions here. I took the CBP exam right after finishing the Coursera and was able to pass comfortably. See &lt;a href=&#34;http://charlesjlee.com/post/Bitcoin-Coursera-review&#34;&gt;this post&lt;/a&gt; for my review of this class.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-was-the-exam-like&#34;&gt;What was the exam like?&lt;/h2&gt;
+
+&lt;p&gt;After receipt of the exam fee is verified, C4 will send you a link to an online exam with 75 multiple-choice questions to answer in 20 minutes. This time constraint was chosen so that &amp;ldquo;you will not have an opportunity to use a search engine&amp;rdquo; and comes to 16 seconds available per question. Banning Google is a hopeless endeavor and I agree with the time pressure approach, though I felt that pressure could have been higher.&lt;/p&gt;
+
+&lt;p&gt;If we assume that a test-taker is able to answer half, i.e. 38, of the questions in 5 seconds each because he instantly knows the answers, then that leaves him with 27.3s/question to Google the remaining questions. That seems like plenty of time. I understand that C4 needs to accommodate people who need more time to respond to questions, e.g. slow Internet connection, slow reading pace, slow computer, etc., but an increase to say 100 questions, giving test-takers 12s/question or 19s/Google seems reasonable.&lt;/p&gt;
+
+&lt;p&gt;While the CBP exam could be more Google-resistant, I believe it&amp;rsquo;s still a good indicator of basic Bitcoin proficiency because the test questions are well-written. Sure there were a few too many acronym and definition look-ups, but the majority of questions tested understanding and there were many good concepts questions, e.g. Is this possible? If &lt;em&gt;x&lt;/em&gt; happens, then what about &lt;em&gt;y&lt;/em&gt;?&lt;/p&gt;
+
+&lt;h2 id=&#34;is-this-certification-worth-getting&#34;&gt;Is this certification worth getting?&lt;/h2&gt;
+
+&lt;p&gt;Since this is a professional exam, it&amp;rsquo;s natural to think about its utility from an employment perspective. As an employer, I can see CBP serving as a FizzBuzz test to filter out people on the Bitcoin bandwagon who want to &amp;ldquo;decentralize everything&amp;rdquo; and don&amp;rsquo;t have the basic knowledge of how BTC works. Indeed two Bitcoin exchange services, &lt;a href=&#34;https://www.reddit.com/r/BitcoinCA/comments/2ff3gx/im_now_a_certified_bitcoin_professional_cbp_and/&#34;&gt;QuickBT&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/Bitcoin/comments/2g27fi/i_am_now_a_cbp_a_certified_bitcoin_professional/ckf1nc5/&#34;&gt;QuadrigaCX&lt;/a&gt;, announced their intentions to do so.&lt;/p&gt;
+
+&lt;p&gt;As a job-seeker, I see CBP as a worthwhile investment because it serves as a resume line-item and topic of conversation. The way I see it, if CBP helps me get my foot in door three times, even if the initial conversation is just about what CBP is, then it was money well-spent. The exam costs $50 + $23 = $73 (test fee + application fee) and certifications can be renewed every two years for $23. (Note that fees on the C4 website are denominated in Canadian dollars and that all fees must appropriately be paid in BTC.)&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Creating a Steem bot using Python, Piston, and Heroku</title>
-      <link>/post/steem-bot/</link>
+      <link>/post/Steem-bot/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/steem-bot/</guid>
-      <description>Steem for the people When someone writes a great post on Reddit that goes viral and is widely shared, the party that benefits most is Reddit itself. Realizing this and wanting to give back to the community responsible for its success, Reddit toyed with the idea of giving shares of the company to users in the form of a cryptocurrency. This plan was later put on indefinite hold.
-Steem is the embodiment of what Reddit wanted to achieve &amp;ndash; a blockchain-based, social news platform where posters and upvoters, i.</description>
+      <guid>/post/Steem-bot/</guid>
+      <description>
+
+&lt;h2 id=&#34;steem-for-the-people&#34;&gt;Steem for the people&lt;/h2&gt;
+
+&lt;p&gt;When someone writes a great post on Reddit that goes viral and is widely shared, the party that benefits most is Reddit itself. Realizing this and wanting to give back to the community responsible for its success, Reddit toyed with the idea of giving shares of the company to users in the form of a cryptocurrency. This plan was later &lt;a href=&#34;http://www.theverge.com/2015/2/3/7968397/reddit-backtracks-reddit-notes-cryptocurrency&#34;&gt;put on indefinite hold&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://steem.io&#34;&gt;Steem&lt;/a&gt; is the embodiment of what Reddit wanted to achieve &amp;ndash; a blockchain-based, social news platform where posters and upvoters, i.e. &amp;ldquo;curators&amp;rdquo;, are rewarded directly with cryptocurrency (actually three currencies: STEEM, Steem Power, and Steem Dollars). I was first exposed to Steem via &lt;a href=&#34;https://steemit.com&#34;&gt;Steemit&lt;/a&gt;, a website built on top of the Steem blockchain. My first thought after learning about Steemit and reading the white paper was &amp;ldquo;wouldn&amp;rsquo;t it be neat if I could write a bot that would &amp;lsquo;curate&amp;rsquo;, upvote posts for me, and make me rich overnight?&amp;rdquo; Of course, it wasn&amp;rsquo;t that easy, but at least no one can say I didn&amp;rsquo;t &lt;em&gt;try&lt;/em&gt; to get rich quick.&lt;/p&gt;
+
+&lt;p&gt;This is a guide to creating a simple bot that will periodically upvote a random post. Specifically, the bot will work like this (numbers are configurable):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Bot will wake up every 10 minutes, but only run 5% of the time. This is to give new posts a chance to appear and to preserve voting power&lt;/li&gt;
+&lt;li&gt;If the bot runs, it will randomly upvote one of the 20 most recent posts with weight 100. The weight can be adjusted if you want to experiment with voting more often but with less weight. Every vote decreases your voting power, which regenerates over time, and hence the rewards you can potentially earn&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Our bot will be built using GitHub, Heroku, and &lt;a href=&#34;https://steemit.com/@xeroc&#34;&gt;@xeroc&lt;/a&gt;&amp;rsquo;s excellent Steem library, &lt;a href=&#34;https://github.com/xeroc/piston&#34;&gt;steem-piston&lt;/a&gt;. We&amp;rsquo;ll build this in two steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create accounts (will need email, cellphone, credit card)&lt;/li&gt;
+&lt;li&gt;Setup and deploy Heroku project&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;1-create-accounts&#34;&gt;1) Create accounts&lt;/h2&gt;
+
+&lt;h3 id=&#34;create-heroku-https-www-heroku-com-account&#34;&gt;Create &lt;a href=&#34;https://www.heroku.com&#34;&gt;Heroku&lt;/a&gt; account&lt;/h3&gt;
+
+&lt;p&gt;The first step is to create an account on &lt;a href=&#34;https://www.heroku.com&#34;&gt;Heroku&lt;/a&gt;. &lt;em&gt;Dynos&lt;/em&gt; are the Heroku term for virtual machine instances. You initially start with 550 free dyno hours. If you add a credit card number, you get an additional 450 free hours and the ability to use free add-ons. We will be using the free Scheduler add-on to make our bot run every 10 minutes, so add your credit card number now.&lt;/p&gt;
+
+&lt;p&gt;If you didn&amp;rsquo;t add your credit card during registration, you can do so after you login:&lt;br /&gt;
+Click your avatar in the upper right-hand corner &amp;ndash;&amp;gt; Account settings &amp;ndash;&amp;gt; Billing&lt;/p&gt;
+
+&lt;h3 id=&#34;create-steemit-https-steemit-com-account&#34;&gt;Create &lt;a href=&#34;https://steemit.com&#34;&gt;SteemIt&lt;/a&gt; account&lt;/h3&gt;
+
+&lt;p&gt;Next you need an account on the Steem blockchain (this costs a fee). The easiest way to do this is to register an account on &lt;a href=&#34;https://steemit.com&#34;&gt;Steemit&lt;/a&gt;, a website that runs on top of Steem to display its contents (Steemit will pay the fee). To help combat account creation abuse, Steemit recently switched from a &lt;a href=&#34;https://steemit.com/steemit/@gord0b/abusing-steemit-using-facebook-sign-up&#34;&gt;Facebook/Reddit&lt;/a&gt; registration process to an email + SMS process.&lt;/p&gt;
+
+&lt;p&gt;After you finish registering, log into your Steemit account and grab your private Posting key. You can find this by going to the URL below and clicking &lt;strong&gt;Show Private Key&lt;/strong&gt; next to &lt;strong&gt;Posting&lt;/strong&gt;. Our bot will need this key to vote on our behalf.&lt;br /&gt;
+&lt;a href=&#34;https://steemit.com/@ReplaceWithYourSteemHandle/permissions&#34;&gt;https://steemit.com/@ReplaceWithYourSteemHandle/permissions&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;create-github-https-github-com-join-account&#34;&gt;Create &lt;a href=&#34;https://github.com/join&#34;&gt;GitHub&lt;/a&gt; account&lt;/h3&gt;
+
+&lt;p&gt;Git is a version control system for tracking changes to files and coordinating work on those files among multiple people. &lt;a href=&#34;https://github.com/join&#34;&gt;GitHub&lt;/a&gt; is a popular web-based service that hosts Git repositories. We will use GitHub to store our code in a repository and then point Heroku to that repository.&lt;/p&gt;
+
+&lt;h2 id=&#34;2-setup-and-deploy-heroku-project&#34;&gt;2) Setup and deploy Heroku project&lt;/h2&gt;
+
+&lt;h3 id=&#34;fork-github-repo&#34;&gt;Fork GitHub repo&lt;/h3&gt;
+
+&lt;p&gt;What is a &lt;em&gt;fork&lt;/em&gt;?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A &lt;em&gt;fork&lt;/em&gt; is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+&lt;a href=&#34;https://help.github.com/articles/fork-a-repo/&#34;&gt;https://help.github.com/articles/fork-a-repo/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this case, you&amp;rsquo;ll fork my repository by clicking the link below, logging into your GitHub account, and clicking the &lt;strong&gt;Fork&lt;/strong&gt; button in the upper right-hand corner.&lt;br /&gt;
+&lt;a href=&#34;https://github.com/charlesjlee/steemBot&#34;&gt;https://github.com/charlesjlee/steemBot&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;create-heroku-project-and-link-to-github&#34;&gt;Create Heroku project and link to GitHub&lt;/h3&gt;
+
+&lt;p&gt;Now we&amp;rsquo;re ready to create our Heroku project:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Log into Heroku and go to the app dashboard&lt;br /&gt;
+&lt;a href=&#34;https://dashboard.heroku.com/apps&#34;&gt;https://dashboard.heroku.com/apps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;New&lt;/strong&gt; in the upper right-hand corner then &lt;strong&gt;Create new app&lt;/strong&gt;. You can give the app a name or leave it blank to randomly generate one. Click &lt;strong&gt;Create App&lt;/strong&gt;. This brings you to the app configuration site&lt;/li&gt;
+&lt;li&gt;You should be in the &lt;strong&gt;Deploy&lt;/strong&gt; tab. If not, then click &lt;strong&gt;Deploy&lt;/strong&gt; to navigate there. Under &lt;strong&gt;Deployment method&lt;/strong&gt;, click &lt;strong&gt;GitHub&lt;/strong&gt;. The bottom items will refresh and you will only see the &lt;strong&gt;Connect to GitHub&lt;/strong&gt; item. Click that, enter your GitHub password, and &lt;strong&gt;Connect&lt;/strong&gt; to the &lt;code&gt;steemBot&lt;/code&gt; repository you just forked&lt;/li&gt;
+&lt;li&gt;Now &lt;strong&gt;Connect to GitHub&lt;/strong&gt; disappears and is replaced with other items. Under &lt;strong&gt;Manual deploy&lt;/strong&gt;, click &lt;strong&gt;Deploy Branch&lt;/strong&gt;. This tells Heroku to pick-up the code in the repository we just linked and compile it into a slug, Heroku&amp;rsquo;s term for a runnable package&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;setup-config-vars&#34;&gt;Setup config vars&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s set some custom values:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Navigate to the &lt;strong&gt;Settings&lt;/strong&gt; tab and find the &lt;strong&gt;Config Variables&lt;/strong&gt; item&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click &lt;strong&gt;Reveal Config Vars&lt;/strong&gt;. There are 5 config vars we need to enter:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;key&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;example value&lt;/th&gt;
+&lt;th&gt;comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;numPostsToConsider&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;20&lt;/td&gt;
+&lt;td&gt;Number of recent posts to consider&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;percentChanceToPost&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5&lt;/td&gt;
+&lt;td&gt;Percent chance that script will run. Must be between 0 and 100&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;steemAccountName&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;lsquo;mySteemName&amp;rsquo;&lt;/td&gt;
+&lt;td&gt;Your Steem account name wrapped in single quotes&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;steemPostingKey&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;lsquo;myPrivatePostingKey&amp;rsquo;&lt;/td&gt;
+&lt;td&gt;Your Private Posting Key that you saved when creating your SteemIt account, wrapped in single quotes&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;voteWeight&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;100&lt;/td&gt;
+&lt;td&gt;How much voting power to use per upvote. Note that voting power decreases after every vote. Must be between 0 and 100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;schedule-bot&#34;&gt;Schedule bot&lt;/h3&gt;
+
+&lt;p&gt;Finally we schedule our bot using the free Heroku Scheduler Add-on:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Navigate to the &lt;strong&gt;Resources&lt;/strong&gt; tab&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;Add-ons&lt;/strong&gt;, search for &lt;strong&gt;Heroku Scheduler&lt;/strong&gt; then click &lt;strong&gt;Provision&lt;/strong&gt; in the pop-up&lt;/li&gt;
+&lt;li&gt;Now &lt;strong&gt;Heroku Scheduler&lt;/strong&gt; appears as a row. Click it and a new window opens&lt;/li&gt;
+&lt;li&gt;In the new window, click &lt;strong&gt;Add new job&lt;/strong&gt;. Enter &lt;strong&gt;python bot.py&lt;/strong&gt; in the text box and change the &lt;strong&gt;Frequency&lt;/strong&gt; to &lt;strong&gt;Every 10 minutes&lt;/strong&gt;. Click &lt;strong&gt;Save&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;check-logs-and-celebrate&#34;&gt;Check logs and celebrate&lt;/h3&gt;
+
+&lt;p&gt;That&amp;rsquo;s it! Now our bot is running every 10 minutes and has a &lt;code&gt;percentChanceToPost&lt;/code&gt; chance to activate. Every time the bot activates, it will choose a random post from the most recent &lt;code&gt;numPostsToConsider&lt;/code&gt; and upvote it with weight &lt;code&gt;voteWeight&lt;/code&gt;. You can see the run logs of your bot by going to:&lt;br /&gt;
+More (to the right of Open app, in the upper right corner) &amp;ndash;&amp;gt; View logs&lt;/p&gt;
+
+&lt;p&gt;You can see your handiwork being written to the Steem block chain using this block chain explorer:
+&lt;a href=&#34;https://steemd.com/@ReplaceWithYourSteemHandle&#34;&gt;https://steemd.com/@ReplaceWithYourSteemHandle&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>2017 Priorities - Family First</title>
-      <link>/post/2017-priorities-family-first/</link>
+      <link>/post/2017-Priorities-Family-First/</link>
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-priorities-family-first/</guid>
-      <description>It&amp;rsquo;s 11:30pm and I&amp;rsquo;m in the family kitchen by myself munching on a box of palmiers1 with a glass of milk and it dawns on me that I feel uncharacteristically good. I feel safe, calm, clear-headed, and full of food.
-Thinking back to my pre-holiday rush to close out everything before 2017, I was over-whelmed, anxious, and really not that productive. With a list of 2017 priorities in front of me, I start planning out the first few months of 2017 and it&amp;rsquo;s soon obvious there&amp;rsquo;s no way I can do all of this.</description>
+      <guid>/post/2017-Priorities-Family-First/</guid>
+      <description>
+
+&lt;p&gt;It&amp;rsquo;s 11:30pm and I&amp;rsquo;m in the family kitchen by myself munching on a box of palmiers&lt;a href=&#34;http://www.costcobusinessdelivery.com/Sugar-Bowl-Petite-Palmiers,-32-oz.product.11756230.html&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; with a glass of milk and it dawns on me that I feel uncharacteristically good. I feel safe, calm, clear-headed, and full of food.&lt;/p&gt;
+
+&lt;p&gt;Thinking back to my pre-holiday rush to close out everything before 2017, I was over-whelmed, anxious, and really not that productive. With a list of 2017 priorities in front of me, I start planning out the first few months of 2017 and it&amp;rsquo;s soon obvious there&amp;rsquo;s no way I can do all of this. I just started putting together a schedule and I&amp;rsquo;m already over-allocated? What am I doing wrong?&lt;/p&gt;
+
+&lt;p&gt;According to Tim Ferriss (I&amp;rsquo;m a fan), &amp;ldquo;lack of time is actually lack of priorities.&amp;rdquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_4-Hour_Workweek&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; Then  what are my priorities? Certainly not to pack my schedule to the brim with tasks, actually finish few of them, and disappoint myself like I did in 2016. Or maybe I should aim to have more moments like the one I&amp;rsquo;m having now &amp;ndash; with palmiers and milk at home &amp;ndash; and prioritize family. Family is something that was not top-of-mind for me in 2016 and I have physical proof that I didn&amp;rsquo;t make much progress in that area last year: a stagnant list of &amp;ldquo;Family To-Do&amp;rsquo;s&amp;rdquo; that I generally only added to throughout the year.&lt;/p&gt;
+
+&lt;p&gt;What does it mean to prioritize family first? In &lt;em&gt;Tools of Titans&lt;/em&gt;&lt;a href=&#34;https://www.amazon.com/Tools-Titans-Billionaires-World-Class-Performers/dp/1328683788&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;, Ferriss describes what he means when he says he now prioritizes his health first:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;After contracting Lyme disease and operating at ~10% capacity for 9 months in 2014, I made health #1. Prior to Lyme, I’d worked out and eaten well, but when push came to shove, “health #1” was negotiable. Now, it’s literally #1. What does this mean?&lt;/p&gt;
+
+&lt;p&gt;If I sleep poorly and have an early morning meeting, I’ll cancel the meeting last-minute if needed and catch up on sleep. If I’ve missed a workout and have a conference call coming up in 30 minutes? Same. Late-night birthday party with a close friend? Not unless I can sleep in the next morning. In practice, strictly making health #1 has real social and business ramifications. That’s a price I’ve realized I MUST be fine with paying, or I will lose weeks or months to sickness and fatigue.&lt;/p&gt;
+
+&lt;p&gt;Making health #1 50% of the time doesn’t work. It’s absolutely all-or-nothing. If it’s #1 50% of the time, you’ll compromise precisely when it’s most important not to.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Am I willing to do the same for family? Would I explicitly or implicitly (by spending less time) turn down career opportunities for family opportunities? I&amp;rsquo;m going to start looking for a new contract soon because my current one is ending, and I expect this search to require significant time and effort. Would I cancel a meeting with a potential client if my brother &amp;ldquo;wants to talk&amp;rdquo;?&lt;/p&gt;
+
+&lt;p&gt;What do I have to lose?&lt;a href=&#34;#references&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; Not much really. I can&amp;rsquo;t lose contract opportunities I don&amp;rsquo;t yet have. I&amp;rsquo;ve already accepted that my income may be zero for some time. The worst thing that could happen would be that, because of spending too much time with family and on family activities, I don&amp;rsquo;t find a new contract and remain unemployed for a few months. If that happened, I&amp;rsquo;m confident I could find another full-time position similar to my old one.&lt;/p&gt;
+
+&lt;p&gt;It &lt;em&gt;would&lt;/em&gt; be unpleasant if the worst-case scenario actually played out, but my worries are disproportionately large given that I think this worst-case scenario is unlikely. I believe a more likely scenario is that I will find a lower paying contract, which would be not unusual given that I am beginning my contracting career.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, I would very likely be able to strengthen my relationship with my family, hopefully feel happier and healthier, and possibly leverage this increased positivity to increase my career prospects. With this perspective, betting on family seems like reasonable risk to take.&lt;/p&gt;
+
+&lt;p&gt;How should I go about doing this, e.g. measuring progress, settings goals, etc?
+I&amp;rsquo;ll start by tackling my existing &amp;ldquo;Family To-Do&amp;rdquo; list and performing the following items weekly:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Talk with all of my immediate family&lt;/li&gt;
+&lt;li&gt;Talk with one member of my extended family&lt;/li&gt;
+&lt;li&gt;Review last week&amp;rsquo;s progress/status and generate new ideas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My risk/reward assessment for friendship and professional networks is the same, so I will also do these items weekly:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Talk with a friend&lt;/li&gt;
+&lt;li&gt;Have a meal with a friend&lt;/li&gt;
+&lt;li&gt;One professional networking activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am blessed to have healthy, supportive family and friends. In 2017, I will cultivate this blessing so that it lasts for many years.&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.costcobusinessdelivery.com/Sugar-Bowl-Petite-Palmiers,-32-oz.product.11756230.html&#34;&gt;http://www.costcobusinessdelivery.com/Sugar-Bowl-Petite-Palmiers,-32-oz.product.11756230.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_4-Hour_Workweek&#34;&gt;https://en.wikipedia.org/wiki/The_4-Hour_Workweek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Tools-Titans-Billionaires-World-Class-Performers/dp/1328683788&#34;&gt;https://www.amazon.com/Tools-Titans-Billionaires-World-Class-Performers/dp/1328683788&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;This saying has always bothered me because the answer is obvious &amp;ndash; of course I have something to lose because there&amp;rsquo;s always an opportunity cost for every action. Yet somehow this phrase is effective in allowing me (and others, see Ferriss&amp;rsquo;s &lt;em&gt;Fear Setting&lt;/em&gt; exercise in the &lt;em&gt;The 4-Hour Workweek&lt;/em&gt;) to widen my perspective and consider options I had been blind to.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
     <item>
       <title>6 weeks of Uberman</title>
-      <link>/post/6-weeks-of-uberman/</link>
+      <link>/post/6-weeks-of-Uberman/</link>
       <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/6-weeks-of-uberman/</guid>
-      <description>Introduction This post is about my experience with the Uberman (UM) sleep schedule, the popularized and extreme polyphasic sleep schedule that achieves 2-3 hours of total daily sleep through periodic 20 minutes naps. The benefits are enticing. Assuming you currently sleep 8 hours/day and follow the 3 hours/day schedule, you can have 21 more hours a week to enjoy and to get stuff done. With all that extra time, surely I&amp;rsquo;d be able to get through my to-do backlog!</description>
+      <guid>/post/6-weeks-of-Uberman/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This post is about my experience with the Uberman (UM) sleep schedule, the popularized and extreme polyphasic sleep schedule that achieves 2-3 hours of total daily sleep through periodic 20 minutes naps. The benefits are enticing. Assuming you currently sleep 8 hours/day and follow the 3 hours/day schedule, you can have 21 more hours a week to enjoy and to get stuff done. With all that extra time, surely I&amp;rsquo;d be able to get through my to-do backlog! The requirements &amp;ndash; a flexible work schedule and a two-week adaptation period during which you are a brain-dead zombie &amp;ndash; are steep though, which is why I didn&amp;rsquo;t give UM any serious consideration until recently. UM success stories&lt;a href=&#34;http://www.businessinsider.com/this-guy-has-only-slept-45-hours-per-day-for-two-years-2013-11&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; would pop up a few times a year and the idea stayed in the back of my mind. Finally a change in my job&amp;rsquo;s working hours (with a 5 week break in-between the transition) gave me an opportune window to adjust to and potentially stick with the schedule.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-plan&#34;&gt;The Plan&lt;/h2&gt;
+
+&lt;p&gt;First things first, it was time to do some thinking and research. Why do I want to try the UM sleep schedule and how can I accomplish this?&lt;/p&gt;
+
+&lt;p&gt;Reasons I want to try UM&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I hadn&amp;rsquo;t been sleeping well and wanted to see if changing my sleep pattern would help. I would feel groggy when waking up and lethargic for most of the day, even after exercising and/or napping. I was originally interested in the Everyman schedule (3.5 hour core and 3 x 20 minute naps) but &lt;a href=&#34;http://www.polyphasicsociety.com/polyphasic-sleep/overviews/everyman&#34;&gt;Polyphasic Society&lt;/a&gt; recommends first attempting UM because, even if you fail to adapt to UM, adjusting to 20 minute naps will make subsequent attempts at any polyphasic schedule easier.&lt;/li&gt;
+&lt;li&gt;I wanted more time to do things. I had just finished the Organize stage of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Getting_Things_Done&#34;&gt;Getting Things Done&lt;/a&gt; method, in which you list out everything you want to do and determine the next physical step required. The mental lightness I felt after dumping all my recurring thoughts (and worries) onto paper was incredibly refreshing and I was eager to start tackling my list.&lt;br /&gt;
+I realize that more time available does not always translate to more things done, and I was hoping to take advantage of the moments of mental clarity after waking from a well-timed nap to boost productivity.&lt;/li&gt;
+&lt;li&gt;Similarly, on the rare occasions when I can afford to, I enjoy being awake during the late night and early morning hours. I find those hours to be the most peaceful and productive ones of the whole day and wanted to experience more of them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After evaluating my reasons for pursuing UM, I did some reading on what other people did and their experiences with the schedule. Apparently this UM thing is a scam&amp;hellip; The majority of people fail to adapt from either lack of motivation or technique &lt;a href=&#34;https://www.codeword.xyz/2016/03/03/my-experience-with-the-uberman-sleep-schedule/&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;https://mysleepexperiment.wordpress.com/effects-of-polyphasic-sleep-on-health/&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;http://www.lifehacker.com.au/2012/07/what-i-learned-through-completely-failing-to-master-polyphasic-sleep/&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. Those that were able to successfully adapt stopped because of social obligations &lt;a href=&#34;http://www.stevepavlina.com/blog/2007/03/polyphasic-sleep-one-year-later/&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;http://qz.com/430415/i-once-tried-to-cheat-sleep-and-for-a-year-i-succeeded/&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt; or perhaps fundamental human incompatibility with the schedule&lt;a href=&#34;https://www.supermemo.com/en/articles/polyphasic2010&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sounds like fun. Let&amp;rsquo;s do this!&lt;/p&gt;
+
+&lt;p&gt;Using the recommendations on &lt;a href=&#34;http://polyphasicsociety.com/polyphasic-sleep/overviews/&#34;&gt;PolyphasicSociety.com&lt;/a&gt;, I settled on this plan for adapting to UM and decided to stick with the UM schedule for 6 weeks then evaluate whether I wanted to continue:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Stay awake for 24-48 hours to induce REM deprivation, i.e. exaptation&lt;/li&gt;
+&lt;li&gt;Nap every 2 hours for 3 days&lt;/li&gt;
+&lt;li&gt;Nap every 3 hours until the end of 6 weeks&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I went on a lot about productivity above, but I anticipated that I would spend a lot of time just watching TV in a struggle to stay awake.&lt;/p&gt;
+
+&lt;h2 id=&#34;outcome&#34;&gt;Outcome&lt;/h2&gt;
+
+
+&lt;div class=&#34;pure-u-1&#34;&gt;
+  &lt;img class=&#34;pure-img&#34; src=&#34;/img/6-weeks-of-Uberman-daily.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;You can see that I didn&amp;rsquo;t follow the schedule very well and never adapted to UM. This is because excuse&lt;sub&gt;1&lt;/sub&gt;, excuse&lt;sub&gt;2&lt;/sub&gt;, &amp;hellip;, excuse&lt;sub&gt;99&lt;/sub&gt;. The adjustment period was &lt;em&gt;rough&lt;/em&gt;, and because I never adapted to the schedule, the entire 6 weeks was an adjustment period. I expected that my physical and mental faculties would be compromised by sleep deprivation during this experiment, but I was still surprised by the extent to which they were.&lt;/p&gt;
+
+&lt;p&gt;Physically, I experienced headaches, malaise, intermittent nausea, weakness, and joint pain. Mentally, I experienced impaired short and long-term memory, mental fog, and anxiety.&lt;/p&gt;
+
+&lt;p&gt;In particular, there were three events that stood out as prime examples of sleep deprivation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Walking around ShopRite knowing that I needed to buy toppings to make pizza for dinner, but being unable to decide what to buy&lt;/li&gt;
+&lt;li&gt;Watching Inception for the second time and not being emotionally moved or impressed or anything. I was mind-blown the first time I saw the movie and I knew that something was off when I felt no reaction the second time&lt;/li&gt;
+&lt;li&gt;Sitting at the kitchen counter and seeing a large cockroach fly out from behind the fridge, fly into miscellaneous things next to the fridge, fall next to my hand, and then continue to drunkenly fly around and bump into things. It was bizarre seeing a cockroach &amp;ndash; the unkillable insect &amp;ndash; act so vulnerable and erratic. It was probably poisoned or otherwise dying. In any case, I was majorly spooked&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For some reason, I naively assumed I would have enough time to get to everything on my to-do list. A moment&amp;rsquo;s calculation reveals this to be ridiculous because it would have taken 527 hours or 21.9 days to watch my anime/movie/TV backlog alone.&lt;/p&gt;
+
+
+&lt;div class=&#34;pure-u-1&#34;&gt;
+  &lt;img class=&#34;pure-img&#34; src=&#34;/img/6-weeks-of-Uberman-cumulative.png&#34; alt=&#34;Hours Slept: Planned vs Expected&#34;&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Ironically, not only did I not accomplish much work during these 6 weeks because of sleep deprivation, I actually slept more hours total than I would have normally. Woe is me.&lt;/p&gt;
+
+&lt;h2 id=&#34;concluding-thoughts&#34;&gt;Concluding thoughts&lt;/h2&gt;
+
+&lt;p&gt;These 6 weeks were a generally unpleasant time. Even so, if given the choice, I would try UM again because it satisfied a long-standing curiosity and let me feel &amp;ndash; and not just know &amp;ndash; how devastating sleep deprivation can be. I also gave myself a reminder that increasing productivity is really about effective energy management and not time management. I have enough time to do the things I want; I don&amp;rsquo;t have the habits, discipline, and energy to avoid squandering my free time.&lt;/p&gt;
+
+&lt;p&gt;At some point in the future, I will probably try that &lt;a href=&#34;http://www.polyphasicsociety.com/polyphasic-sleep/overviews/everyman&#34;&gt;Everyman schedule&lt;/a&gt; I was originally eyeing, but not too soon.&lt;/p&gt;
+
+&lt;p&gt;I leave you with a quote from &lt;em&gt;Manhole 69&lt;/em&gt;, a J.G. Ballard short story about an experimental surgery to eliminate the ability to sleep that I coincidentally happened to read during this time:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Continual consciousness is more than the brain can stand. Any signal repeated often enough eventually loses its meaning. Try saying the word &amp;ldquo;sleep&amp;rdquo; fifty times. After a point the brain&amp;rsquo;s self-awareness dulls. It&amp;rsquo;s no longer able to grasp who or why it is, and it rides adrift.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.businessinsider.com/this-guy-has-only-slept-45-hours-per-day-for-two-years-2013-11&#34;&gt;http://www.businessinsider.com/this-guy-has-only-slept-45-hours-per-day-for-two-years-2013-11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.codeword.xyz/2016/03/03/my-experience-with-the-uberman-sleep-schedule/&#34;&gt;https://www.codeword.xyz/2016/03/03/my-experience-with-the-uberman-sleep-schedule/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mysleepexperiment.wordpress.com/effects-of-polyphasic-sleep-on-health/&#34;&gt;https://mysleepexperiment.wordpress.com/effects-of-polyphasic-sleep-on-health/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lifehacker.com.au/2012/07/what-i-learned-through-completely-failing-to-master-polyphasic-sleep/&#34;&gt;http://www.lifehacker.com.au/2012/07/what-i-learned-through-completely-failing-to-master-polyphasic-sleep/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.stevepavlina.com/blog/2007/03/polyphasic-sleep-one-year-later/&#34;&gt;http://www.stevepavlina.com/blog/2007/03/polyphasic-sleep-one-year-later/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://qz.com/430415/i-once-tried-to-cheat-sleep-and-for-a-year-i-succeeded/&#34;&gt;http://qz.com/430415/i-once-tried-to-cheat-sleep-and-for-a-year-i-succeeded/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.supermemo.com/en/articles/polyphasic2010&#34;&gt;https://www.supermemo.com/en/articles/polyphasic2010&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.polyphasicsociety.com/polyphasic-sleep/overviews/uberman-2/&#34;&gt;https://www.polyphasicsociety.com/polyphasic-sleep/overviews/uberman-2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
   </channel>
