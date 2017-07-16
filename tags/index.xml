@@ -2,148 +2,148 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Charles Lee</title>
-    <link>/tags/</link>
+    <link>http://charlesjlee.com/tags/</link>
     <description>Recent content in Tags on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Wed, 01 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://charlesjlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bitcoin</title>
-      <link>/tags/bitcoin/</link>
+      <link>http://charlesjlee.com/tags/bitcoin/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/bitcoin/</guid>
+      <guid>http://charlesjlee.com/tags/bitcoin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Block Chain</title>
-      <link>/tags/block-chain/</link>
+      <link>http://charlesjlee.com/tags/block-chain/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/block-chain/</guid>
+      <guid>http://charlesjlee.com/tags/block-chain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Certified Bitcoin Professional Cbp</title>
-      <link>/tags/certified-bitcoin-professional-cbp/</link>
+      <link>http://charlesjlee.com/tags/certified-bitcoin-professional-cbp/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/certified-bitcoin-professional-cbp/</guid>
+      <guid>http://charlesjlee.com/tags/certified-bitcoin-professional-cbp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coursera</title>
-      <link>/tags/coursera/</link>
+      <link>http://charlesjlee.com/tags/coursera/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/coursera/</guid>
+      <guid>http://charlesjlee.com/tags/coursera/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Crypto Currency Certification Consortium C4</title>
-      <link>/tags/crypto-currency-certification-consortium-c4/</link>
+      <link>http://charlesjlee.com/tags/crypto-currency-certification-consortium-c4/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/crypto-currency-certification-consortium-c4/</guid>
+      <guid>http://charlesjlee.com/tags/crypto-currency-certification-consortium-c4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Life</title>
-      <link>/tags/life/</link>
+      <link>http://charlesjlee.com/tags/life/</link>
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/life/</guid>
+      <guid>http://charlesjlee.com/tags/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Personal</title>
-      <link>/tags/personal/</link>
+      <link>http://charlesjlee.com/tags/personal/</link>
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/personal/</guid>
+      <guid>http://charlesjlee.com/tags/personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Piston</title>
-      <link>/tags/piston/</link>
+      <link>http://charlesjlee.com/tags/piston/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/piston/</guid>
+      <guid>http://charlesjlee.com/tags/piston/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Polyphasic</title>
-      <link>/tags/polyphasic/</link>
+      <link>http://charlesjlee.com/tags/polyphasic/</link>
       <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/polyphasic/</guid>
+      <guid>http://charlesjlee.com/tags/polyphasic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Priorities</title>
-      <link>/tags/priorities/</link>
+      <link>http://charlesjlee.com/tags/priorities/</link>
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/priorities/</guid>
+      <guid>http://charlesjlee.com/tags/priorities/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
+      <link>http://charlesjlee.com/tags/python/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/python/</guid>
+      <guid>http://charlesjlee.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sleep</title>
-      <link>/tags/sleep/</link>
+      <link>http://charlesjlee.com/tags/sleep/</link>
       <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sleep/</guid>
+      <guid>http://charlesjlee.com/tags/sleep/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Steem</title>
-      <link>/tags/steem/</link>
+      <link>http://charlesjlee.com/tags/steem/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/steem/</guid>
+      <guid>http://charlesjlee.com/tags/steem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Steemit</title>
-      <link>/tags/steemit/</link>
+      <link>http://charlesjlee.com/tags/steemit/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/steemit/</guid>
+      <guid>http://charlesjlee.com/tags/steemit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xeroc</title>
-      <link>/tags/xeroc/</link>
+      <link>http://charlesjlee.com/tags/xeroc/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/xeroc/</guid>
+      <guid>http://charlesjlee.com/tags/xeroc/</guid>
       <description></description>
     </item>
     
