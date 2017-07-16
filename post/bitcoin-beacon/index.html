@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="a Python implementation of the paper &#34;On Bitcoin as a public randomness source&#34;">
+  <meta name="generator" content="Hugo 0.25" />
+
+  <title>Bitcoin beacon: using the blockchain to generate random bits &middot; Charles Lee</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+  
+  
+  <link rel="stylesheet" href="/css/lightbox.css">
+  
+  
+  <link rel="stylesheet" href=" /css/gridside-main.css">
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+  <link rel="stylesheet" href="/css/mathjax.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://charlesjlee.com/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38182774-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"> </a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/charlesleeonline" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/charlesjlee" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="/files/CharlesLee-resume.pdf" target="_blank"><i class="fa fa-file-text fa-fw"></i>Resume</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Bitcoin beacon: using the blockchain to generate random bits</h1>
+  <h2>a Python implementation of the paper &#34;On Bitcoin as a public randomness source&#34;</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>July 16, 2017</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/bitcoin">Bitcoin</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/blockchain">blockchain</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/python">Python</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="random-beacons">Random beacons</h2>
+
+<p>A random beacon is &ldquo;a trusted service that broadcasts fresh random numbers at regular intervals&rdquo;. Random beacons are useful in situations that demand security against manipulation, e.g. choosing precincts to audit after an election. Several beacon services currently exist, notably Random.org and the NIST beacon, however there are several advantages to using the Bitcoin blockchain as a source of randomness:</p>
+
+<ul>
+<li>Publicly verifiable
+
+<ul>
+<li>Bitcoin blocks are public as soon as they are mined so anyone can perform and verify the beacon computations.</li>
+</ul></li>
+<li>No trusted parties
+
+<ul>
+<li>Using proprietary services requires that you trust the operator of that service. In the case of <a href="https://www.random.org/">random.org</a>, they publicly state that they buffer their random numbers<a href="https://www.random.org/faq/"><sup>1</sup></a>, i.e. they generate the numbers before they are requested. This means that they could be in a position to profit from advance knowledge of the beacon output. Analogously, <a href="https://www.nist.gov/programs-projects/nist-randomness-beacon">NIST</a> previously promoted the Dual_EC_DRBG standard, which it has now admitted contained a backdoor for the NSA to exploit. Additionally, the NIST beacon was offline during the 2013 US Government shutdown.</li>
+</ul></li>
+<li>Precise security guarantees
+
+<ul>
+<li>Due to the cryptographic structure of the Bitcoin blockchain and its use as a currency, it is possible to concretely analyze the entropy generated and the the monetary cost of compromising the beacon output.</li>
+</ul></li>
+</ul>
+
+<p>In their paper, <em>On Bitcoin as a public randomness source</em><a href="https://eprint.iacr.org/2015/1015"><sup>2</sup></a>, Joseph Bonneau, Jeremy Clark, and Steven Goldfeder provide such a construction and analysis. Specifically, they conclude that</p>
+
+<blockquote>
+<blockquote>
+<p>at least 68 bits of min-entropy are produced every 10 minutes [the average Bitcoin block time], from which one can derive over 32 near-uniform bits using standard extractor techniques</p>
+
+<p>a lottery producing a single unbiased bit is manipulation-resistant against an attacker with a stake of less than 50 bitcoins</p>
+</blockquote>
+</blockquote>
+
+<h2 id="summary-of-beacon-construction">Summary of beacon construction</h2>
+
+<p>The beacon construction provided in the paper is a single computation with three components: $$ Beacon(t) = Ext_k (B_t || H(B_t)) $$</p>
+
+<ul>
+<li>$Ext_k$
+
+<ul>
+<li>This is an extractor function that takes in $n$ bits with sufficient entropy and returns $m$ bits with high entropy, i.e. uniform distribution. The extractors discussed (HMAC&rsquo;s and block ciphers in CBC-MAC mode) work best when the input has at least $2m$ bits of min-entropy; this is why our output $m$ is roughly $n \over 2$ bits.</li>
+</ul></li>
+<li>$B_t$
+
+<ul>
+<li>The 640-bit block header. A valid block must have a hash value starting with $d$ (68 at the time of writing) consecutive zeros. This is the source of the $d$ bits of min-entropy, or inherent randomness, that powers the beacon. The $d$ bits are actually spread across two fields (Merkle hash of transactions and nonce) in the header, but we capture both by using the entire header.</li>
+</ul></li>
+<li>$H(B_t)$
+
+<ul>
+<li>By including the hash of the header, we make it impossible for malicious miners to exclusively trying hash solutions that produce a certain beacon output. Since the hash of the header is unpredictable, malicious miners must mine normally: finding valid hash solutions, computing the beacon output, then deciding whether to withhold the block.</li>
+</ul></li>
+</ul>
+
+<h2 id="beacon-construction-in-python">Beacon construction in Python</h2>
+
+<iframe src="/files/Bitcoin_beacon.html" width="100%" height="2625" scrolling="yes"></iframe> 
+
+<h2 id="cost-of-manipulation">Cost of manipulation</h2>
+
+<p>The paper begins by considering the simplest case of a single-stage lottery (multi-stage lotteries are discussed in Appendix A), where the attacker stands to win reward $W$ with probability $p$ and the lottery outcome is decided on a single beacon output. The paper models a strong <em>bribing attacker</em> &ldquo;who is able to [successfully] pay any miner exactly $B$ [the block reward] to suppress a valid block whenever the attacker desires&rdquo;. This bribing attacker&rsquo;s power to manipulate the beacon is equivalent to that of a mining pool with 100% of the network&rsquo;s hashing power.</p>
+
+<p>The authors conclude that &ldquo;a single stage lottery is manipulation-resistant [it would cost more than the bribing attacker&rsquo;s expected winnings] against any binary [do nothing or attack the beacon] attacker who has a stake less than $1 \over p$ in an event with probability $p$&ldquo;. Thus if we use a single bit generated from the beacon to decide the lottery outcome, then the lottery is manipulation-resistant against an attacker who has less than $2B$ at stake.</p>
+
+<p>Intuitively, the bribing attacker expects to win $pW$ without doing anything. To incentive him to attack the beacon by withholding blocks until he finds a winning one (Appendix B.1 shows that &ldquo;it is always in the attackers&rsquo; interest to prune completely or not at all), the reward $W$ must be high enough.</p>
+
+<p>If he decides to attack, then he is presented with future block candidates, where each block candidate has probability $1 \over 2$ of winning the lottery and costs $B$ to reject (if it doesn&rsquo;t win). This is a geometric distribution where the expected number of failures before the first success is $(1-p) \over p$<a href="https://en.wikipedia.org/wiki/Geometric_distribution"><sup>3</sup></a>.</p>
+
+<p>So we have<br />
+$$(earnings\ from\ manipulating\ beacon) &gt; (expected\ earnings\ if\ do\ nothing)$$
+$$(lottery\ stake) - (cost\ to\ manipulate\ beacon) &gt; (expected\ earnings\ if\ do\ nothing)$$
+$$W - {(1-p) \over p} &gt; pW$$
+$$W &gt; {1 \over p}$$</p>
+
+<p>In our case, $p={1 \over 2}$, so $W$ must be greater than $2B$ and we arrive at our conclusion. To give some context, the block reward on July 10, 2017 is <i class="fa fa-btc"></i>12.5 or $30,000.</p>
+
+<h2 id="extensions-and-further-work">Extensions and further work</h2>
+
+<p>We covered one implementation of a beacon based on the Bitcoin blockchain. Here are some ways to take this idea of a blockchain-based beacon further:</p>
+
+<ul>
+<li><p>Use an asymmetric slow hash function to make the beacon slow to compute but fast to verify. This will prevent the bribing attacker from quickly deciding whether to withhold blocks, but still allow anyone to verify that the beacon was computed correctly. This is discussed further in Section 6.1.</p></li>
+
+<li><p>Revisit the beacon construction to provide higher (or even adjustable) levels of randomness. In <em>Bitcoin Beacon</em><a href="https://arxiv.org/abs/1605.04559"><sup>4</sup></a>, Bentov, Gabizon, and Zuckerman provide a construction that outputs only a single random bit per block but with much stronger guarantees than we discussed here. Their key idea is to take the headers from the last $n$ blocks.</p></li>
+
+<li><p>Compute and analyze the observed beacon values to validate the theoretical results, i.e. that the beacon is indeed random.</p></li>
+
+<li><p>Turn the Jupyter notebook into an API.</p></li>
+
+<li><p>Apply similar analysis to altcoins, e.g. Ethereum, Steem, Monero. Due to their difference in complexity and implementation, they may provide different security and manipulation cost results.</p></li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ol>
+<li><a href="https://www.random.org/faq/">https://www.random.org/faq/</a></li>
+<li><a href="https://eprint.iacr.org/2015/1015">https://eprint.iacr.org/2015/1015</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Geometric_distribution">https://en.wikipedia.org/wiki/Geometric_distribution</a></li>
+<li><a href="https://arxiv.org/abs/1605.04559">https://arxiv.org/abs/1605.04559</a></li>
+</ol>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://charlesjlee.com/post/bitcoin-coursera-review/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://charlesjlee.com/post/bitcoin-coursera-review/">Coursera review: Bitcoin and Cryptocurrency Technologies</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="http://charlesjlee.com/js/ui.js"></script>
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</body>
+</html>
