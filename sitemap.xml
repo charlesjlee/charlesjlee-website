@@ -1,39 +1,148 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>/post/bitcoin-coursera-review/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/Bitcoin-Coursera-review/</loc>
+    <loc>/post/c4-bitcoin-certified-professional/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/C4-Bitcoin-Certified-Professional/</loc>
-    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/Steem-bot/</loc>
+    <loc>/post/steem-bot/</loc>
     <lastmod>2017-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2017-Priorities-Family-First/</loc>
+    <loc>/post/2017-priorities-family-first/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/6-weeks-of-Uberman/</loc>
+    <loc>/post/6-weeks-of-uberman/</loc>
     <lastmod>2016-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/about/</loc>
     <lastmod>2016-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bitcoin/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/block-chain/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/certified-bitcoin-professional-cbp/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/coursera/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/crypto-currency-certification-consortium-c4/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/life/</loc>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/personal/</loc>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/piston/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/polyphasic/</loc>
+    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/priorities/</loc>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sleep/</loc>
+    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/steem/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/steemit/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/topics/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/xeroc/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
