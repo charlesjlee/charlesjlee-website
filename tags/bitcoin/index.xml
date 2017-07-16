@@ -1,70 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Charles Lee</title>
-    <link>/tags/bitcoin/index.xml</link>
-    <description>Recent content on Charles Lee</description>
+    <title>Bitcoin on Charles Lee</title>
+    <link>/tags/bitcoin/</link>
+    <description>Recent content in Bitcoin on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <atom:link href="/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Coursera review: Bitcoin and Cryptocurrency Technologies</title>
-      <link>/post/Bitcoin-Coursera-review/</link>
+      <link>/post/bitcoin-coursera-review/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/Bitcoin-Coursera-review/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://www.coursera.org/learn/cryptocurrency&#34;&gt;Bitcoin and Cryptocurrency Technologies&lt;/a&gt; Coursera is an 11-week, 4-lecturer collaboration that gives the student an overview of the existing cryptocurrency environment and how it came to be. It begins with a history of cryptocurrency advancements leading up to Bitcoin, then goes into the technical details of how Bitcoin works, moves on to the societal impact of cryptocurrencies, and finally ends with a discussion of future developments and their feasibility.&lt;/p&gt;
-
-&lt;p&gt;I took this course during the 12/26/2016 - 03/20/2016 offering and was thoroughly impressed by its quality. I learned a lot from taking the course &amp;ndash; enough to pass the &lt;a href=&#34;https://cryptoconsortium.org/certifications/CBP&#34;&gt;Certified Bitcoin Professional&lt;/a&gt; exam (see &lt;a href=&#34;http://charlesjlee.com/post/C4-Bitcoin-Certified-Professional&#34;&gt;this post&lt;/a&gt; for my thoughts on Bitcoin certification). On each topic, the instructors first discuss a motivating problem, then examine a technical solution to the problem, and finally explore the real-world practicality and adoption of this solution. Far from feeding the hype, the lecturers instead examine it to produce nuggets of insights, such as:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It has been very difficult to make money mining Bitcoin because of the fast pace of hardware evolution. Historically, miners would have been better off investing in the price of Bitcoin instead of their mining rigs.&lt;/li&gt;
-&lt;li&gt;Just because something can be decentralized doesn&amp;rsquo;t mean it ever will be. There has to be a compelling use case for decentralization &amp;ndash; usually a financial one.&lt;/li&gt;
-&lt;li&gt;Many problems that people are trying to address with new cryptocurrency ideas are fundamentally social problems not technical ones.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The Coursera includes three optional homeworks. The first is to implement part of a simple cryptocurrency called Scrooge Coin. I found this exercise to be challenging and hugely rewarding. The inner-mechanics of Scrooge Coin are mostly the same as Bitcoin&amp;rsquo;s and filling in how transaction inputs and outputs function and interact cemented my understanding of how they work. I had a particularly hard time understanding what an Unspent Transaction Output (UTXO) was and actually having to use one gave me an &amp;ldquo;aha&amp;rdquo; moment. That said, some parts of the assignment could have used further explanation and I had to turn to the forums for help. Unfortunately, the instructors were not active on the forums to assist with this.&lt;/p&gt;
-
-&lt;p&gt;Sadly, the last two assignments were not as instructive as the first was. Homework #2 has you implementing a distributed consensus algorithm on a random graph with malicious nodes. Though interesting, this exercise has strangely little to do with the lectures. It was also disappointing that the simplest heuristic is sufficient to pass 80% of the test cases. Homework #3 has you revisiting the code used in #1 to implement a node to receive incoming transactions and blocks and maintain an updated block chain. Again, this exercise was only tangentially related to the lectures. I didn&amp;rsquo;t have any revelations this time around and revisiting the same code made this exercise feel like house-keeping.&lt;/p&gt;
-
-&lt;p&gt;The course ends with a lecture on the &amp;ldquo;Future of Bitcoin&amp;rdquo;. Here, the lecturer doesn&amp;rsquo;t speculate about how popular Bitcoin will become but rather offers a technical discussion of what is currently possible, what may become possible, and the societal impact of and resistance to adopting these ideas. With tempered enthusiasm, the lecturer explains how it&amp;rsquo;s possible to use block chains to de-centralize property ownership, betting, file storage, etc. but that often the primary barrier to adoption is social not technical. See &lt;a href=&#34;http://bitcoin.stanford.edu&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://crypto.stanford.edu/cs251&#34;&gt;here&lt;/a&gt; for courses on these forward-looking applications.&lt;/p&gt;
-
-&lt;p&gt;My only reservation in recommending this course is that it&amp;rsquo;s a bit dated. The majority of lectures were recorded in 2014 and some references are outdated, e.g. global hash rate, price of BTC, status of NY BitLicense, and the status of Ethereum. My lament here is not that the information is no longer up-to-date but that the authors missed an opportunity to discuss recent developments, such as the approval of the NY BitLicense and what kind of precedent it set, the current state of international regulation and its effect on block chain adoption, the proliferation of Bitcoin ATM&amp;rsquo;s and the effect of readily available BTC to physical fiat conversation, the rise of Ethereum and other altcoins, etc. Since it&amp;rsquo;s unlikely that the lecturers will record new videos that discuss these recent developments, you can instead find more up-to-date material in their &lt;a href=&#34;http://bitcoinbook.cs.princeton.edu&#34;&gt;book&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>/post/bitcoin-coursera-review/</guid>
+      <description>The Bitcoin and Cryptocurrency Technologies Coursera is an 11-week, 4-lecturer collaboration that gives the student an overview of the existing cryptocurrency environment and how it came to be. It begins with a history of cryptocurrency advancements leading up to Bitcoin, then goes into the technical details of how Bitcoin works, moves on to the societal impact of cryptocurrencies, and finally ends with a discussion of future developments and their feasibility.</description>
     </item>
     
     <item>
       <title>My Thoughts on Crypto Currency Certification Consortium&#39;s (C4&#39;s) Certified Bitcoin Professional (CBP) certification</title>
-      <link>/post/C4-Bitcoin-Certified-Professional/</link>
+      <link>/post/c4-bitcoin-certified-professional/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/C4-Bitcoin-Certified-Professional/</guid>
-      <description>
-
-&lt;h2 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h2&gt;
-
-&lt;p&gt;The Crypto Currency Certification Consortium (C4) is a non-profit organization that issues Bitcoin certifications. Currently, the only certification they offer is the Certified Bitcoin Professional (CBP), though a more advanced version, the Certified Bitcoin Expert (CBX), is being developed. Given Bitcoin&amp;rsquo;s decentralized nature, there can be no official certifying authority &amp;ndash; anyone can issue anything. In this environment, the only thing that carries weight is reputation, and C4 has a &lt;a href=&#34;https://cryptoconsortium.org/about&#34;&gt;solid roster&lt;/a&gt; on their board and advisors, including Andreas M. Antonopoulos (prominent Bitcoin evangelist) and Vitalik Buterin (co-founder of Ethereum).&lt;/p&gt;
-
-&lt;h2 id=&#34;how-did-i-prepare&#34;&gt;How did I prepare?&lt;/h2&gt;
-
-&lt;p&gt;It&amp;rsquo;s worthwhile reading through the &lt;a href=&#34;https://cryptoconsortium.org/cbp/CBPStudyGuide.pdf&#34;&gt;study guide&lt;/a&gt; to get a feel for the scope and because it&amp;rsquo;s actually an accurate outline of what is tested. My primary test preparation method though was spending 25 hours working through the &lt;a href=&#34;https://www.coursera.org/learn/cryptocurrency&#34;&gt;Bitcoin Coursera&lt;/a&gt;. This is a great class: every lecturer is engaging and covers both the technical and social sides of their topics &amp;ndash; no dry re-hashing of definitions here. I took the CBP exam right after finishing the Coursera and was able to pass comfortably. See &lt;a href=&#34;http://charlesjlee.com/post/Bitcoin-Coursera-review&#34;&gt;this post&lt;/a&gt; for my review of this class.&lt;/p&gt;
-
-&lt;h2 id=&#34;what-was-the-exam-like&#34;&gt;What was the exam like?&lt;/h2&gt;
-
-&lt;p&gt;After receipt of the exam fee is verified, C4 will send you a link to an online exam with 75 multiple-choice questions to answer in 20 minutes. This time constraint was chosen so that &amp;ldquo;you will not have an opportunity to use a search engine&amp;rdquo; and comes to 16 seconds available per question. Banning Google is a hopeless endeavor and I agree with the time pressure approach, though I felt that pressure could have been higher.&lt;/p&gt;
-
-&lt;p&gt;If we assume that a test-taker is able to answer half, i.e. 38, of the questions in 5 seconds each because he instantly knows the answers, then that leaves him with 27.3s/question to Google the remaining questions. That seems like plenty of time. I understand that C4 needs to accommodate people who need more time to respond to questions, e.g. slow Internet connection, slow reading pace, slow computer, etc., but an increase to say 100 questions, giving test-takers 12s/question or 19s/Google seems reasonable.&lt;/p&gt;
-
-&lt;p&gt;While the CBP exam could be more Google-resistant, I believe it&amp;rsquo;s still a good indicator of basic Bitcoin proficiency because the test questions are well-written. Sure there were a few too many acronym and definition look-ups, but the majority of questions tested understanding and there were many good concepts questions, e.g. Is this possible? If &lt;em&gt;x&lt;/em&gt; happens, then what about &lt;em&gt;y&lt;/em&gt;?&lt;/p&gt;
-
-&lt;h2 id=&#34;is-this-certification-worth-getting&#34;&gt;Is this certification worth getting?&lt;/h2&gt;
-
-&lt;p&gt;Since this is a professional exam, it&amp;rsquo;s natural to think about its utility from an employment perspective. As an employer, I can see CBP serving as a FizzBuzz test to filter out people on the Bitcoin bandwagon who want to &amp;ldquo;decentralize everything&amp;rdquo; and don&amp;rsquo;t have the basic knowledge of how BTC works. Indeed two Bitcoin exchange services, &lt;a href=&#34;https://www.reddit.com/r/BitcoinCA/comments/2ff3gx/im_now_a_certified_bitcoin_professional_cbp_and/&#34;&gt;QuickBT&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/Bitcoin/comments/2g27fi/i_am_now_a_cbp_a_certified_bitcoin_professional/ckf1nc5/&#34;&gt;QuadrigaCX&lt;/a&gt;, announced their intentions to do so.&lt;/p&gt;
-
-&lt;p&gt;As a job-seeker, I see CBP as a worthwhile investment because it serves as a resume line-item and topic of conversation. The way I see it, if CBP helps me get my foot in door three times, even if the initial conversation is just about what CBP is, then it was money well-spent. The exam costs $50 + $23 = $73 (test fee + application fee) and certifications can be renewed every two years for $23. (Note that fees on the C4 website are denominated in Canadian dollars and that all fees must appropriately be paid in BTC.)&lt;/p&gt;
-</description>
+      <guid>/post/c4-bitcoin-certified-professional/</guid>
+      <description>What is this? The Crypto Currency Certification Consortium (C4) is a non-profit organization that issues Bitcoin certifications. Currently, the only certification they offer is the Certified Bitcoin Professional (CBP), though a more advanced version, the Certified Bitcoin Expert (CBX), is being developed. Given Bitcoin&amp;rsquo;s decentralized nature, there can be no official certifying authority &amp;ndash; anyone can issue anything. In this environment, the only thing that carries weight is reputation, and C4 has a solid roster on their board and advisors, including Andreas M.</description>
     </item>
     
   </channel>
