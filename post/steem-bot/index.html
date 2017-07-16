@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="a simple, random upvoter">
+  <meta name="generator" content="Hugo 0.25" />
+
+  <title>Creating a Steem bot using Python, Piston, and Heroku &middot; Charles Lee</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38182774-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"> </a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/charlesleeonline" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/charlesjlee" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="/files/CharlesLee-resume.pdf" target="_blank"><i class="fa fa-file-text fa-fw"></i>Resume</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Creating a Steem bot using Python, Piston, and Heroku</h1>
+  <h2>a simple, random upvoter</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>January 08, 2017</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="tags/steem">Steem</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="tags/steemit">Steemit</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="tags/block-chain">block chain</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="tags/python">Python</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="tags/piston">piston</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="tags/xeroc">xeroc</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="steem-for-the-people">Steem for the people</h2>
+
+<p>When someone writes a great post on Reddit that goes viral and is widely shared, the party that benefits most is Reddit itself. Realizing this and wanting to give back to the community responsible for its success, Reddit toyed with the idea of giving shares of the company to users in the form of a cryptocurrency. This plan was later <a href="http://www.theverge.com/2015/2/3/7968397/reddit-backtracks-reddit-notes-cryptocurrency">put on indefinite hold</a>.</p>
+
+<p><a href="https://steem.io">Steem</a> is the embodiment of what Reddit wanted to achieve &ndash; a blockchain-based, social news platform where posters and upvoters, i.e. &ldquo;curators&rdquo;, are rewarded directly with cryptocurrency (actually three currencies: STEEM, Steem Power, and Steem Dollars). I was first exposed to Steem via <a href="https://steemit.com">Steemit</a>, a website built on top of the Steem blockchain. My first thought after learning about Steemit and reading the white paper was &ldquo;wouldn&rsquo;t it be neat if I could write a bot that would &lsquo;curate&rsquo;, upvote posts for me, and make me rich overnight?&rdquo; Of course, it wasn&rsquo;t that easy, but at least no one can say I didn&rsquo;t <em>try</em> to get rich quick.</p>
+
+<p>This is a guide to creating a simple bot that will periodically upvote a random post. Specifically, the bot will work like this (numbers are configurable):</p>
+
+<ol>
+<li>Bot will wake up every 10 minutes, but only run 5% of the time. This is to give new posts a chance to appear and to preserve voting power</li>
+<li>If the bot runs, it will randomly upvote one of the 20 most recent posts with weight 100. The weight can be adjusted if you want to experiment with voting more often but with less weight. Every vote decreases your voting power, which regenerates over time, and hence the rewards you can potentially earn</li>
+</ol>
+
+<p>Our bot will be built using GitHub, Heroku, and <a href="https://steemit.com/@xeroc">@xeroc</a>&rsquo;s excellent Steem library, <a href="https://github.com/xeroc/piston">steem-piston</a>. We&rsquo;ll build this in two steps:</p>
+
+<ol>
+<li>Create accounts (will need email, cellphone, credit card)</li>
+<li>Setup and deploy Heroku project</li>
+</ol>
+
+<h2 id="1-create-accounts">1) Create accounts</h2>
+
+<h3 id="create-heroku-https-www-heroku-com-account">Create <a href="https://www.heroku.com">Heroku</a> account</h3>
+
+<p>The first step is to create an account on <a href="https://www.heroku.com">Heroku</a>. <em>Dynos</em> are the Heroku term for virtual machine instances. You initially start with 550 free dyno hours. If you add a credit card number, you get an additional 450 free hours and the ability to use free add-ons. We will be using the free Scheduler add-on to make our bot run every 10 minutes, so add your credit card number now.</p>
+
+<p>If you didn&rsquo;t add your credit card during registration, you can do so after you login:<br />
+Click your avatar in the upper right-hand corner &ndash;&gt; Account settings &ndash;&gt; Billing</p>
+
+<h3 id="create-steemit-https-steemit-com-account">Create <a href="https://steemit.com">SteemIt</a> account</h3>
+
+<p>Next you need an account on the Steem blockchain (this costs a fee). The easiest way to do this is to register an account on <a href="https://steemit.com">Steemit</a>, a website that runs on top of Steem to display its contents (Steemit will pay the fee). To help combat account creation abuse, Steemit recently switched from a <a href="https://steemit.com/steemit/@gord0b/abusing-steemit-using-facebook-sign-up">Facebook/Reddit</a> registration process to an email + SMS process.</p>
+
+<p>After you finish registering, log into your Steemit account and grab your private Posting key. You can find this by going to the URL below and clicking <strong>Show Private Key</strong> next to <strong>Posting</strong>. Our bot will need this key to vote on our behalf.<br />
+<a href="https://steemit.com/@ReplaceWithYourSteemHandle/permissions">https://steemit.com/@ReplaceWithYourSteemHandle/permissions</a></p>
+
+<h3 id="create-github-https-github-com-join-account">Create <a href="https://github.com/join">GitHub</a> account</h3>
+
+<p>Git is a version control system for tracking changes to files and coordinating work on those files among multiple people. <a href="https://github.com/join">GitHub</a> is a popular web-based service that hosts Git repositories. We will use GitHub to store our code in a repository and then point Heroku to that repository.</p>
+
+<h2 id="2-setup-and-deploy-heroku-project">2) Setup and deploy Heroku project</h2>
+
+<h3 id="fork-github-repo">Fork GitHub repo</h3>
+
+<p>What is a <em>fork</em>?</p>
+
+<blockquote>
+<blockquote>
+<p>A <em>fork</em> is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+<a href="https://help.github.com/articles/fork-a-repo/">https://help.github.com/articles/fork-a-repo/</a></p>
+</blockquote>
+</blockquote>
+
+<p>In this case, you&rsquo;ll fork my repository by clicking the link below, logging into your GitHub account, and clicking the <strong>Fork</strong> button in the upper right-hand corner.<br />
+<a href="https://github.com/charlesjlee/steemBot">https://github.com/charlesjlee/steemBot</a></p>
+
+<h3 id="create-heroku-project-and-link-to-github">Create Heroku project and link to GitHub</h3>
+
+<p>Now we&rsquo;re ready to create our Heroku project:</p>
+
+<ol>
+<li>Log into Heroku and go to the app dashboard<br />
+<a href="https://dashboard.heroku.com/apps">https://dashboard.heroku.com/apps</a></li>
+<li>Click <strong>New</strong> in the upper right-hand corner then <strong>Create new app</strong>. You can give the app a name or leave it blank to randomly generate one. Click <strong>Create App</strong>. This brings you to the app configuration site</li>
+<li>You should be in the <strong>Deploy</strong> tab. If not, then click <strong>Deploy</strong> to navigate there. Under <strong>Deployment method</strong>, click <strong>GitHub</strong>. The bottom items will refresh and you will only see the <strong>Connect to GitHub</strong> item. Click that, enter your GitHub password, and <strong>Connect</strong> to the <code>steemBot</code> repository you just forked</li>
+<li>Now <strong>Connect to GitHub</strong> disappears and is replaced with other items. Under <strong>Manual deploy</strong>, click <strong>Deploy Branch</strong>. This tells Heroku to pick-up the code in the repository we just linked and compile it into a slug, Heroku&rsquo;s term for a runnable package</li>
+</ol>
+
+<h3 id="setup-config-vars">Setup config vars</h3>
+
+<p>Let&rsquo;s set some custom values:</p>
+
+<ol>
+<li>Navigate to the <strong>Settings</strong> tab and find the <strong>Config Variables</strong> item</li>
+
+<li><p>Click <strong>Reveal Config Vars</strong>. There are 5 config vars we need to enter:</p>
+
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th align="center">example value</th>
+<th>comment</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>numPostsToConsider</td>
+<td align="center">20</td>
+<td>Number of recent posts to consider</td>
+</tr>
+
+<tr>
+<td>percentChanceToPost</td>
+<td align="center">5</td>
+<td>Percent chance that script will run. Must be between 0 and 100</td>
+</tr>
+
+<tr>
+<td>steemAccountName</td>
+<td align="center">&lsquo;mySteemName&rsquo;</td>
+<td>Your Steem account name wrapped in single quotes</td>
+</tr>
+
+<tr>
+<td>steemPostingKey</td>
+<td align="center">&lsquo;myPrivatePostingKey&rsquo;</td>
+<td>Your Private Posting Key that you saved when creating your SteemIt account, wrapped in single quotes</td>
+</tr>
+
+<tr>
+<td>voteWeight</td>
+<td align="center">100</td>
+<td>How much voting power to use per upvote. Note that voting power decreases after every vote. Must be between 0 and 100</td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+
+<h3 id="schedule-bot">Schedule bot</h3>
+
+<p>Finally we schedule our bot using the free Heroku Scheduler Add-on:</p>
+
+<ol>
+<li>Navigate to the <strong>Resources</strong> tab</li>
+<li>Under <strong>Add-ons</strong>, search for <strong>Heroku Scheduler</strong> then click <strong>Provision</strong> in the pop-up</li>
+<li>Now <strong>Heroku Scheduler</strong> appears as a row. Click it and a new window opens</li>
+<li>In the new window, click <strong>Add new job</strong>. Enter <strong>python bot.py</strong> in the text box and change the <strong>Frequency</strong> to <strong>Every 10 minutes</strong>. Click <strong>Save</strong></li>
+</ol>
+
+<h3 id="check-logs-and-celebrate">Check logs and celebrate</h3>
+
+<p>That&rsquo;s it! Now our bot is running every 10 minutes and has a <code>percentChanceToPost</code> chance to activate. Every time the bot activates, it will choose a random post from the most recent <code>numPostsToConsider</code> and upvote it with weight <code>voteWeight</code>. You can see the run logs of your bot by going to:<br />
+More (to the right of Open app, in the upper right corner) &ndash;&gt; View logs</p>
+
+<p>You can see your handiwork being written to the Steem block chain using this block chain explorer:
+<a href="https://steemd.com/@ReplaceWithYourSteemHandle">https://steemd.com/@ReplaceWithYourSteemHandle</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/post/2017-priorities-family-first/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/2017-priorities-family-first/">2017 Priorities - Family First</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/post/c4-bitcoin-certified-professional/">My Thoughts on Crypto Currency Certification Consortium&#39;s (C4&#39;s) Certified Bitcoin Professional (CBP) certification</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/post/c4-bitcoin-certified-professional/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="js/ui.js"></script>
+</body>
+</html>
