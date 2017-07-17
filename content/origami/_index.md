@@ -1,4 +1,4 @@
 +++
 Title = "Origami"
-Description = ""
+Description = "folded by Charles Lee, photographed by Yi Deng"
 +++

@@ -36,12 +36,12 @@ baseURL = "http://charlesjlee.com/"
     identifier = "post"
     url = "/post/"
 
-#  [[menu.main]]
-#    name = "Origami"
-#    pre = "<i class='fa fa-map-o fa-fw'></i>"
-#    weight = 3
-#    identifier = "origami"
-#    url = "/origami/"
+  [[menu.main]]
+    name = "Origami"
+    pre = "<i class='fa fa-map-o fa-fw'></i>"
+    weight = 3
+    identifier = "origami"
+    url = "/origami/"
 
   [[menu.main]]
     name = "About"

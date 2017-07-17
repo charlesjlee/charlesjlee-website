@@ -164,6 +164,7 @@ body:after {
 .lb-data {
   padding: 0 4px;
   color: #ccc;
+  font-size: 0.35em;
 }
 
 .lb-data .lb-details {
