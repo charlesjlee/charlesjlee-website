@@ -16,9 +16,13 @@ baseURL = "http://charlesjlee.com/"
   brand = " "
   googleAnalytics = "UA-38182774-1"
   disqus = ""
+
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   dateFormat = "January 02, 2006"
+
+  [Params.Gallery]
+  infinite_scroll = false
 
 [menu]
   # Shown in the side menu.
