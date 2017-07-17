@@ -34,6 +34,7 @@
   <link rel="stylesheet" href=" /css/gridside-main.css">
 
   <link rel="stylesheet" href="/css/blackburn.css">
+  <link rel="stylesheet" href="/css/mathjax.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -222,6 +223,11 @@
   
     <li>
       <a href="bitcoin">bitcoin</a>
+      <span>&#40;3&#41;</span>
+    </li>
+  
+    <li>
+      <a href="blockchain">blockchain</a>
       <span>&#40;2&#41;</span>
     </li>
   
@@ -231,8 +237,8 @@
     </li>
   
     <li>
-      <a href="block-chain">block-chain</a>
-      <span>&#40;1&#41;</span>
+      <a href="python">python</a>
+      <span>&#40;2&#41;</span>
     </li>
   
     <li>
@@ -271,11 +277,6 @@
     </li>
   
     <li>
-      <a href="python">python</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
       <a href="sleep">sleep</a>
       <span>&#40;1&#41;</span>
     </li>
@@ -301,5 +302,24 @@
 </div>
 </div>
 <script src="http://charlesjlee.com/js/ui.js"></script>
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
 </body>
 </html>

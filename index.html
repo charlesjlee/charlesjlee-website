@@ -34,6 +34,7 @@
   <link rel="stylesheet" href=" /css/gridside-main.css">
 
   <link rel="stylesheet" href="/css/blackburn.css">
+  <link rel="stylesheet" href="/css/mathjax.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -222,6 +223,54 @@
   
     <article>
   <header>
+    <h2><a href="http://charlesjlee.com/post/bitcoin-beacon/">Bitcoin beacon: using the blockchain to generate random bits</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>July 16, 2017</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/bitcoin">Bitcoin</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/blockchain">blockchain</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/python">Python</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  Random beacons A random beacon is &ldquo;a trusted service that broadcasts fresh random numbers at regular intervals&rdquo;. Random beacons are useful in situations that demand security against manipulation, e.g. choosing precincts to audit after an election. Several beacon services currently exist, notably Random.org and the NIST beacon, however there are several advantages to using the Bitcoin blockchain as a source of randomness:
+ Publicly verifiable  Bitcoin blocks are public as soon as they are mined so anyone can perform and verify the beacon computations.
+  </p>
+
+  
+  <footer>
+    <a href="/post/bitcoin-beacon/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="http://charlesjlee.com/post/bitcoin-coursera-review/">Coursera review: Bitcoin and Cryptocurrency Technologies</a></h2>
 
     <div class="post-meta">
@@ -337,7 +386,7 @@
     
       <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/steemit">Steemit</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/block-chain">block chain</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/blockchain">blockchain</a>&nbsp;&#47;
     
       <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/python">Python</a>&nbsp;&#47;
     
@@ -470,5 +519,24 @@ Thinking back to my pre-holiday rush to close out everything before 2017, I was 
 </div>
 </div>
 <script src="http://charlesjlee.com/js/ui.js"></script>
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
 </body>
 </html>

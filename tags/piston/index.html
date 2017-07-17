@@ -34,6 +34,7 @@
   <link rel="stylesheet" href=" /css/gridside-main.css">
 
   <link rel="stylesheet" href="/css/blackburn.css">
+  <link rel="stylesheet" href="/css/mathjax.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -244,7 +245,7 @@
     
       <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/steemit">Steemit</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/block-chain">block chain</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/blockchain">blockchain</a>&nbsp;&#47;
     
       <a class="post-taxonomy-tag" href="http://charlesjlee.com/tags/python">Python</a>&nbsp;&#47;
     
@@ -278,5 +279,24 @@ Steem is the embodiment of what Reddit wanted to achieve &ndash; a blockchain-ba
 </div>
 </div>
 <script src="http://charlesjlee.com/js/ui.js"></script>
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
 </body>
 </html>

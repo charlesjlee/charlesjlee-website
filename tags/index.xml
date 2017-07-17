@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://charlesjlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,18 +15,18 @@
     <item>
       <title>Bitcoin</title>
       <link>http://charlesjlee.com/tags/bitcoin/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>http://charlesjlee.com/tags/bitcoin/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Block Chain</title>
-      <link>http://charlesjlee.com/tags/block-chain/</link>
-      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Blockchain</title>
+      <link>http://charlesjlee.com/tags/blockchain/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/block-chain/</guid>
+      <guid>http://charlesjlee.com/tags/blockchain/</guid>
       <description></description>
     </item>
     
@@ -105,7 +105,7 @@
     <item>
       <title>Python</title>
       <link>http://charlesjlee.com/tags/python/</link>
-      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>http://charlesjlee.com/tags/python/</guid>
       <description></description>
