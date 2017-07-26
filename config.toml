@@ -10,10 +10,10 @@ baseURL = "http://charlesjlee.com/"
   tag = "tags"
   topic = "topics"
 
-[params]
+[Params]
   # Shown in the home page
-  subtitle = " "
-  brand = " "
+  subtitle = ""
+  brand = ""
   googleAnalytics = "UA-38182774-1"
   disqus = ""
 
