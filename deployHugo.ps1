@@ -1,4 +1,6 @@
-﻿param (
+﻿# https://gohugo.io/tutorials/github-pages-blog/
+
+param (
     [Parameter(Mandatory=$true)][string]$commitMessage
 )
 
