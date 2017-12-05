@@ -18,7 +18,7 @@ Remove-Item .git\worktrees\public\ -Force -Recurse -ErrorAction Ignore
 git worktree add -B gh-pages public origin/gh-pages
 
 "Removing existing files"
-Remove-Item .\public\* -Force -Recurse
+Remove-Item .\public\* -Force -Recurse -Exclude '.git'
 
 "Generating site"
 hugo --quiet
