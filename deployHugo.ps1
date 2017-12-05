@@ -41,8 +41,3 @@ git push origin gh-pages
 
 # pop back to Hugo folder
 Pop-Location
-
-# sleep before closing window for a chance to read output
-#Start-Sleep 5
-
-# setup rsa token
