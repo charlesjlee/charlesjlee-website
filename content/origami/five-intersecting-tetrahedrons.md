@@ -1,6 +1,6 @@
 +++
 title = "Five Intersecting Tetrahedrons (FIT)"
-designed = "Robert Lang"
+designed = "Thomas Hull"
 folded = "Charles Lee"
 description = "30 units, copypaper"
 date = "2017-05-01"
