@@ -1,0 +1,8 @@
++++
+title = "Makalu"
+designed = "Robert Lang"
+folded = "Charles Lee"
+description = "30 units, copypaper"
+date = "2017-08-01"
+image = "/img/origami/makalu.jpg"
++++
