@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://charlesjlee.com/origami/makalu/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://charlesjlee.com/post/bitcoin-beacon/</loc>
     <lastmod>2017-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://charlesjlee.com/origami/five-tetrahedrally-distorted-hexadron/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://charlesjlee.com/origami/nebula/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -92,7 +102,7 @@
   
   <url>
     <loc>http://charlesjlee.com/</loc>
-    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -116,7 +126,7 @@
   
   <url>
     <loc>http://charlesjlee.com/origami/</loc>
-    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
