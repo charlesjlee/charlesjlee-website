@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 16 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://charlesjlee.com/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C4&#39;s CBP Bitcoin certification - 9 months later</title>
+      <link>http://charlesjlee.com/post/c4-cbp-9-months-later/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://charlesjlee.com/post/c4-cbp-9-months-later/</guid>
+      <description>Back in March 2017, I posted about passing the Certified Bitcoin Professional (CBP) exam by C4. I did this partly out of curiosity and partly hoping it would help in a job search for crypto roles. My curiosity was satisfied, my wallet \$73 lighter, and no employers seemed to care. Not surprisingly, what did help during my job search were my understanding of Bitcoin and my crypto sideprojects.
+There is a more technical CBX (Certified Bitcoin Expert) exam intended for developers that looks promising: it covers the API and scripting.</description>
+    </item>
     
     <item>
       <title>Bitcoin beacon: using the blockchain to generate random bits</title>
