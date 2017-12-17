@@ -5,12 +5,9 @@
   <h2>{{ .Description }}</h2>
 </div>
 
-    <section class="main-content">
-        {{ partial "gallery/collection.html" . }}
-        {{ partial "gallery/pagination.html" . }}
-    </section>
-
-    {{ partial "gallery/js.html" . }}
-</body>
+<section class="main-content">
+    {{ partial "gallery/collection.html" . }}
+    {{ partial "gallery/pagination.html" . }}
+</section>
 
 {{ partial "footer.html" . }}
