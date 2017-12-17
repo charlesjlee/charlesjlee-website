@@ -4,5 +4,5 @@ designed = "Sipho Mabona"
 folded = "Charles Lee"
 description = "Tissue foil"
 date = "2008-07-01"
-image = "/img/origami/octopus.jpg"
+image = "/img/origami/200807-octopus.jpg"
 +++

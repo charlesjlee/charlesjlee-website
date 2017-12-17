@@ -40,7 +40,7 @@ The beacon construction provided in the paper is a single computation with three
     - By including the hash of the header, we make it impossible for malicious miners to exclusively trying hash solutions that produce a certain beacon output. Since the hash of the header is unpredictable, malicious miners must mine normally: finding valid hash solutions, computing the beacon output, then deciding whether to withhold the block.
 
 ## Beacon construction in Python
-<iframe src="/files/Bitcoin_beacon.html" width="100%" height="2475" scrolling="yes" frameBorder="0" seamless="seamless"></iframe> 
+<iframe src="/files/20170716-Bitcoin-beacon.html" width="100%" height="2475" scrolling="yes" frameBorder="0" seamless="seamless"></iframe> 
 
 ## Cost of manipulation
 The paper begins by considering the simplest case of a single-stage lottery (multi-stage lotteries are discussed in Appendix A), where the attacker stands to win reward $W$ with probability $p$ and the lottery outcome is decided on a single beacon output. The paper models a strong _bribing attacker_ "who is able to [successfully] pay any miner exactly $B$ [the block reward] to suppress a valid block whenever the attacker desires". This bribing attacker's power to manipulate the beacon is equivalent to that of a mining pool with 100% of the network's hashing power.
