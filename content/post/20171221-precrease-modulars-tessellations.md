@@ -76,10 +76,10 @@ Here are some pictures of what I was able to do with the Cameo. You can click an
 
 {{<fluid_lightbox_imgs
     "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-cut-screen.png|Getting ready to cut (red lines) and precrease (blue lines) some modular units"
-    "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-mat.png|Result of running the previous job"
-    "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-precreased-hexagon.png|32x32 precreased hexagon"
-    "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-modular-pieces.png|Stack of perfectly cut modular units"    
-    "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-tessellation.png|Folding a tessellation with fewer unnecessary creases"    
+    "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-mat.jpg|Result of running the previous job"
+    "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-precreased-hexagon.jpg|32x32 precreased hexagon"
+    "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-modular-pieces.jpg|Stack of perfectly cut modular units"    
+    "pure-u-1-3|/img/20171221-precrease-modulars-tessellations-tessellation.jpg|Folding a tessellation with fewer unnecessary creases"    
 >}}
 
 ## Cameo advice
