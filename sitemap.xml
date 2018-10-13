@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://charlesjlee.com/origami/201808-event-horizon/</loc>
+    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://charlesjlee.com/origami/201806-aurora/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://charlesjlee.com/origami/201804-interstellar/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
@@ -127,7 +137,7 @@
   
   <url>
     <loc>http://charlesjlee.com/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -163,7 +173,7 @@
   
   <url>
     <loc>http://charlesjlee.com/origami/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>

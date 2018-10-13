@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://charlesjlee.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Event Horizon</title>
+      <link>http://charlesjlee.com/origami/201808-event-horizon/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://charlesjlee.com/origami/201808-event-horizon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aurora</title>
+      <link>http://charlesjlee.com/origami/201806-aurora/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://charlesjlee.com/origami/201806-aurora/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Interstellar</title>
