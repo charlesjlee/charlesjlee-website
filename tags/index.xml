@@ -1,203 +1,202 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Charles Lee</title>
-    <link>http://charlesjlee.com/tags/</link>
+    <link>https://charlesjlee.github.io/test/tags/</link>
     <description>Recent content in Tags on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://charlesjlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://charlesjlee.github.io/test/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Bitcoin</title>
-      <link>http://charlesjlee.com/tags/bitcoin/</link>
-      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/bitcoin/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>Blockchain</title>
-      <link>http://charlesjlee.com/tags/blockchain/</link>
-      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/blockchain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Certified Bitcoin Professional Cbp</title>
-      <link>http://charlesjlee.com/tags/certified-bitcoin-professional-cbp/</link>
-      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/certified-bitcoin-professional-cbp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Coursera</title>
-      <link>http://charlesjlee.com/tags/coursera/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/coursera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Crypto Currency Certification Consortium C4</title>
-      <link>http://charlesjlee.com/tags/crypto-currency-certification-consortium-c4/</link>
-      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/crypto-currency-certification-consortium-c4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Life</title>
-      <link>http://charlesjlee.com/tags/life/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Modulars</title>
-      <link>http://charlesjlee.com/tags/modulars/</link>
+      <title>modulars</title>
+      <link>https://charlesjlee.github.io/test/tags/modulars/</link>
       <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/modulars/</guid>
+      <guid>https://charlesjlee.github.io/test/tags/modulars/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Origami</title>
-      <link>http://charlesjlee.com/tags/origami/</link>
+      <title>origami</title>
+      <link>https://charlesjlee.github.io/test/tags/origami/</link>
       <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/origami/</guid>
+      <guid>https://charlesjlee.github.io/test/tags/origami/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Personal</title>
-      <link>http://charlesjlee.com/tags/personal/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Piston</title>
-      <link>http://charlesjlee.com/tags/piston/</link>
-      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/piston/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Polyphasic</title>
-      <link>http://charlesjlee.com/tags/polyphasic/</link>
-      <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/polyphasic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Precreasing</title>
-      <link>http://charlesjlee.com/tags/precreasing/</link>
+      <title>precreasing</title>
+      <link>https://charlesjlee.github.io/test/tags/precreasing/</link>
       <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/precreasing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Priorities</title>
-      <link>http://charlesjlee.com/tags/priorities/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/priorities/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>http://charlesjlee.com/tags/python/</link>
-      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/python/</guid>
+      <guid>https://charlesjlee.github.io/test/tags/precreasing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Silhouette Cameo</title>
-      <link>http://charlesjlee.com/tags/silhouette-cameo/</link>
+      <link>https://charlesjlee.github.io/test/tags/silhouette-cameo/</link>
       <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/silhouette-cameo/</guid>
+      <guid>https://charlesjlee.github.io/test/tags/silhouette-cameo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Sleep</title>
-      <link>http://charlesjlee.com/tags/sleep/</link>
-      <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
+      <title>tessellations</title>
+      <link>https://charlesjlee.github.io/test/tags/tessellations/</link>
+      <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/sleep/</guid>
+      <guid>https://charlesjlee.github.io/test/tags/tessellations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wireframes</title>
+      <link>https://charlesjlee.github.io/test/tags/wireframes/</link>
+      <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/wireframes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bitcoin</title>
+      <link>https://charlesjlee.github.io/test/tags/bitcoin/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/bitcoin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Certified Bitcoin Professional (CBP)</title>
+      <link>https://charlesjlee.github.io/test/tags/certified-bitcoin-professional-cbp/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/certified-bitcoin-professional-cbp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crypto Currency Certification Consortium (C4)</title>
+      <link>https://charlesjlee.github.io/test/tags/crypto-currency-certification-consortium-c4/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/crypto-currency-certification-consortium-c4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blockchain</title>
+      <link>https://charlesjlee.github.io/test/tags/blockchain/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://charlesjlee.github.io/test/tags/python/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coursera</title>
+      <link>https://charlesjlee.github.io/test/tags/coursera/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/coursera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>piston</title>
+      <link>https://charlesjlee.github.io/test/tags/piston/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/piston/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Steem</title>
-      <link>http://charlesjlee.com/tags/steem/</link>
+      <link>https://charlesjlee.github.io/test/tags/steem/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/steem/</guid>
+      <guid>https://charlesjlee.github.io/test/tags/steem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Steemit</title>
-      <link>http://charlesjlee.com/tags/steemit/</link>
+      <link>https://charlesjlee.github.io/test/tags/steemit/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/steemit/</guid>
+      <guid>https://charlesjlee.github.io/test/tags/steemit/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tessellations</title>
-      <link>http://charlesjlee.com/tags/tessellations/</link>
-      <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/tessellations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wireframes</title>
-      <link>http://charlesjlee.com/tags/wireframes/</link>
-      <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://charlesjlee.com/tags/wireframes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Xeroc</title>
-      <link>http://charlesjlee.com/tags/xeroc/</link>
+      <title>xeroc</title>
+      <link>https://charlesjlee.github.io/test/tags/xeroc/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/tags/xeroc/</guid>
+      <guid>https://charlesjlee.github.io/test/tags/xeroc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://charlesjlee.github.io/test/tags/life/</link>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://charlesjlee.github.io/test/tags/personal/</link>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>priorities</title>
+      <link>https://charlesjlee.github.io/test/tags/priorities/</link>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/priorities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polyphasic</title>
+      <link>https://charlesjlee.github.io/test/tags/polyphasic/</link>
+      <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/polyphasic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sleep</title>
+      <link>https://charlesjlee.github.io/test/tags/sleep/</link>
+      <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.github.io/test/tags/sleep/</guid>
       <description></description>
     </item>
     

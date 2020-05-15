@@ -1,274 +1,249 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://charlesjlee.com/origami/201808-event-horizon/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201808-event-horizon/</loc>
     <lastmod>2018-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201806-aurora/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/</loc>
+    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/origami/201806-aurora/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201804-interstellar/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201804-interstellar/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201803-atmosphere/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201803-atmosphere/</loc>
     <lastmod>2018-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201801-galaxy/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201801-galaxy/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/post/20171221-precrease-modulars-tessellations/</loc>
+    <loc>https://charlesjlee.github.io/test/tags/modulars/</loc>
     <lastmod>2017-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/post/20171210-c4-cbp-9-months-later/</loc>
+    <loc>https://charlesjlee.github.io/test/tags/origami/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/post/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/precreasing/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/silhouette-cameo/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/tessellations/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/post/20171221-precrease-modulars-tessellations/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/wireframes/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/bitcoin/</loc>
     <lastmod>2017-12-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201708-makalu/</loc>
+    <loc>https://charlesjlee.github.io/test/post/20171210-c4-cbp-9-months-later/</loc>
+    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/certified-bitcoin-professional-cbp/</loc>
+    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/crypto-currency-certification-consortium-c4/</loc>
+    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/origami/201708-makalu/</loc>
     <lastmod>2017-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/post/20170716-bitcoin-beacon/</loc>
+    <loc>https://charlesjlee.github.io/test/post/20170716-bitcoin-beacon/</loc>
     <lastmod>2017-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201707-five-tetrahedrally-distorted-hexadron/</loc>
+    <loc>https://charlesjlee.github.io/test/tags/blockchain/</loc>
+    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/python/</loc>
+    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/origami/201707-five-tetrahedrally-distorted-hexadron/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201707-nebula/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201707-nebula/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201706-16-triangles/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201706-16-triangles/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201706-gasherbrum/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201706-gasherbrum/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201706-qrstuvwxyz-stars/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201706-qrstuvwxyz-stars/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201706-ten-intersecting-triangles/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201706-ten-intersecting-triangles/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/201705-five-intersecting-tetrahedrons/</loc>
+    <loc>https://charlesjlee.github.io/test/origami/201705-five-intersecting-tetrahedrons/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/post/20170301-bitcoin-coursera-review/</loc>
+    <loc>https://charlesjlee.github.io/test/tags/coursera/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/post/20170301-c4-certified-bitcoin-professional/</loc>
+    <loc>https://charlesjlee.github.io/test/post/20170301-bitcoin-coursera-review/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/post/20170108-steem-bot/</loc>
+    <loc>https://charlesjlee.github.io/test/post/20170301-c4-certified-bitcoin-professional/</loc>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/post/20170108-steem-bot/</loc>
     <lastmod>2017-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/post/20161230-2017-priorities-family-first/</loc>
+    <loc>https://charlesjlee.github.io/test/tags/piston/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/steem/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/steemit/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/xeroc/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/post/20161230-2017-priorities-family-first/</loc>
     <lastmod>2016-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/post/20161221-6-weeks-of-uberman/</loc>
+    <loc>https://charlesjlee.github.io/test/tags/life/</loc>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/personal/</loc>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/priorities/</loc>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/post/20161221-6-weeks-of-uberman/</loc>
     <lastmod>2016-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/about/</loc>
+    <loc>https://charlesjlee.github.io/test/about/</loc>
     <lastmod>2016-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/origami/200807-octopus/</loc>
+    <loc>https://charlesjlee.github.io/test/</loc>
+    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/polyphasic/</loc>
+    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/tags/sleep/</loc>
+    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.github.io/test/origami/200807-octopus/</loc>
     <lastmod>2008-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://charlesjlee.com/tags/bitcoin/</loc>
-    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/blockchain/</loc>
-    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/certified-bitcoin-professional-cbp/</loc>
-    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/</loc>
-    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/coursera/</loc>
-    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/crypto-currency-certification-consortium-c4/</loc>
-    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/life/</loc>
-    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/modulars/</loc>
-    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/origami/</loc>
-    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/origami/</loc>
-    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/personal/</loc>
-    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/piston/</loc>
-    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/polyphasic/</loc>
-    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/post/</loc>
-    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/precreasing/</loc>
-    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/priorities/</loc>
-    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/python/</loc>
-    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/silhouette-cameo/</loc>
-    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/sleep/</loc>
-    <lastmod>2016-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/steem/</loc>
-    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/steemit/</loc>
-    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/</loc>
-    <lastmod>2017-12-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/tessellations/</loc>
-    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/topics/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/wireframes/</loc>
-    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://charlesjlee.com/tags/xeroc/</loc>
-    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://charlesjlee.github.io/test/topics/</loc>
   </url>
   
 </urlset>
