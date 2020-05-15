@@ -34,14 +34,14 @@ I actually do have a meditation practice and I'd rather keep these two interests
 ## Lasers and cutting plotters[<sup>5</sup>][5]
 Not surprisingly, I'm not the first person to explore computer-assisted precreasing: just a few months Origami USA published an article[<sup>6</sup>][6] on this topic. Some Googling told me that the two options people go with are laser cutters and cutting plotters. Lasers are unarguably the superior machine -- they are faster and more accurate -- so I looked at them first.
 
-Buying a laser cutter was out of the questions because low-end models start at \$3k. There are low-cost Chinese models for ~\$400, but they require extensive tuning and troubleshooting I'd rather not deal with. That left renting or using a shared laser as my last option. I checked out a local maker space[<sup>7</sup>][7] and found that to use the laser, I had to take the training course for \$75 and then could either:
+Buying a laser cutter was out of the questions because low-end models start at \\$3k. There are low-cost Chinese models for ~\\$400, but they require extensive tuning and troubleshooting I'd rather not deal with. That left renting or using a shared laser as my last option. I checked out a local maker space[<sup>7</sup>][7] and found that to use the laser, I had to take the training course for \\$75 and then could either:
 
 1. Come in during open hours and pay-per-minute for the laser
-2. Become a member for \$110/month, which would grant me 24/7 access to the space
+2. Become a member for \\$110/month, which would grant me 24/7 access to the space
 
 The problem with option 1 is the lack of flexibility. As a complete neophyte, I know I'll need to run the same job over-and-over with different parameters until I get it right. This will be difficult if there are other people competing for laser time (I didn't try this, maybe there is no wait during open hours). I also can't just try out ideas when I have them; I have to trek over to the lab. Option 2 is cost prohibitive.
 
-Given the high cost and availability constraints of using a laser, I moved onto investigating cutting plotters. There aren't that many choices for consumer-level cutting plotters and I quickly settled on the Silhouette Cameo. It seems to be the most popular choice among folders and Jun Mitani recommends the Cameo in his book *3D Origami Art*. At \$250, I felt comfortable buying and trying the Cameo. If it didn't work out, I could cut some vinyl and make some t-shirts (what most people use the Cameo for) or just sell the machine.
+Given the high cost and availability constraints of using a laser, I moved onto investigating cutting plotters. There aren't that many choices for consumer-level cutting plotters and I quickly settled on the Silhouette Cameo. It seems to be the most popular choice among folders and Jun Mitani recommends the Cameo in his book *3D Origami Art*. At \\$250, I felt comfortable buying and trying the Cameo. If it didn't work out, I could cut some vinyl and make some t-shirts (what most people use the Cameo for) or just sell the machine.
 
 ## Using the Silhouette Cameo
 The Cameo comes with a manual on features the machine and software has but no tutorial on how to actually run a job beyond just "load and run". I had to watch a few Youtube videos to get a feel for the proprietary software and how to properly load the mat into the Cameo. 
@@ -60,15 +60,15 @@ Given these caveats, I found the precreased grids on 32lb copy paper[<sup>9</sup
 This is everything I bought:
 
 - Silhouette Cameo 3
-	- \$250
+	- \\$250
 	- https://www.ebay.com/itm/Silhouette-Cameo-3-Bluetooth-SHIPS-WORLDWIDE-/191982753991
 	- I went with the newer Cameo 3 vs the older Cameo 2 for better future support, but the Cameo 2 should perform comparably
 - Silhouette embossing tip
-	- \$8
+	- \\$8
 	- https://www.amazon.com/gp/product/B00YU7UE00
 	- Intended for embossing/debossing, but I used it for creasing
 - Cricut cutting mat (12″x12″, 2 pack)
-	- \$10
+	- \\$10
 	- https://www.amazon.com/gp/product/B00BSK750Y
 	- Cricut is a competing brand of cutting plotters that has compatible mats. Having multiple mats lets you setup/finish the next/previous job while one is running. Plus, if you're like me, you'll scratch up the mat that came with the Cameo by mis-configuring jobs to cut too deeply
 

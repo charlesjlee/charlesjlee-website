@@ -57,7 +57,7 @@ $$(lottery\ stake) - (cost\ to\ manipulate\ beacon) > (expected\ earnings\ if\ d
 $$W - {(1-p) \over p} > pW$$
 $$W > {1 \over p}$$
 
-In our case, $p={1 \over 2}$, so $W$ must be greater than $2B$ and we arrive at our conclusion. To give some context, the block reward on July 10, 2017 is <i class="fa fa-btc"></i>12.5 or $30,000.
+In our case, $p={1 \over 2}$, so $W$ must be greater than $2B$ and we arrive at our conclusion. To give some context, the block reward on July 10, 2017 is ₿12.5 or $30,000.
 
 ## Extensions and further work
 We covered one implementation of a beacon based on the Bitcoin blockchain. Here are some ways to take this idea of a blockchain-based beacon further:

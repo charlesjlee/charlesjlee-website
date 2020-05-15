@@ -1,25 +1,26 @@
+baseURL = "https://charlesjlee.github.io/test/"
 languageCode = "en-us"
 title = "Charles Lee"
-theme = "blackburn"
 author = "Charles Lee"
-copyright = "&copy; 2017. All rights reserved."
+theme = "blackburn"
+RelativeURLs = true
+CanonifyURLs = true
 paginate = 10
-baseURL = "http://charlesjlee.com/"
+
+# force Goldmark to render raw HTML, e.g. <sup>
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [indexes]
-  tag = "tags"
-  topic = "topics"
+	tag = "tags"
+	topic = "topics"
 
 [Params]
-  # Shown in the home page
-  subtitle = ""
-  brand = ""
-  googleAnalytics = "UA-38182774-1"
-  disqus = ""
-
-  # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  dateFormat = "January 02, 2006"
+	googleAnalytics = "UA-38182774-1"
+	highlightjs = "androidstudio"
+	dateFormat = "January 02, 2006"
 
   # Include any custom CSS and/or JS files
   # (relative to /static folder)
@@ -28,22 +29,12 @@ baseURL = "http://charlesjlee.com/"
     "css/lightbox.css",
     "css/gridside-main.css",
   ]
-#  custom_js = [
-#    "js/gridside/jquery-2.1.4.min.js",
-#    "js/gridside/materialize.min.js",
-#    "js/gridside/imagesloaded.pkgd.min.js",
-#    "js/gridside/masonry.pkgd.min.js",
-#    "js/gridside/highlight.pack.js",
-#    "js/gridside/lightbox.min.js",
-#    "js/gridside/jquery.infinitescroll.min.js",
-#    "js/gridside/main.js",
-#  ]
 
-  [Params.Gallery]
-  infinite_scroll = true
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
 
 [menu]
-  # Shown in the side menu.
   [[menu.main]]
     name = "Home"
     pre = "<i class='fa fa-home fa-fw'></i>"
@@ -60,7 +51,7 @@ baseURL = "http://charlesjlee.com/"
 
   [[menu.main]]
     name = "Origami"
-    pre = "<i class='fa fa-map-o fa-fw'></i>"
+    pre = "<i class='fa fas fa-map'></i>"
     weight = 3
     identifier = "origami"
     url = "/origami/"
@@ -73,8 +64,5 @@ baseURL = "http://charlesjlee.com/"
     url = "/about/"
 
 [social]
-  # Link your social networking accounts to the side menu
-  # by entering your username or ID.
   github = "charlesjlee"
   linkedin = "charlesleeonline"
-  resume = "CharlesLee-resume.pdf"
