@@ -5,6 +5,6 @@ sidemenu = "true"
 description = ""
 +++
 
-This place is where I post projects I have worked and will work on, my musings on programming and life, my thoughts and feelings, and other universal truths. My schooling and trade are in operations research and application/database development, respectively.
+I'm a backend software developer with >8 years of experience. Most recently, I worked on an Ethereum-like blockchain for financial institutions. That's not what I post about here though. On here, I just do whatever.
 
-You can reach me at charleslee592<span style="display:none">foo</span>@gmail.com. My resume is in the sidebar.
+You can reach me at charleslee592<span style="display:none">foo</span>@gmail.com
