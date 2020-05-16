@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tessellations on Charles Lee</title>
-    <link>http://charlesjlee.com/tags/tessellations/</link>
+    <link>http://www.charlesjlee.com/tags/tessellations/</link>
     <description>Recent content in tessellations on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://charlesjlee.com/tags/tessellations/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.charlesjlee.com/tags/tessellations/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using the Silhouette Cameo to cut and precrease origami tessellations and modulars</title>
-      <link>http://charlesjlee.com/post/20171221-precrease-modulars-tessellations/</link>
+      <link>http://www.charlesjlee.com/post/20171221-precrease-modulars-tessellations/</link>
       <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://charlesjlee.com/post/20171221-precrease-modulars-tessellations/</guid>
+      <guid>http://www.charlesjlee.com/post/20171221-precrease-modulars-tessellations/</guid>
       <description>Opportunity for automation After a 7-year hiatus, I recently started folding origami again and decided to focus on tessellations and modulars. I used to fold mostly representational models, i.e. animals and humans, and wanted to explore some new areas. Luckily for me, origami advanced greatly while I was away and the first good books on tessellations1 and wireframe modulars2 were published by Eric Gjerde and Byriah Loper, respectively. I bought both books, dove straight into making models, and immediately found myself repeating the same steps hundreds of times.</description>
     </item>
     
