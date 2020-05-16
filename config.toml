@@ -30,10 +30,6 @@ paginate = 10
     "css/gridside-main.css",
   ]
 
-[outputs]
-  home = ["HTML"]
-  section = ["HTML"]
-
 [menu]
   [[menu.main]]
     name = "Home"
