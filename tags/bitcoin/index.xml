@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bitcoin on Charles Lee</title>
-    <link>http://www.charlesjlee.com/tags/bitcoin/</link>
+    <link>https://www.charlesjlee.com/tags/bitcoin/</link>
     <description>Recent content in Bitcoin on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.charlesjlee.com/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.charlesjlee.com/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C4&#39;s CBP Bitcoin certification - 9 months later</title>
-      <link>http://www.charlesjlee.com/post/20171210-c4-cbp-9-months-later/</link>
+      <link>https://www.charlesjlee.com/post/20171210-c4-cbp-9-months-later/</link>
       <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.charlesjlee.com/post/20171210-c4-cbp-9-months-later/</guid>
+      <guid>https://www.charlesjlee.com/post/20171210-c4-cbp-9-months-later/</guid>
       <description>Back in March 2017, I posted about passing the Certified Bitcoin Professional (CBP) exam by C4. I did this partly out of curiosity and partly hoping it would help in a job search for crypto roles. My curiosity was satisfied, my wallet $73 lighter, and no employers seemed to care. Not surprisingly, what did help during my job search were my understanding of Bitcoin and my crypto sideprojects.
 There is a more technical CBX (Certified Bitcoin Expert) exam intended for developers that looks promising: it covers the API and scripting.</description>
     </item>
     
     <item>
       <title>Bitcoin beacon: using the blockchain to generate random bits</title>
-      <link>http://www.charlesjlee.com/post/20170716-bitcoin-beacon/</link>
+      <link>https://www.charlesjlee.com/post/20170716-bitcoin-beacon/</link>
       <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.charlesjlee.com/post/20170716-bitcoin-beacon/</guid>
+      <guid>https://www.charlesjlee.com/post/20170716-bitcoin-beacon/</guid>
       <description>Random beacons A random beacon is &amp;ldquo;a trusted service that broadcasts fresh random numbers at regular intervals&amp;rdquo;. Random beacons are useful in situations that demand security against manipulation, e.g. choosing precincts to audit after an election. Several beacon services currently exist, notably Random.org and the NIST beacon, however there are several advantages to using the Bitcoin blockchain as a source of randomness:
  Publicly verifiable  Bitcoin blocks are public as soon as they are mined so anyone can perform and verify the beacon computations.</description>
     </item>
     
     <item>
       <title>Coursera review: Bitcoin and Cryptocurrency Technologies</title>
-      <link>http://www.charlesjlee.com/post/20170301-bitcoin-coursera-review/</link>
+      <link>https://www.charlesjlee.com/post/20170301-bitcoin-coursera-review/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.charlesjlee.com/post/20170301-bitcoin-coursera-review/</guid>
+      <guid>https://www.charlesjlee.com/post/20170301-bitcoin-coursera-review/</guid>
       <description>The Bitcoin and Cryptocurrency Technologies Coursera is an 11-week, 4-lecturer collaboration that gives the student an overview of the existing cryptocurrency environment and how it came to be. It begins with a history of cryptocurrency advancements leading up to Bitcoin, then goes into the technical details of how Bitcoin works, moves on to the societal impact of cryptocurrencies, and finally ends with a discussion of future developments and their feasibility.</description>
     </item>
     
     <item>
       <title>My Thoughts on Crypto Currency Certification Consortium&#39;s (C4&#39;s) Certified Bitcoin Professional (CBP) certification</title>
-      <link>http://www.charlesjlee.com/post/20170301-c4-certified-bitcoin-professional/</link>
+      <link>https://www.charlesjlee.com/post/20170301-c4-certified-bitcoin-professional/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.charlesjlee.com/post/20170301-c4-certified-bitcoin-professional/</guid>
+      <guid>https://www.charlesjlee.com/post/20170301-c4-certified-bitcoin-professional/</guid>
       <description>What is this? The Crypto Currency Certification Consortium (C4) is a non-profit organization that issues Bitcoin certifications. Currently, the only certification they offer is the Certified Bitcoin Professional (CBP), though a more advanced version, the Certified Bitcoin Expert (CBX), is being developed. Given Bitcoin&amp;rsquo;s decentralized nature, there can be no official certifying authority &amp;ndash; anyone can issue anything. In this environment, the only thing that carries weight is reputation, and C4 has a solid roster on their board and advisors, including Andreas M.</description>
     </item>
     

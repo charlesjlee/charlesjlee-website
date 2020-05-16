@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coursera on Charles Lee</title>
-    <link>http://www.charlesjlee.com/tags/coursera/</link>
+    <link>https://www.charlesjlee.com/tags/coursera/</link>
     <description>Recent content in Coursera on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.charlesjlee.com/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.charlesjlee.com/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Coursera review: Bitcoin and Cryptocurrency Technologies</title>
-      <link>http://www.charlesjlee.com/post/20170301-bitcoin-coursera-review/</link>
+      <link>https://www.charlesjlee.com/post/20170301-bitcoin-coursera-review/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.charlesjlee.com/post/20170301-bitcoin-coursera-review/</guid>
+      <guid>https://www.charlesjlee.com/post/20170301-bitcoin-coursera-review/</guid>
       <description>The Bitcoin and Cryptocurrency Technologies Coursera is an 11-week, 4-lecturer collaboration that gives the student an overview of the existing cryptocurrency environment and how it came to be. It begins with a history of cryptocurrency advancements leading up to Bitcoin, then goes into the technical details of how Bitcoin works, moves on to the societal impact of cryptocurrencies, and finally ends with a discussion of future developments and their feasibility.</description>
     </item>
     

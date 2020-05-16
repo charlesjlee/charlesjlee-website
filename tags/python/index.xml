@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Charles Lee</title>
-    <link>http://www.charlesjlee.com/tags/python/</link>
+    <link>https://www.charlesjlee.com/tags/python/</link>
     <description>Recent content in Python on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.charlesjlee.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.charlesjlee.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bitcoin beacon: using the blockchain to generate random bits</title>
-      <link>http://www.charlesjlee.com/post/20170716-bitcoin-beacon/</link>
+      <link>https://www.charlesjlee.com/post/20170716-bitcoin-beacon/</link>
       <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.charlesjlee.com/post/20170716-bitcoin-beacon/</guid>
+      <guid>https://www.charlesjlee.com/post/20170716-bitcoin-beacon/</guid>
       <description>Random beacons A random beacon is &amp;ldquo;a trusted service that broadcasts fresh random numbers at regular intervals&amp;rdquo;. Random beacons are useful in situations that demand security against manipulation, e.g. choosing precincts to audit after an election. Several beacon services currently exist, notably Random.org and the NIST beacon, however there are several advantages to using the Bitcoin blockchain as a source of randomness:
  Publicly verifiable  Bitcoin blocks are public as soon as they are mined so anyone can perform and verify the beacon computations.</description>
     </item>
     
     <item>
       <title>Creating a Steem bot using Python, Piston, and Heroku</title>
-      <link>http://www.charlesjlee.com/post/20170108-steem-bot/</link>
+      <link>https://www.charlesjlee.com/post/20170108-steem-bot/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.charlesjlee.com/post/20170108-steem-bot/</guid>
+      <guid>https://www.charlesjlee.com/post/20170108-steem-bot/</guid>
       <description>Steem for the people When someone writes a great post on Reddit that goes viral and is widely shared, the party that benefits most is Reddit itself. Realizing this and wanting to give back to the community responsible for its success, Reddit toyed with the idea of giving shares of the company to users in the form of a cryptocurrency. This plan was later put on indefinite hold.
 Steem is the embodiment of what Reddit wanted to achieve &amp;ndash; a blockchain-based, social news platform where posters and upvoters, i.</description>
     </item>
