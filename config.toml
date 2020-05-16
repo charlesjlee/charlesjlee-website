@@ -1,4 +1,4 @@
-baseURL = "https://www.charlesjlee.com/"
+BaseURL = "https://www.charlesjlee.com/"
 languageCode = "en-us"
 title = "Charles Lee"
 author = "Charles Lee"
