@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://charlesjlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://charlesjlee.com/tags/github/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub Actions</title>
+      <link>https://charlesjlee.com/tags/github-actions/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub Pages</title>
+      <link>https://charlesjlee.com/tags/github-pages/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://charlesjlee.com/tags/hugo/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/tags/hugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>DNS</title>
@@ -17,24 +53,6 @@
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://charlesjlee.com/tags/dns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://charlesjlee.com/tags/github/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub Pages</title>
-      <link>https://charlesjlee.com/tags/github-pages/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/tags/github-pages/</guid>
       <description></description>
     </item>
     

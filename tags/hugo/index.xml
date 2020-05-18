@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GitHub Pages on Charles Lee</title>
-    <link>https://charlesjlee.com/tags/github-pages/</link>
-    <description>Recent content in GitHub Pages on Charles Lee</description>
+    <title>Hugo on Charles Lee</title>
+    <link>https://charlesjlee.com/tags/hugo/</link>
+    <description>Recent content in Hugo on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://charlesjlee.com/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://charlesjlee.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>https://charlesjlee.com/post/20200517-github-actions/</guid>
       <description>Introduction It&amp;rsquo;s been almost two and a half years since I&amp;rsquo;ve updated this website. While I was away, GitHub Actions was released and Hugo jumped from version 0.31 to 0.70! My old Hugo code no longer builds and instead of updating incrementally, I decided it was easier to just rebuild from scratch with the latest version. At the same time, I would update the theme1 I use and integrate GitHub Actions to replace the now-unnecessary deployment script 23.</description>
-    </item>
-    
-    <item>
-      <title>DNS Records for GitHub Pages</title>
-      <link>https://charlesjlee.com/post/20200516-github-pages-dns/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/post/20200516-github-pages-dns/</guid>
-      <description>Every once in a while I need to modify my custom domain&amp;rsquo;s DNS records to work with GitHub pages, and every time it&amp;rsquo;s a struggle to get it right. Here I document my currently-working setup.
-I followed the recommended setup1 by configuring www as my Custom Domain, also configuring my apex domain, and letting GitHub Pages &amp;ldquo;automatically create redirects between the domains&amp;rdquo;. Specifically for this website, I told GitHub that my Custom Domain is www.</description>
     </item>
     
   </channel>

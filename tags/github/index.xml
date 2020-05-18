@@ -6,20 +6,10 @@
     <description>Recent content in GitHub on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://charlesjlee.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>DNS Records for GitHub Pages</title>
-      <link>https://charlesjlee.com/post/20200516-github-actions/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/post/20200516-github-actions/</guid>
-      <description>Every once in a while I need to modify my custom domain&amp;rsquo;s DNS records to work with GitHub pages, and every time it&amp;rsquo;s a struggle to get it right. Here I document my currently-working setup.
-I followed the recommended setup1 by configuring www as my Custom Domain, also configuring my apex domain, and letting GitHub Pages &amp;ldquo;automatically create redirects between the domains&amp;rdquo;. Specifically for this website, I told GitHub that my Custom Domain is www.</description>
-    </item>
     
     <item>
       <title>DNS Records for GitHub Pages</title>

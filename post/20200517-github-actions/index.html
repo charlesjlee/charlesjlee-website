@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="step-by-step, end-to-end">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  <title>Static site deployments with Hugo and GitHub Actions &middot; Charles Lee</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://charlesjlee.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/mathjax.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/lightbox.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/gridside-main.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../origami/"><i class='fa fas fa-map'></i>Origami</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/charlesleeonline" rel="me" target="_blank">&nbsp;<i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/charlesjlee" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div class="pure-menu">
+	<ul class="pure-menu-list">
+	  <div class="small-print">
+	    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+	    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+	  </div>
+	</ul>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Static site deployments with Hugo and GitHub Actions</h1>
+  <h2>step-by-step, end-to-end</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>May 17, 2020</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/hugo">Hugo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/github-pages">GitHub Pages</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/github-actions">GitHub Actions</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <h2 id="introduction">Introduction</h2>
+<p>It&rsquo;s been almost two and a half years since I&rsquo;ve updated this website. While I was away, GitHub Actions was released and Hugo jumped from version 0.31 to 0.70! My old Hugo code no longer builds and instead of updating incrementally, I decided it was easier to just rebuild from scratch with the latest version. At the same time, I would update the theme<a href="https://github.com/yoshiharuyamashita/blackburn"><sup>1</sup></a> I use and integrate GitHub Actions to replace the now-unnecessary deployment script <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script-1"><sup>2</sup></a><a href="https://github.com/charlesjlee/hugo-publish-to-ghpages-powershell"><sup>3</sup></a>.</p>
+<p>I used the Hugo Quick Start guide<a href="https://gohugo.io/getting-started/quick-start/"><sup>4</sup></a> for the initial setup and then some helpful articles<a href="https://ruddra.com/posts/hugo-deploy-static-page-using-github-actions/"><sup>5</sup></a><a href="https://medium.com/@asishrs/automate-your-github-pages-deployment-using-hugo-and-actions-518b959a51f9"><sup>6</sup></a><a href="https://blog.kye.dev/hugo-github-pages-actions/"><sup>7</sup></a> for the GitHub Actions setup. I did, however, stumble a few times because some steps or details were missing, so I wrote this step-by-step, end-to-end guide that is a compilation of the aforementioned resources.</p>
+<h2 id="overview-and-plan">Overview and Plan</h2>
+<ol>
+<li><a href="#1-create-and-configure-github-repo">Create and configure GitHub repo</a></li>
+<li><a href="#2-develop-on-repo-locally">Develop on repo locally</a></li>
+<li><a href="#3-use-github-actions-to-deploy">Use GitHub Actions to deploy</a></li>
+</ol>
+<p>We&rsquo;re going to store our code on the <strong>master</strong> branch and the generated site on the <strong>gh-pages</strong> branch. If you don&rsquo;t already have Hugo installed<a href="https://gohugo.io/getting-started/installing"><sup>8</sup></a>, Git installed, and your GitHub SSH account key<a href="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh"><sup>9</sup></a> configured, you should take care of that before proceeding.</p>
+<p>The final repo is available at <a href="https://github.com/charlesjlee/hugo-github-pages-actions-demo">https://github.com/charlesjlee/hugo-github-pages-actions-demo</a></p>
+<h2 id="1-create-and-configure-github-repo">1) Create and configure GitHub repo</h2>
+<p>Navigate to <strong>+</strong>  in the upper right-hand to find <strong>New repository</strong>, fill out the form, and click <strong>Create repository</strong>.
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-github-create-repo.png" data-lightbox="gallery" data-title="Create GitHub repo">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-github-create-repo.png"
+        alt="Create GitHub repo">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</p>
+<p>Click <strong>Branch: master ▾</strong> on the left side, type <strong>gh-pages</strong> into the text field, and click <strong>Create branch: gh-pages from &lsquo;master&rsquo;</strong> to create the branch.
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-github-create-branch.png" data-lightbox="gallery" data-title="Create gh-pages branch">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-github-create-branch.png"
+        alt="Create gh-pages branch">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</p>
+<p>Since we named our branch <strong>gh-pages</strong>, GitHub Pages automatically designated this branch as our <strong>Source</strong>, so we don&rsquo;t need to set this ourselves. You can confirm this by navigating to <strong>⚙ Settings</strong> and then scrolling all the way to down to the <strong>GitHub Pages</strong> section. This also means that our site is now live at <strong>https://{user}.github.io/{repo}/</strong>, where <strong>{user}</strong> and <strong>{repo}</strong> are replaced with your GitHub username and repo name. If you navigate there now, the only thing you&rsquo;ll see is the contents of <strong>README.md</strong> like below because we just branched <strong>gh-pages</strong> from an empty <strong>master</strong>.</p>
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-github-branch-initial.png" data-lightbox="gallery" data-title="Initial gh-pages site">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-github-branch-initial.png"
+        alt="Initial gh-pages site">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+
+<h2 id="2-develop-on-repo-locally">2) Develop on repo locally</h2>
+<p>Our repo is now ready to use. We&rsquo;re going to clone <strong>master</strong> locally so we can setup and test our site.</p>
+<p>If you&rsquo;re not on the <strong>master</strong> branch, use the <strong>Branch</strong> dropdown on the left side to switch to the <strong>master</strong> branch. Click the green <strong>Clone or download</strong> button on the right side, then click the clipboard 📋 icon to copy the path.</p>
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-github-master-clone.png" data-lightbox="gallery" data-title="Clone master">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-github-master-clone.png"
+        alt="Clone master">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+
+<p>Now open a shell (e.g. PowerShell, bash) in the directory where you want to work and clone <strong>master</strong>. In the example below, I&rsquo;m using PowerShell and <strong>C:\Hugo</strong> as my directory. The path for <strong>git clone</strong> should be in your clipboard from the previous step.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo&gt; git clone git@github.com<span style="color:#960050;background-color:#1e0010">:</span>charlesjlee/hugo-github-pages-actions-demo.git
+Cloning into <span style="color:#e6db74">&#39;hugo-github-pages-actions-demo&#39;</span>...
+remote<span style="color:#960050;background-color:#1e0010">:</span> Enumerating objects<span style="color:#960050;background-color:#1e0010">:</span> 4, done.
+remote<span style="color:#960050;background-color:#1e0010">:</span> Counting objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (4/4), done.
+remote<span style="color:#960050;background-color:#1e0010">:</span> Compressing objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (3/3), done.
+remote<span style="color:#960050;background-color:#1e0010">:</span> Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (4/4), done.
+</code></pre></div><p>Next, we&rsquo;ll use <strong>hugo new site</strong> to create a new site. This command will create the folders and files that Hugo needs to function. Since our project directory already exists, we have to pass the <strong>&ndash;force</strong> and make sure that the site name matches the repo name.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo&gt; hugo new site hugo-github-pages-actions-demo --force
+Congratulations! Your new Hugo site is created <span style="color:#66d9ef">in</span> C:\Hugo\hugo-github-pages-actions-demo.
+
+Just a few more steps and you<span style="color:#960050;background-color:#1e0010">&#39;</span>re ready to go<span style="color:#960050;background-color:#1e0010">:</span>
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https<span style="color:#960050;background-color:#1e0010">:</span>//themes.gohugo.io/ or
+   create your own with the <span style="color:#e6db74">&#34;hugo new theme &lt;THEMENAME&gt;&#34;</span> command.
+2. Perhaps you want to add some content. You can add single files
+   with <span style="color:#e6db74">&#34;hugo new &lt;SECTIONNAME&gt;\&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;</span>.
+3. Start the built-in live server via <span style="color:#e6db74">&#34;hugo server&#34;</span>.
+
+Visit https<span style="color:#960050;background-color:#1e0010">:</span>//gohugo.io/ <span style="color:#66d9ef">for</span> quickstart guide and full documentation.
+</code></pre></div><p>Then we&rsquo;ll move into our repo and download the <strong>ananke</strong> theme.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo&gt; cd hugo-github-pages-actions-demo
+PS C:\Hugo\hugo-github-pages-actions-demo&gt; git submodule add https<span style="color:#960050;background-color:#1e0010">:</span>//github.com/budparr/gohugo-theme-ananke.git themes/ananke
+Cloning into <span style="color:#e6db74">&#39;C:/Hugo/hugo-github-pages-actions-demo/themes/ananke&#39;</span>...
+remote<span style="color:#960050;background-color:#1e0010">:</span> Enumerating objects<span style="color:#960050;background-color:#1e0010">:</span> 23, done.
+remote<span style="color:#960050;background-color:#1e0010">:</span> Counting objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (23/23), done.
+remote<span style="color:#960050;background-color:#1e0010">:</span> Compressing objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (22/22), done.
+remote<span style="color:#960050;background-color:#1e0010">:</span> Total 1636 (delta 6), reused 8 (delta 1), pack-reused 1613
+Receiving objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (1636/1636), 4.23 MiB | 13.50 MiB/s, done.
+Resolving deltas<span style="color:#960050;background-color:#1e0010">:</span> 100% (897/897), done.
+</code></pre></div><p>To configure our site to use the newly downloaded theme, we need to add the line <strong>theme = &ldquo;ananke&rdquo;</strong> to our site&rsquo;s configuration file <strong>config.toml</strong>. You can do this by opening <strong>config.toml</strong> in a text editor, adding the line, and saving the file. We also need to update <strong>baseURL</strong> and enable <strong>relativeURLs</strong>. When you&rsquo;re done, <strong>config.toml</strong> should look like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;ananke&#34;</span>
+<span style="color:#a6e22e">relativeURLs</span> = <span style="color:#66d9ef">true</span>
+</code></pre></div><p>We now have the minimum we need to create a barebones website. You can see the current state of the site by running <strong>hugo server -D</strong> and then going to <strong>http://localhost:1313/</strong> in your browser. We&rsquo;ll use the <strong>-D</strong> flag momentarily.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo\hugo-github-pages-actions-demo&gt; hugo server -D
+Building sites <span style="color:#960050;background-color:#1e0010">…</span>
+                   | EN
+-------------------+-----
+  Pages            |  7
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  3
+  Processed images |  0
+  Aliases          |  0
+  Sitemaps         |  1
+  Cleaned          |  0
+
+Built <span style="color:#66d9ef">in</span> 25 ms
+Watching <span style="color:#66d9ef">for</span> changes <span style="color:#66d9ef">in</span> C:\Hugo\hugo-github-pages-actions-demo\{archetypes,content,data,layouts,static,themes}
+Watching <span style="color:#66d9ef">for</span> config changes <span style="color:#66d9ef">in</span> C:\Hugo\hugo-github-pages-actions-demo\config.toml
+Environment<span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;development&#34;</span>
+Serving pages from memory
+Running <span style="color:#66d9ef">in</span> Fast Render Mode. <span style="color:#66d9ef">For</span> full rebuilds on change<span style="color:#960050;background-color:#1e0010">:</span> hugo server --disableFastRender
+Web Server is available at http<span style="color:#960050;background-color:#1e0010">:</span>//localhost<span style="color:#960050;background-color:#1e0010">:</span>1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre></div><p>Your site will look like this: no content and title text still set to the default.
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-barebones.png" data-lightbox="gallery" data-title="Barebones site">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-barebones.png"
+        alt="Barebones site">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</p>
+<p>Notice above that <strong>hugo server -D</strong> said it was &ldquo;watching for changes&rdquo;. This allows us to add/update/modify files and watch the site change in real-time. With <strong>hugo server -D</strong> still running in your shell, open <strong>config.toml</strong> and change the value of <strong>title</strong>. You should see this change reflected immediately in the site.</p>
+<p>Let&rsquo;s a create a new post using <strong>hugo new</strong> in a separate shell. We should see this post appear immediately when we revisit the site. <strong>hugo new</strong> is just a convenience function for creating stubs for posts; you can also create these by hand. If you don&rsquo;t see your post appear on your site, it&rsquo;s probably because new posts are created with <strong>draft: true</strong> and you forgot to run <strong>hugo new</strong> with the <strong>-D</strong> flag.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo\hugo-github-pages-actions-demo&gt; hugo new posts/my-first-post.md
+C:\Hugo\hugo-github-pages-actions-demo\content\posts\my-first-post.md created
+</code></pre></div><p>This is a good time to commit our code</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo\hugo-github-pages-actions-demo&gt; git status
+On branch master
+Your branch is up to date with <span style="color:#e6db74">&#39;origin/master&#39;</span>.
+
+Changes to be committed<span style="color:#960050;background-color:#1e0010">:</span>
+  (use <span style="color:#e6db74">&#34;git restore --staged &lt;file&gt;...&#34;</span> to unstage)
+        new file<span style="color:#960050;background-color:#1e0010">:</span>   .gitmodules
+        new file<span style="color:#960050;background-color:#1e0010">:</span>   themes/ananke
+
+Untracked files<span style="color:#960050;background-color:#1e0010">:</span>
+  (use <span style="color:#e6db74">&#34;git add &lt;file&gt;...&#34;</span> to include <span style="color:#66d9ef">in</span> what will be committed)
+        archetypes/
+        config.toml
+        content/
+
+PS C:\Hugo\hugo-github-pages-actions-demo&gt; git add .
+PS C:\Hugo\hugo-github-pages-actions-demo&gt; git commit -m <span style="color:#e6db74">&#39;first commit&#39;</span>
+<span style="color:#66d9ef">[master eec6d9e]</span> first commit
+ 5 files changed, 19 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 100644 archetypes/<span style="color:#66d9ef">default</span>.md
+ create mode 100644 config.toml
+ create mode 100644 content/posts/my-first-post.md
+ create mode 160000 themes/ananke
+PS C:\Hugo\hugo-github-pages-actions-demo&gt; git push
+Enumerating objects<span style="color:#960050;background-color:#1e0010">:</span> 11, done.
+Counting objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (6/6), done.
+Writing objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (10/10), 980 bytes | 980.00 KiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com<span style="color:#960050;background-color:#1e0010">:</span>charlesjlee/hugo-github-pages-actions-demo.git
+   9319021..eec6d9e  master -&gt; master
+</code></pre></div><p>Now let&rsquo;s talk about deployment. Executing <strong>hugo</strong> will build your site and put it into a new directory named <strong>public</strong>. You could then just &ldquo;simply&rdquo; commit the contents of <strong>public</strong> to the <strong>gh-pages</strong> branch. Actually doing this requires a couple of different steps so people back in the day scripted this process<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script-1"><sup>2</sup></a><a href="https://github.com/charlesjlee/hugo-publish-to-ghpages-powershell"><sup>3</sup></a> and even deployed their script, e.g. on Netlify, so it ran automatically on a commit to <strong>master</strong>. GitHub Actions takes care of both of these steps (watching for a commit to <strong>master</strong>, building the site and committing to <strong>gh-pages</strong>) and staying within the GitHub ecosystem means our setup will be simpler than if we used a third-party service or manually ran a script.</p>
+<h2 id="3-use-github-actions-to-deploy">3) Use GitHub Actions to deploy</h2>
+<p>We enable GitHub Actions by creating a file in the <strong>.github/workflows</strong> directory. First though, we&rsquo;ll need to add a &ldquo;secret&rdquo; to our repo that is proof that the holder is authorized to make changes to the repo. We can do this by creating a &ldquo;deploy key&rdquo;, which is an SSH key similar to our &ldquo;account key&rdquo; but only grants access to a single repo.</p>
+<p>Generate an RSA (private, public) key-pair and save it to the files (<strong>master</strong>, <strong>master.pub</strong>). We won&rsquo;t be committing these files, so you can do this in any directory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo&gt; ssh-keygen -t rsa -b 4096 -C <span style="color:#e6db74">&#34;</span>$(git config user.email)<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">-f</span> master -N <span style="color:#e6db74">&#39;&#34;&#34;&#39;</span>
+Generating public/private rsa key pair.
+Your identification has been saved <span style="color:#66d9ef">in</span> master.
+Your public key has been saved <span style="color:#66d9ef">in</span> master.pub.
+The key fingerprint is<span style="color:#960050;background-color:#1e0010">:</span>
+SHA256<span style="color:#960050;background-color:#1e0010">:</span>iRd5eMCgndRLWlQuUtD4Z5ep/pmneBGxiK+GHiKKOA4 charleslee592@gmail.com
+The key<span style="color:#960050;background-color:#1e0010">&#39;</span>s randomart image is<span style="color:#960050;background-color:#1e0010">:</span>
++---<span style="color:#66d9ef">[RSA 4096]</span>----+
+|      +O+..      |
+|     +.o*=  .    |
+|    . +==o+. =   |
+|      .o+*+ *    |
+|      . S+ o .   |
+|       .  o .    |
+|E . . .. o   .   |
+|=. . ...o ...o.  |
+|=o   ...  .o=o   |
++----<span style="color:#66d9ef">[SHA256]</span>-----+ 
+</code></pre></div><p>Open your repo in GitHub and navigate to <strong>⚙ Settings</strong> &ndash;&gt; <strong>Secrets</strong> &ndash;&gt; <strong>New secret</strong>. <strong>Name</strong> should be <strong>ACTIONS_DEPLOY_KEY</strong> and <strong>Value</strong> should be the contents of the file named <strong>master</strong>.
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-github-secrets.png" data-lightbox="gallery" data-title="Creating a new secret">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-github-secrets.png"
+        alt="Creating a new secret">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</p>
+<p>Then navigate to <strong>⚙ Settings</strong> &ndash;&gt; <strong>Deploy keys</strong> &ndash;&gt; <strong>Add deploy key</strong>. <strong>Title</strong> should be <strong>ACTIONS_DEPLOY_KEY</strong>, <strong>Key</strong> should be the contents of the file named <strong>master.pub</strong>, and <strong>Allow write access</strong> should be checked.
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-github-deploy-keys.png" data-lightbox="gallery" data-title="Creating a deploy key">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-github-deploy-keys.png"
+        alt="Creating a deploy key">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</p>
+<p>After the above two steps are done, you should delete <strong>master</strong> and <strong>master.pub</strong>. We won&rsquo;t need them anymore and they&rsquo;re dangerous to leave sitting around because someone who gets a hold of the private key <strong>master</strong> might be able to deploy to your repo.</p>
+<p>Next, we create the workflow directory and file. I used <strong>ni</strong> to create the file but you might need <strong>touch</strong>. We&rsquo;re calling the file <strong>deploy.yml</strong> but the YML file can be named anything.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo\hugo-github-pages-actions-demo&gt; mkdir .github/workflows
+PS C:\Hugo\hugo-github-pages-actions-demo&gt; ni .github/workflows/deploy.yml
+</code></pre></div><p>Open <strong>deploy.yml</strong> in a text editor, paste in the below, and save. There are a couple things you&rsquo;ll need to change, but first let&rsquo;s unpack this by describing what&rsquo;s going on in English:</p>
+<p>&ldquo;When a <em>push</em> is made to this branch, i.e. <em>master</em>, execute a job named <em>deploy</em> inside of a container running the <em>ubuntu-18.04</em> OS. This job is composed of five ordered <em>steps</em>: (1) checking out the code in master, (2) checking out the code for our themes, (3) setting up Hugo to run in the next step, (4) running <em>hugo</em> to build our site, (5) deploying the contents of <em>./public</em> into <em>gh-pages</em>&rdquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">name</span>: CI
+<span style="color:#66d9ef">on</span>: push
+<span style="color:#66d9ef">jobs</span>:
+  <span style="color:#66d9ef">deploy</span>:
+    <span style="color:#66d9ef">runs-on</span>: ubuntu<span style="color:#ae81ff">-18.04</span>
+    <span style="color:#66d9ef">steps</span>:
+      - <span style="color:#66d9ef">name</span>: Git checkout
+        <span style="color:#66d9ef">uses</span>: actions/checkout@v2
+
+      - <span style="color:#66d9ef">name</span>: Update theme
+        <span style="color:#66d9ef">run</span>: git submodule update --init --recursive
+
+      - <span style="color:#66d9ef">name</span>: Setup hugo
+        <span style="color:#66d9ef">uses</span>: peaceiris/actions-hugo@v2
+        <span style="color:#66d9ef">with</span>:
+          <span style="color:#66d9ef">hugo-version</span>: <span style="color:#e6db74">&#34;0.70.0&#34;</span>
+
+      - <span style="color:#66d9ef">name</span>: Build
+        <span style="color:#75715e"># run: hugo --minify</span>
+        <span style="color:#66d9ef">run</span>: hugo
+
+      - <span style="color:#66d9ef">name</span>: Deploy
+        <span style="color:#66d9ef">uses</span>: peaceiris/actions-gh-pages@v3
+        <span style="color:#66d9ef">with</span>:
+          <span style="color:#66d9ef">deploy_key</span>: ${{secrets.ACTIONS_DEPLOY_KEY}}
+          <span style="color:#66d9ef">external_repository</span>: charlesjlee/hugo-github-pages-actions-demo
+          <span style="color:#66d9ef">publish_dir</span>: ./public
+          <span style="color:#66d9ef">user_name</span>: Charles Lee
+          <span style="color:#66d9ef">user_email</span>: charleslee592@gmail.com
+          <span style="color:#66d9ef">publish_branch</span>: gh-pages
+          <span style="color:#75715e"># cname: ﻿www.charlesjlee.com</span>
+</code></pre></div><p>Required Changes
+
+
+
+<table class="pure-table pure-table-striped">
+  <thead><tr>
+    
+      <th>Field Name</th>
+    
+      <th>Valid Value</th>
+    
+  </thead></tr>
+  <tbody>
+  
+    <tr>
+      
+      
+        <td>external_repository</td>
+      
+        <td>this should be {username}/{repo_name}</td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>user_name</td>
+      
+        <td>this can be anything, but it would make sense to match what you use when committing to master</td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>user_email</td>
+      
+        <td>ditto</td>
+      
+    </tr>
+  
+  </tbody>
+</table></p>
+<p>Optional Changes
+
+
+
+<table class="pure-table pure-table-striped">
+  <thead><tr>
+    
+      <th>Description</th>
+    
+      <th>Comment</th>
+    
+  </thead></tr>
+  <tbody>
+  
+    <tr>
+      
+      
+        <td>hugo-version</td>
+      
+        <td>I use 0.70.0. You should use whichever version of hugo you have running locally to avoid situations where local vs remote behavior don&#39;t match</td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>hugo --minify</td>
+      
+        <td>this will minify the HTML output generated by &#39;hugo&#39; by removing comments and whitespace. This may lead to performance improvements, but will make the HTML output difficult to read and debug</td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>cname</td>
+      
+        <td>set this if you are using a custom domain. see this post for details https://www.charlesjlee.com/post/20200516-github-pages-dns/</td>
+      
+    </tr>
+  
+  </tbody>
+</table></p>
+<p>Let&rsquo;s commit this file and see our workflow in action.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">PS C:\Hugo\hugo-github-pages-actions-demo&gt; git status
+On branch master
+Your branch is up to date with <span style="color:#e6db74">&#39;origin/master&#39;</span>.
+
+Untracked files<span style="color:#960050;background-color:#1e0010">:</span>
+  (use <span style="color:#e6db74">&#34;git add &lt;file&gt;...&#34;</span> to include <span style="color:#66d9ef">in</span> what will be committed)
+        .github/
+
+nothing added to commit but untracked files present (use <span style="color:#e6db74">&#34;git add&#34;</span> to track)
+PS C:\Hugo\hugo-github-pages-actions-demo&gt; git add .; git commit -m <span style="color:#e6db74">&#39;create deploy workflow&#39;</span>
+<span style="color:#66d9ef">[master e4f9020]</span> create deploy workflow
+ 1 file changed, 31 insertions(+)
+ create mode 100644 .github/workflows/deploy.yml
+PS C:\Hugo\hugo-github-pages-actions-demo&gt; git push
+Enumerating objects<span style="color:#960050;background-color:#1e0010">:</span> 6, done.
+Counting objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (3/3), done.
+Writing objects<span style="color:#960050;background-color:#1e0010">:</span> 100% (5/5), 766 bytes | 766.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote<span style="color:#960050;background-color:#1e0010">:</span> Resolving deltas<span style="color:#960050;background-color:#1e0010">:</span> 100% (1/1), completed with 1 local object.
+To github.com<span style="color:#960050;background-color:#1e0010">:</span>charlesjlee/hugo-github-pages-actions-demo.git
+   dc1e177..e4f9020  master -&gt; master
+</code></pre></div><p>After you push this commit, the workflow will kick-off immediately. You can get an overview by navigating to the <strong>⯈ Actions</strong> section of your repo.
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-github-actions.png" data-lightbox="gallery" data-title="GitHub Actions overview">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-github-actions.png"
+        alt="GitHub Actions overview">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</p>
+<p>For logs on a specific run, you can click the workflow&rsquo;s name, then click the job&rsquo;s name on the left, e.g. <strong>deploy</strong> in our case.
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200517-github-actions-logs.png" data-lightbox="gallery" data-title="GitHub Actions logs">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200517-github-actions-logs.png"
+        alt="GitHub Actions logs">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</p>
+<h2 id="the-end">The End</h2>
+<p>You&rsquo;re done! You now have a setup that makes it easy to both test changes locally and deploy remotely. For reference, this repo contains all the changes up to this point and is ready to fork and use:
+<a href="https://github.com/charlesjlee/hugo-github-pages-actions-demo">https://github.com/charlesjlee/hugo-github-pages-actions-demo</a></p>
+<p>The site is looking a bit bare though. Some things you can explore further:</p>
+<ul>
+<li>the post we made earlier, <strong>my-first-post.md</strong>, doesn&rsquo;t appear on our site because it has the <strong>draft</strong> flag enabled. Delete that flag to enable the post</li>
+<li>make more posts!</li>
+<li>explore and try out different themes<a href="https://themes.gohugo.io/"><sup>10</sup></a>. It&rsquo;s even possible to layer multiple themes</li>
+<li>learn about Hugo Templating<a href="https://gohugo.io/templates/"><sup>11</sup></a> and how to customize aka override themes</li>
+<li>buy and configure a custom domain<a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site"><sup>12</sup></a>. I have a post on configuring the DNS<a href="https://www.charlesjlee.com/post/20200516-github-pages-dns/"><sup>13</sup></a></li>
+</ul>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://github.com/yoshiharuyamashita/blackburn">https://github.com/yoshiharuyamashita/blackburn</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script-1">https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script-1</a></li>
+<li><a href="https://github.com/charlesjlee/hugo-publish-to-ghpages-powershell">https://github.com/charlesjlee/hugo-publish-to-ghpages-powershell</a></li>
+<li><a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a></li>
+<li><a href="https://ruddra.com/posts/hugo-deploy-static-page-using-github-actions/">https://ruddra.com/posts/hugo-deploy-static-page-using-github-actions/</a></li>
+<li><a href="https://medium.com/@asishrs/automate-your-github-pages-deployment-using-hugo-and-actions-518b959a51f9">https://medium.com/@asishrs/automate-your-github-pages-deployment-using-hugo-and-actions-518b959a51f9</a></li>
+<li><a href="https://blog.kye.dev/hugo-github-pages-actions/">https://blog.kye.dev/hugo-github-pages-actions/</a></li>
+<li><a href="https://gohugo.io/getting-started/installing">https://gohugo.io/getting-started/installing</a></li>
+<li><a href="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh</a></li>
+<li><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></li>
+<li><a href="https://gohugo.io/templates/">https://gohugo.io/templates/</a></li>
+<li><a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site">https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site</a></li>
+<li><a href="https://www.charlesjlee.com/post/20200516-github-pages-dns/">https://www.charlesjlee.com/post/20200516-github-pages-dns/</a></li>
+</ol>
+
+  
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://charlesjlee.com/post/20200516-github-pages-dns/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://charlesjlee.com/post/20200516-github-pages-dns/">DNS Records for GitHub Pages</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://charlesjlee.com/js/ui.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38182774-1', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery-2.1.4.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/materialize.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/imagesloaded.pkgd.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/masonry.pkgd.min.js"></script>
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/lightbox.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery.infinitescroll.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/main.js"></script>
+
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</body>
+</html>
