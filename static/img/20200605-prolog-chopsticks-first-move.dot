@@ -1,0 +1,33 @@
+https://dreampuf.github.io/GraphvizOnline/#digraph%20structs%20%7B%0D%0A%20%20%20%20node%20%5Bshape%3Dplaintext%5D%3B%0D%0A%20%20%20%20rankdir%3DLR%0D%0A%0D%0A%20%20%20%20struct1%20%5Blabel%3D%3C%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%222%22%3E%0D%0A%09%3Ctr%3E%0D%0A%09%20%20%20%20%3Ctd%20ROWSPAN%3D%222%22%20valign%3D%22top%22%20border%3D%220%22%3E*%3C%2Ftd%3E%0D%0A%09%20%20%20%20%3Ctd%20border%3D%221%22%3E1%201%3C%2Ftd%3E%0D%0A%09%3C%2Ftr%3E%3Ctr%3E%0D%0A%09%20%20%20%20%3Ctd%20border%3D%221%22%3E1%201%3C%2Ftd%3E%0D%0A%09%3C%2Ftr%3E%0D%0A%09%3C%2Ftable%3E%3E%5D%3B%0D%0A%09%0D%0A%20%20%20%20struct2%20%5Blabel%3D%3C%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%222%22%3E%0D%0A%09%3Ctr%3E%0D%0A%09%20%20%20%20%3Ctd%20ROWSPAN%3D%222%22%20valign%3D%22bottom%22%20border%3D%220%22%3E*%3C%2Ftd%3E%0D%0A%09%20%20%20%20%3Ctd%20border%3D%221%22%3E1%201%3C%2Ftd%3E%0D%0A%09%3C%2Ftr%3E%3Ctr%3E%0D%0A%09%20%20%20%20%3Ctd%20border%3D%221%22%3E2%201%3C%2Ftd%3E%0D%0A%09%3C%2Ftr%3E%0D%0A%09%3C%2Ftable%3E%3E%5D%3B%0D%0A%09%0D%0A%20%20%20%20struct1%20-%3E%20struct2%20%20%5Blabel%3D%3C%3Ctable%20BORDER%3D%220%22%20CELLBORDER%3D%220%22%20CELLSPACING%3D%220%22%20width%3D%2220%22%20height%3D%225%22%3E%0D%0A%20%20%20%20%20%20%20%20%3Ctr%3E%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctd%3ETurn%201%3C%2Ftd%3E%0D%0A%20%20%20%20%20%20%20%20%3C%2Ftr%3E%0D%0A%20%20%20%20%20%20%20%20%3Ctr%3E%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctd%3ELL%3C%2Ftd%3E%0D%0A%20%20%20%20%20%20%20%20%3C%2Ftr%3E%0D%0A%20%20%20%20%20%20%20%20%3C%2Ftable%3E%3E%5D%3B%0D%0A%7D%0D%0A
+
+digraph structs {
+    node [shape=plaintext];
+    rankdir=LR
+
+    struct1 [label=<<table border="0" cellspacing="0" cellpadding="2">
+	<tr>
+	    <td ROWSPAN="2" valign="top" border="0">*</td>
+	    <td border="1">1 1</td>
+	</tr><tr>
+	    <td border="1">1 1</td>
+	</tr>
+	</table>>];
+	
+    struct2 [label=<<table border="0" cellspacing="0" cellpadding="2">
+	<tr>
+	    <td ROWSPAN="2" valign="bottom" border="0">*</td>
+	    <td border="1">1 1</td>
+	</tr><tr>
+	    <td border="1">2 1</td>
+	</tr>
+	</table>>];
+	
+    struct1 -> struct2  [label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0" width="20" height="5">
+        <tr>
+            <td>Turn 1</td>
+        </tr>
+        <tr>
+            <td>LL</td>
+        </tr>
+        </table>>];
+}
