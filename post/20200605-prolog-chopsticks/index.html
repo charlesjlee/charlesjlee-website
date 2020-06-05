@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  <title>Chopsticks in Prolog &middot; Charles Lee</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://charlesjlee.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/mathjax.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/lightbox.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/gridside-main.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../origami/"><i class='fa fas fa-map'></i>Origami</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/charlesleeonline" rel="me" target="_blank">&nbsp;<i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/charlesjlee" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div class="pure-menu">
+	<ul class="pure-menu-list">
+	  <div class="small-print">
+	    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+	    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+	  </div>
+	</ul>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Chopsticks in Prolog</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>June 05, 2020</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/prolog">Prolog</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <h2 id="the-game">The Game</h2>
+<p>Chopsticks is a simple game of many variations played by children and college students. The variation I play is:</p>
+<ol>
+<li>two players start by each sticking both index fingers out to represent a count of one on each hand</li>
+<li>players alternate turns until someone loses by having a count of zero on both hands</li>
+<li>on a player&rsquo;s turn, he must either:
+<ol>
+<li>use one of his hands with positive count $H1$ to tap one of the other player&rsquo;s hands $H2$. The other player updates the count on $H2$ to $(H1+H2) \bmod 5$ by changing the number of fingers sticking out</li>
+<li>redistribute aka &ldquo;split&rdquo; his fingers in one of two ways: $(4,0)&ndash;&gt;(2,2)$ or $(2,0)&ndash;&gt;(1,1)$</li>
+</ol>
+</li>
+</ol>
+<p>For example, we can visualize the first turn of the game like so:</p>
+<ul>
+<li>each cell is a player&rsquo;s hand</li>
+<li>* designates whose turn it is</li>
+<li>LL means top player used his left hand (wrt us, so actually his right hand) to tap bottom player&rsquo;s left hand</li>
+</ul>
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200605-prolog-chopsticks-first-move.svg" data-lightbox="gallery" data-title="First move of the game">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200605-prolog-chopsticks-first-move.svg"
+        alt="First move of the game">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+
+<p>Like many games, Chopsticks is well-suited to being modeled in Prolog. I was particularly interested in determining whether the first or second player has a forced win. Unfortunately, for the variation given above, there is no forced win for either player. Let&rsquo;s see how I modeled this in Prolog (<a href="https://github.com/charlesjlee/prolog/blob/master/chopsticks.pl">source code</a>, <a href="https://swish.swi-prolog.org/p/Chopsticks.swinb">run online</a>).</p>
+<p>My original vision was to test <em>all</em> possible variations to find rulesets (there is at least <a href="https://kipkis.com/Always_Win_Chopsticks">one</a>) with forced wins. I actually got as far as implementing all the variations with configurable toggles everywhere, but the code was horribly bug-infested and I threw it in the garbage. I might return to this one day when I&rsquo;m better at Prolog. In the meantime, this simple, straightforward code will have to suffice.</p>
+<h2 id="the-program">The Program</h2>
+<p>We first define helper predicate <code>tap/3</code> that calculates new finger counts and some facts about valid <code>split</code> and <code>lost</code> states.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-prolog" data-lang="prolog"><span style="color:#a6e22e">tap</span>(From, To, ToNew) :-
+	From <span style="color:#e6db74">\=</span> <span style="color:#ae81ff">0</span>,
+	Total <span style="color:#f92672">is</span> From <span style="color:#f92672">+</span> To,
+	ToNew <span style="color:#f92672">is</span> <span style="color:#f92672">mod</span>(Total, <span style="color:#ae81ff">5</span>).
+
+<span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>).
+<span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>).
+<span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>).
+<span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>).
+
+<span style="color:#a6e22e">lost</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>).
+</code></pre></div><p>There are five possible moves (LL, RR, LR, RL, split) on a player&rsquo;s turn. <code>get_next/3</code> is comprised of a rule for each move for each player for a total of ten rules.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-prolog" data-lang="prolog"><span style="color:#75715e">% get_next(hand(TopLeft,TopRight,BottomLeft,BottomRight,Turn), Next, Seen)</span>
+<span style="color:#75715e">% calculates the Next unSeen state given it is Turn&#39;s move</span>
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BL,TL,TL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL_New,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BR,TR,TR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR_New,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BL,TR,TR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR_New,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BR,TL,TL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL_New,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TL,BL,BL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL_New,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TR,BR,BR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL,BR_New,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TR,BL,BL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL_New,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TL,BR,BR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL,BR_New,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">split</span>(BL,BR,S), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,S,S,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">split</span>(TL,TR,S), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(S,S,BL,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</code></pre></div><p>The final and most interesting predicate <code>forced_win/2</code> has two base cases and one recursive case. I was proud of myself 😂 for figuring out the recursive case and feel that it nicely captures the expressive power of Prolog.</p>
+<p>The <code>\+</code> operator can be read as &ldquo;not&rdquo;. The <code>!</code> operator is a &ldquo;cut&rdquo;, which means &ldquo;don&rsquo;t try to re-satisfy any of the previous clauses&rdquo;. We use this because we are interested in only the first forced win.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-prolog" data-lang="prolog"><span style="color:#75715e">% current player already won</span>
+<span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,<span style="color:#66d9ef">_</span>,<span style="color:#66d9ef">_</span>,<span style="color:#e6db74">bottom</span>), <span style="color:#66d9ef">_</span>) :- <span style="color:#a6e22e">lost</span>(TL, TR), !.
+<span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#66d9ef">_</span>,<span style="color:#66d9ef">_</span>,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#66d9ef">_</span>) :- <span style="color:#a6e22e">lost</span>(BL, BR), !.
+
+<span style="color:#75715e">% current player can win in a single move</span>
+<span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Seen) :-
+	<span style="color:#e6db74">\+</span> <span style="color:#a6e22e">lost</span>(BL, BR),
+	<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#a6e22e">hand</span>(TL_2,TR_2,BL,BR,<span style="color:#e6db74">top</span>), Seen),
+	<span style="color:#a6e22e">lost</span>(TL_2, TR_2),
+	!.
+<span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Seen) :-
+	<span style="color:#e6db74">\+</span> <span style="color:#a6e22e">lost</span>(TL, TR),
+	<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#a6e22e">hand</span>(TL,TR,BL_2,BR_2,<span style="color:#e6db74">bottom</span>), Seen),
+	<span style="color:#a6e22e">lost</span>(BL_2, BR_2),
+	!.
+
+<span style="color:#75715e">% current player has a branch that always ends in a win</span>
+<span style="color:#a6e22e">forced_win</span>(H1, Seen) :-
+	<span style="color:#75715e">% can the current player choose a move...</span>
+	<span style="color:#a6e22e">get_next</span>(H1, H2, Seen),
+	<span style="color:#a6e22e">append</span>(Seen, H1, NewSeen),
+
+	<span style="color:#75715e">% s.t. all of the opponent&#39;s possible moves result in a forced win?</span>
+	<span style="color:#a6e22e">setof</span>(H3, <span style="color:#a6e22e">get_next</span>(H2, H3, NewSeen), Hs),
+	<span style="color:#a6e22e">forall</span>(<span style="color:#a6e22e">member</span>(H, Hs), <span style="color:#a6e22e">forced_win</span>(H, NewSeen)),
+	!.
+</code></pre></div><h2 id="the-query">The Query</h2>
+<p>Finally we run our completed program to see if there exist forced wins for the first or second players.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-prolog" data-lang="prolog"><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">top</span>), []).
+<span style="color:#e6db74">false</span>.
+
+<span style="color:#e6db74">?-</span> <span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">bottom</span>), []).
+<span style="color:#e6db74">false</span>.
+</code></pre></div>
+  
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://charlesjlee.com/post/20200517-github-actions/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://charlesjlee.com/post/20200517-github-actions/">Static site deployments with Hugo and GitHub Actions</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://charlesjlee.com/js/ui.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38182774-1', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery-2.1.4.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/materialize.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/imagesloaded.pkgd.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/masonry.pkgd.min.js"></script>
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/lightbox.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery.infinitescroll.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/main.js"></script>
+
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</body>
+</html>
