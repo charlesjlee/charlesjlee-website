@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="story generation through search">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  <title>TALE-SPIN in Prolog &middot; Charles Lee</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://charlesjlee.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/mathjax.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/lightbox.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/gridside-main.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../origami/"><i class='fa fas fa-map'></i>Origami</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/charlesleeonline" rel="me" target="_blank">&nbsp;<i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/charlesjlee" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div class="pure-menu">
+	<ul class="pure-menu-list">
+	  <div class="small-print">
+	    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+	    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+	  </div>
+	</ul>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>TALE-SPIN in Prolog</h1>
+  <h2>story generation through search</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>June 06, 2020</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/prolog">Prolog</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/story-generation">story generation</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <h2 id="tale-spin">TALE-SPIN</h2>
+<p>TALE-SPIN<a href="#references"><sup>1</sup></a> is an AI program developed in 1977 by James R. Meehan. It works by using a knowledge base of actions to solve and modify goals. As actions are performed, they output text that form a story. In the words of the author:</p>
+<blockquote>
+<p>TALE-SPIN is a problem solver, top-down and goal-directed. Its output may be regarded as a trace through problem-solving procedures.</p>
+</blockquote>
+<p>Meehan rejected previous approaches with clean formulations that involved defining &ldquo;one kind&rdquo; of knowledge but sometimes resulted in bizarre stories. He instead defined and incorporated multiple kinds of knowledge to create more natural stories.</p>
+<p>Similarly, the goal-tracking system started as simply a stack of goals, but gradually grew in complexity to account for:</p>
+<ul>
+<li>duplicate goals</li>
+<li>separate goals for each character</li>
+<li>permanent goal states, e.g. self-preservation, in the inference step</li>
+<li>recognizing when a goal
+<ul>
+<li>is superseded</li>
+<li>can be safely abandoned</li>
+<li>should be retired in light of new information</li>
+</ul>
+</li>
+</ul>
+<p>This is a high-level flowchart of TALE-SPIN. There are a few interesting points to note here:</p>
+<ol>
+<li>every story starts with a single <code>sigma-state</code> &ndash; hunger, thirst, rest, sex &ndash; as a goal</li>
+<li>Meehan uses the term &ldquo;planbox&rdquo; to refer to the list of pre-conditions, subgoals (aka actions), post-conditions, and post-actions that must be satisfied to complete a goal. With this in mind, we can see how solving the initial <code>sigma-state</code> goal leads to an explosion of subgoals.</li>
+<li>the inference mechanism is responsible for capturing complex and cascading interactions, e.g. I&rsquo;m hungry and ask Bobby for food. Bobby answers by telling me where to find a beehive. A beehive is not food, but can lead to food by scooping out the honey inside.</li>
+</ol>
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-2">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200606-tale-spin-prolog-flow.svg" data-lightbox="gallery" data-title="TALE-SPIN flowchart">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200606-tale-spin-prolog-flow.svg"
+        alt="TALE-SPIN flowchart">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+
+<p>Meehan defines six types of goals. These goals encapsulate knowledge of the world by having &ldquo;planbox&rdquo; definitions that include other goals, e.g. a pre-condition for stealing is having a certain personality and relationship with the victim.
+
+
+
+<table class="pure-table pure-table-striped">
+  <thead><tr>
+    
+      <th>Name</th>
+    
+      <th>Top-level goal</th>
+    
+      <th>Pre-condition</th>
+    
+      <th>Subgoal</th>
+    
+      <th>Post-condition</th>
+    
+      <th>Post-action</th>
+    
+      <th>Primitives</th>
+    
+      <th>Examples</th>
+    
+  </thead></tr>
+  <tbody>
+  
+    <tr>
+      
+      
+        <td>delta-act</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>n/a</td>
+      
+        <td>DELTA-CONTROL</td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>PERSUADE</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>n/a</td>
+      
+        <td>requesting, proposing, bargaining, threatening</td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>sigma-state</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td></td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>hunger, thirst, rest, sex</td>
+      
+        <td></td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>relationships</td>
+      
+        <td></td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td>✓</td>
+      
+        <td></td>
+      
+        <td>competition, dominance, familiarity, affection, trust, deceit, indebtedness</td>
+      
+        <td></td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>personalities</td>
+      
+        <td></td>
+      
+        <td>✓</td>
+      
+        <td></td>
+      
+        <td>✓</td>
+      
+        <td></td>
+      
+        <td>kindess, vanity, honesty, intelligence</td>
+      
+        <td></td>
+      
+    </tr>
+  
+    <tr>
+      
+      
+        <td>maps</td>
+      
+        <td></td>
+      
+        <td>✓</td>
+      
+        <td></td>
+      
+        <td>✓</td>
+      
+        <td></td>
+      
+        <td></td>
+      
+        <td></td>
+      
+    </tr>
+  
+  </tbody>
+</table></p>
+<h2 id="tale-spin-in-prolog">TALE-SPIN in Prolog</h2>
+<p>Our final project for Advanced Prolog class was to write our own version of the TALE-SPIN story generator. To avoid spending years on this project, I chose to make many simplifications, the major ones being:</p>
+<ol>
+<li>a simple stack of goals</li>
+<li>only one kind of knowledge</li>
+<li>no inference mechanism</li>
+</ol>
+<p>The resulting flowchart looks like this:
+<should always be able to generate a list of actions>
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-2">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20200606-tale-spin-prolog-flow-mine.svg" data-lightbox="gallery" data-title="My TALE-SPIN flowchart">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20200606-tale-spin-prolog-flow-mine.svg"
+        alt="My TALE-SPIN flowchart">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</p>
+<p>I defined a very narrow knowledge base focused on being hungry and trying to make a sandwich. Compared to the original TALE-SPIN, my scope is microscopic (<a href="https://github.com/charlesjlee/prolog/blob/master/talespin.pl">source code</a>, <a href="https://swish.swi-prolog.org/p/talespin.swinb">run online</a>).</p>
+<p>This is a sample run of <code>generate_story(_{name:&quot;John&quot;,gender:male}, Story).</code></p>
+<blockquote>
+<p>One day, John was in the kitchen and he was hungry. He decided to make a BLT sandwich. John took a tomato out of the fridge. John took some bacon out of the fridge. John took some lettuce out of the fridge, but it was moldy and spoiled. John took some lettuce out of the fridge. John took some bread out of the pantry. Then he used the tomato, bacon, lettuce, and bread to make a sandwich. John took a big bite out of his sandwich. Too big. It slipped out of his hand onto the floor. Great. Now he had to start all over. John took a tomato out of the fridge. John took some bacon out of the fridge. John took some lettuce out of the fridge. John took some bread out of the pantry. Then he used the tomato, bacon, lettuce, and bread to make a sandwich. Finally, careful not to drop anything on the floor, John ate his sandwich - the whole, entire thing. With a full belly, John could now get on with the rest of his day. THE END</p>
+</blockquote>
+<h2 id="references">References</h2>
+<ol>
+<li>The original paper is fairly accessible and contains several examples of generated stories. You can find a copy <a href="https://www.cs.utah.edu/nlp/papers/talespin-ijcai77.pdf">here</a>. Unfortunately, the original code is lost forever, but a <a href="https://news.ycombinator.com/item?id=9948653">simplified version is available</a>.</li>
+</ol>
+
+  
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://charlesjlee.com/post/20200605-prolog-chopsticks/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://charlesjlee.com/post/20200605-prolog-chopsticks/">Chopsticks in Prolog</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://charlesjlee.com/js/ui.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38182774-1', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery-2.1.4.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/materialize.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/imagesloaded.pkgd.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/masonry.pkgd.min.js"></script>
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/lightbox.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery.infinitescroll.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/main.js"></script>
+
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</body>
+</html>

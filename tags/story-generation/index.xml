@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Prolog on Charles Lee</title>
-    <link>https://charlesjlee.com/tags/prolog/</link>
-    <description>Recent content in Prolog on Charles Lee</description>
+    <title>story generation on Charles Lee</title>
+    <link>https://charlesjlee.com/tags/story-generation/</link>
+    <description>Recent content in story generation on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://charlesjlee.com/tags/prolog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://charlesjlee.com/tags/story-generation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <description>TALE-SPIN TALE-SPIN1 is an AI program developed in 1977 by James R. Meehan. It works by using a knowledge base of actions to solve and modify goals. As actions are performed, they output text that form a story. In the words of the author:
  TALE-SPIN is a problem solver, top-down and goal-directed. Its output may be regarded as a trace through problem-solving procedures.
  Meehan rejected previous approaches with clean formulations that involved defining &amp;ldquo;one kind&amp;rdquo; of knowledge but sometimes resulted in bizarre stories.</description>
-    </item>
-    
-    <item>
-      <title>Chopsticks in Prolog</title>
-      <link>https://charlesjlee.com/post/20200605-prolog-chopsticks/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/post/20200605-prolog-chopsticks/</guid>
-      <description>The Game Chopsticks is a simple game of many variations played by children and college students. The variation I play is:
- two players start by each sticking both index fingers out to represent a count of one on each hand players alternate turns until someone loses by having a count of zero on both hands on a player&amp;rsquo;s turn, he must either:  use one of his hands with positive count $H1$ to tap one of the other player&amp;rsquo;s hands $H2$.</description>
     </item>
     
   </channel>
