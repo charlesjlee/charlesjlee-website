@@ -1,0 +1,12 @@
+digraph G {
+    node [shape=rect]
+    setup [label = "User initializes settings"]
+    initialize [label = "Initialize goal to a sigma-state"]
+    solve [label = "Solve current goals to produce\nsubgoals and events"]
+    assert [label = "Assert event into \"memory\""]
+    infer [label = "Infer consequences of event"]
+
+    setup -> initialize -> solve -> assert -> infer
+    infer:w -> assert:w [label="  event"]
+    infer:e -> solve:e [label="  goal"]
+}

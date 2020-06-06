@@ -1,0 +1,20 @@
+digraph G {
+    node [shape=rect]
+    initialize [label = "Initialize current_state\nand target_state"]
+    plan [label = "Generate list of actions\ni.e. a plan to reach target_state"]
+    execute [label = "Execute next action in plan"]
+    mutate [label = "Mutate current_state and target_state\nDestroy plan"]
+    end [label = "target_state achieved\nTHE END"]
+
+    node [shape=diamond]
+    plan_more [label = "Are there more\nsteps in the plan?"]
+    event [label = "Was event\ntriggered?"]
+
+    initialize -> plan
+    plan -> execute -> event
+    event -> mutate [label="Yes"]
+    mutate -> plan:e
+    event -> plan_more:ne [label="  No"]
+    plan_more:nw -> execute [xlabel="Yes "]
+    plan_more -> end [label="  No"]
+}
