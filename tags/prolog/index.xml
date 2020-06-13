@@ -6,10 +6,20 @@
     <description>Recent content in Prolog on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://charlesjlee.com/tags/prolog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Experience Learning Prolog</title>
+      <link>https://charlesjlee.com/post/20200613-learning-prolog/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20200613-learning-prolog/</guid>
+      <description>I first heard about the Prolog programming language in the book Seven Languages in Seven Weeks. The book, as promised, introduces the reader to the syntax and paradigms of seven different languages. What attracted me to Prolog was its similarity to constraint programming (programs are defined by and solved using their constraints), its similarity to SQL (data-focused and declarative), and its recursive nature.
+Normally, I would learn a new language by playing with it, but Prolog was too foreign and intimidating, so I looked for a more structured learning approach.</description>
+    </item>
     
     <item>
       <title>TALE-SPIN in Prolog</title>
