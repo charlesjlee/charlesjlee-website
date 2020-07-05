@@ -5,7 +5,7 @@ author = "Charles Lee"
 theme = "blackburn"
 RelativeURLs = true
 CanonifyURLs = true
-paginate = 10
+paginate = 1000
 
 # force Goldmark to render raw HTML, e.g. <sup>
 [markup]
