@@ -3,22 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://charlesjlee.com/tags/origami/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/post/20200705-ousa-unconvention/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/post/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/tags/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://charlesjlee.com/post/20200613-learning-prolog/</loc>
     <lastmod>2020-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://charlesjlee.com/post/</loc>
-    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://charlesjlee.com/tags/prolog/</loc>
-    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://charlesjlee.com/tags/</loc>
     <lastmod>2020-06-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -169,11 +179,6 @@
   
   <url>
     <loc>https://charlesjlee.com/tags/modulars/</loc>
-    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://charlesjlee.com/tags/origami/</loc>
     <lastmod>2017-12-21T00:00:00+00:00</lastmod>
   </url>
   
