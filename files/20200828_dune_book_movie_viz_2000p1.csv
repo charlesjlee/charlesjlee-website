@@ -1,0 +1,40 @@
+Scene,Start,End,Scene
+,00:01:12,00:01:49,opening animation and intro
+,00:01:49,00:02:21,Paul wakes from a dream
+,00:02:21,00:04:07,Paul complains to Jessica about going to Arrakis; Atreides are in space and depart in 10 hours
+1.1,00:04:07,00:07:53,Gaius tests Paul with the gom jabber; Paul leaves
+1.3,00:07:53,00:08:35,Gaius scolds Jessica for bearing a daughter
+1.4,00:08:35,00:09:55,Paul spars with Gurney but “not in the mood”
+1.4,00:09:55,00:12:25,Atreides ship boards the guild ship; Paul chats with Hawat
+,00:12:25,00:14:17,Guild Navigator arrives and folds the ship
+1.2,00:14:17,00:17:20,Piter explains the Baron’s plan to Feyd and Rabban
+,00:17:20,00:19:31,"on Arrakis, the Duke orders Idaho to seek Liet"
+,00:19:31,00:21:52,"Paul, Jessica, Yueh make their way to the house and meet the Duke"
+1.7,00:21:52,00:22:49,Mapes introduces herself and walks Jessica to her room
+1.7+1.10,00:22:49,00:24:33,Jessica visits the plant room with Mapes
+1.7,00:24:33,00:25:34,Jessica ends the waste water squeezing custom
+1.12,00:25:34,00:27:08,Atreides hold a strategy meeting
+irulan,00:27:08,00:28:45,Irulan practices dancing; Emperor sends her to visit the Atreides
+1.6,00:28:45,00:30:22,Paul and Duke talk about why they moved to Arrakis
+,00:30:22,00:32:08,Duke and Jessica talk in bed
+,00:32:08,00:33:25,Idaho and Tuek see signals being sent from the House
+1.8,00:33:25,00:35:09,Jessica talks to Yueh
+1.15,00:35:09,00:43:04,"Kynes meets Duke, Paul and go on spice expedition"
+1.6,00:43:04,00:43:59,Duke talks to Paul about desert power
+,00:43:59,00:46:54,Baron and Rabban discuss plans and watch Feyd battle and kill a slave
+,00:46:54,00:49:46,Paul visits the plant room where Yueh explains dew collectors
+,00:49:46,00:50:27,Hawat explains the term “mahdi” to the Duke
+1.9,00:50:27,00:54:21,Paul awakens from a dream about Chani; destroys a hunter-seeker when Mapes arrives
+1.11,00:54:21,00:55:44,Duke kills the run-away hunter-seeker operator and rages at the assassination attempt
+,00:55:44,00:57:07,Baron rages over Rabban’s unauthorized attempt to kill Paul and advances his timeline to attack the Atreides
+1.14,00:57:07,00:58:34,a tried Duke talks to Paul about ruling Arrakis
+1.16,00:58:34,01:09:33,"Duke has a dinner party, Irulan attends and talks to Paul privately"
+,01:09:33,01:10:40,Paul dreams of crowds chanting Muad’Dib and of his father
+1.12,01:10:40,01:14:00,Idaho returns with Stilgar to meet the Duke; Idaho pledges allegiance to Stilgar and leaves with him
+1.18,01:14:00,01:16:39,Yueh betrays the Duke and gives him the poison tooth
+,01:16:39,01:17:45,battle scene
+1.19,01:17:45,01:19:12,the Baron and Duke tease a bound Jessica
+1.21,01:19:12,01:23:25,Yueh confronts the Baron and is killed; Duke unleashes the poison tooth
+2.1,01:23:25,01:25:29,Paul and Jessica are dropped off in the desert and start walking until picked up by Kynes and Idaho
+2.3,01:25:29,01:27:43,Kynes and Idaho drop Paul and Jessica at a sietch but immediately leave because they were tracked
+2.3,01:27:43,01:29:40,Paul and Jessica fly into a storm to evade pursuers
