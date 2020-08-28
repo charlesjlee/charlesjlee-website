@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data viz on Charles Lee</title>
+    <link>https://charlesjlee.com/tags/data-viz/</link>
+    <description>Recent content in data viz on Charles Lee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://charlesjlee.com/tags/data-viz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dune book vs movies data viz</title>
+      <link>https://charlesjlee.com/post/20200828-dune-book-movie-viz/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20200828-dune-book-movie-viz/</guid>
+      <description>In anticipation of the new movie interpretation of Dune &amp;ndash; &amp;ldquo;Science Fiction&amp;rsquo;s Supreme Masterpiece&amp;rdquo; (says so right on the cover) &amp;ndash; coming out this December, I created a visualization to compare the book to the previous two movies: the 1984 version and Frank Herbert&amp;rsquo;s Dune, a 3-part mini-series broadcast in 2000.
+Dune (1984) review To a fan looking for a fan-movie, 1984 Dune disappoints and feels dumbed-down. Part of the problem is the editing that brought the runtime from four hours down to two by using extensive voice-over narration, casually explaining secrets that characters originally never revealed (e.</description>
+    </item>
+    
+  </channel>
+</rss>
