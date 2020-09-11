@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://charlesjlee.com/post/</loc>
+    <lastmod>2020-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/post/20200911-top-three-favorites/</loc>
+    <lastmod>2020-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://charlesjlee.com/tags/data-viz/</loc>
     <lastmod>2020-08-28T00:00:00+00:00</lastmod>
   </url>
@@ -14,11 +24,6 @@
   
   <url>
     <loc>https://charlesjlee.com/post/20200828-dune-book-movie-viz/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://charlesjlee.com/post/</loc>
     <lastmod>2020-08-28T00:00:00+00:00</lastmod>
   </url>
   
