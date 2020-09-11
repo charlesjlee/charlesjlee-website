@@ -1,18 +1,16 @@
 +++
-title = "About"
-date = "2016-12-21"
-sidemenu = "true"
+title = "Top three favorites"
 description = ""
+tags = [
+]
+date = "2020-09-11"
+categories = [
+]
 +++
 
-I am a backend developer with [18 hours of experience](/files/20200902_udemy_aws_cert_course_certificate.pdf). Professionally, I've worked with process automation, databases, and blockchain. Here though, I just post whatever.
+When people ask me what my favorite *XYZ* is, I usually just talk about a recent *XYZ* because I don't spend time maintaining a life-long list of top *XYZ* -- comparing my recent experiences with my past. But I should. Not so I can give polished answers to the next person who asks, but because it's interesting and fun to see how my tastes and interests have changed over time.
 
-You can reach me at charleslee592<span style="display:none">foo</span>@gmail.com
-
-<br>
-
-# Top three favorites
-*[why?](../post/20200911-top-three-favorites/)*
+This is a snapshot of my favorites as of today. I'll maintain an up-to-date list on my [About](/about) page.
 
 {{< columns >}}
 ### Book
