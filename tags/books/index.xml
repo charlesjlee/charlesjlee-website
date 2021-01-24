@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>books on Charles Lee</title>
+    <link>https://charlesjlee.com/tags/books/</link>
+    <description>Recent content in books on Charles Lee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://charlesjlee.com/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading Harry Potter</title>
+      <link>https://charlesjlee.com/post/20210124-harry-potter/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20210124-harry-potter/</guid>
+      <description>warning: plot spoilers below
+I finally read the Harry Potter (HP) book series, which was very popular 15 years ago when I was teenager. The seven books went on to spawn an eight-part movie adaptation, video games, a prequel film series, a play, and theme parks. As a teenager, I avoided the books because they were popular and I was too cool for popular. It&amp;rsquo;s taken me some time, but I&amp;rsquo;m now mature enough for HP.</description>
+    </item>
+    
+  </channel>
+</rss>
