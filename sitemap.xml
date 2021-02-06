@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://charlesjlee.com/tags/deep-learning/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/post/20210205-gpt2-twitter-bot/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/post/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/tags/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/tags/twitter/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://charlesjlee.com/tags/books/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url>
@@ -13,17 +38,7 @@
   </url>
   
   <url>
-    <loc>https://charlesjlee.com/post/</loc>
-    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://charlesjlee.com/post/20210124-harry-potter/</loc>
-    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://charlesjlee.com/tags/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url>
   
