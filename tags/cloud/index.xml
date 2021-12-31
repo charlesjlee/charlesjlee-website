@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloud on Charles Lee</title>
+    <link>https://charlesjlee.com/tags/cloud/</link>
+    <description>Recent content in cloud on Charles Lee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://charlesjlee.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cloud gaming provider review</title>
+      <link>https://charlesjlee.com/post/20211231-cloud-gaming-review/</link>
+      <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20211231-cloud-gaming-review/</guid>
+      <description>I first heard about gaming-as-a-service aka cloud gaming (not to be confused with games as a service aka GaaS) back in Wired magazine many years ago. The idea was new at the time and Wired talked about how the user experience was laggy and poor so I didn&amp;rsquo;t give it much thought. Fast forward to today and lots of the screenshots I see in game reviews look incredible. I&amp;rsquo;m curious to see for myself what the latest games look like at max settings, but like most people, I don&amp;rsquo;t have a computer that can play modern games nevermind play them at max settings.</description>
+    </item>
+    
+  </channel>
+</rss>
