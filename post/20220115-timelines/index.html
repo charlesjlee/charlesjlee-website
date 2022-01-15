@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  <title>d3-milestones timeline library &middot; Charles Lee</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://charlesjlee.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/mathjax.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/lightbox.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/gridside-main.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../origami/"><i class='fa fas fa-map'></i>Origami</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/charlesleeonline" rel="me" target="_blank">&nbsp;<i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/charlesjlee" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div class="pure-menu">
+	<ul class="pure-menu-list">
+	  <div class="small-print">
+	    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+	    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+	  </div>
+	</ul>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>d3-milestones timeline library</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>January 15, 2022</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/data-visualization">data visualization</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/timeline">timeline</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/wikidata">Wikidata</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/d3">d3</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>While working on a d3 timeline for another post, I came across a beautiful timeline library, <a href="https://github.com/walterra/d3-milestones">d3-milestones</a>, and knew that I wanted to use it. I’ve also wanted to play with <a href="https://en.wikipedia.org/wiki/Wikidata">WikiData</a> for a long time, so I combined these two interests by grabbing data from Wikidata and visualizing it using <a href="https://github.com/walterra/d3-milestones">d3-milestones</a>. There&rsquo;s another chart that I want to try out later in this post, so this first example will be straightforward: Stephen King novels by publication date.</p>
+<p>After scrolling through <a href="https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial">this tutorial</a>, I was able to modify <a href="https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Books_by_a_given_Author_including_genres_and_year_of_first_publication">this sample query</a> to get what I wanted:</p>
+<pre><code>SELECT DISTINCT
+  ?book
+  ?bookLabel
+  ?authorLabel
+  (GROUP_CONCAT(?genre_label; SEPARATOR = &quot;, &quot;) AS ?genres)
+  (MIN(?publicationDate) AS ?firstPublication)
+WHERE {
+  ?author rdfs:label &quot;Stephen King&quot;@en.
+  ?book wdt:P50 ?author.
+  OPTIONAL {
+    ?book wdt:P136 ?genre.
+    ?genre rdfs:label ?genre_label.
+    FILTER((LANG(?genre_label)) = &quot;en&quot;)
+  }
+  ?book wdt:P7937 wd:Q8261;
+    wdt:P577 ?publicationDate.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language &quot;en&quot;. }
+}
+GROUP BY ?book ?bookLabel ?authorLabel
+ORDER BY ?firstPublication
+</code></pre><p><a href="https://query.wikidata.org/#SELECT%20DISTINCT%0A%20%20%3Fbook%0A%20%20%3FbookLabel%0A%20%20%3FauthorLabel%0A%20%20%28GROUP_CONCAT%28%3Fgenre_label%3B%20SEPARATOR%20%3D%20%22%2C%20%22%29%20AS%20%3Fgenres%29%0A%20%20%28MIN%28%3FpublicationDate%29%20AS%20%3FfirstPublication%29%0AWHERE%20%7B%0A%20%20%3Fauthor%20rdfs%3Alabel%20%22Stephen%20King%22%40en.%0A%20%20%3Fbook%20wdt%3AP50%20%3Fauthor.%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fbook%20wdt%3AP136%20%3Fgenre.%0A%20%20%20%20%3Fgenre%20rdfs%3Alabel%20%3Fgenre_label.%0A%20%20%20%20FILTER%28%28LANG%28%3Fgenre_label%29%29%20%3D%20%22en%22%29%0A%20%20%7D%0A%20%20%3Fbook%20wdt%3AP7937%20wd%3AQ8261%3B%0A%20%20%20%20wdt%3AP577%20%3FpublicationDate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3Fbook%20%3FbookLabel%20%3FauthorLabel%0AORDER%20BY%20%3FfirstPublication">(interactive link)</a></p>
+<p>Cross-referencing the Wikidata query results with <a href="https://en.wikipedia.org/wiki/Stephen_King_bibliography#Novels">Stephen King&rsquo;s novels bibliography on Wikipedia</a>, I see several errors on the Wikidata side:</p>
+<ol>
+<li>includes six additional entries for novellas</li>
+<li>includes a short story collection (mis-categorization)</li>
+<li>includes a duplicate Spanish title for an existing novel</li>
+<li>is missing five novels that Wikipedia has</li>
+<li>is missing three novels by Richard Bachman, King&rsquo;s pen name</li>
+<li>has different publication dates for two novels</li>
+</ol>
+<p>Most of these data issues can be addressed by modifying the query, but I&rsquo;m lazy so we&rsquo;ll move on. Exporting, transforming, and feeding this data to <a href="https://github.com/walterra/d3-milestones">d3-milestones</a> gives this nice chart:</p>
+<p>
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20220115-timelines-stephen-king-timeline.png" data-lightbox="gallery" data-title="Stephen King novels published timeline">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20220115-timelines-stephen-king-timeline.png"
+        alt="Stephen King novels published timeline">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+
+(raw version <a href="../../img/20220115-timelines-stephen-king-timeline.png">here</a>)</p>
+<p>I also learned that Wikidata offers <em>nice</em> built-in and interactive visualizations. The view in the iframe below starts off narrow, but you can CTRL+SCROLL to zoom-in.</p>
+<iframe style="width: 100%; height: 70vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20DISTINCT%0A%20%20%3Fbook%0A%20%20%3FbookLabel%0A%20%20%3FauthorLabel%0A%20%20%28GROUP_CONCAT%28%3Fgenre_label%3B%20SEPARATOR%20%3D%20%22%2C%20%22%29%20AS%20%3Fgenres%29%0A%20%20%28MIN%28%3FpublicationDate%29%20AS%20%3FfirstPublication%29%0AWHERE%20%7B%0A%20%20%3Fauthor%20rdfs%3Alabel%20%22Stephen%20King%22%40en.%0A%20%20%3Fbook%20wdt%3AP50%20%3Fauthor.%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fbook%20wdt%3AP136%20%3Fgenre.%0A%20%20%20%20%3Fgenre%20rdfs%3Alabel%20%3Fgenre_label.%0A%20%20%20%20FILTER%28%28LANG%28%3Fgenre_label%29%29%20%3D%20%22en%22%29%0A%20%20%7D%0A%20%20%3Fbook%20wdt%3AP7937%20wd%3AQ8261%3B%0A%20%20%20%20wdt%3AP577%20%3FpublicationDate.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%0A%7D%0AGROUP%20BY%20%3Fbook%20%3FbookLabel%20%3FauthorLabel%0AORDER%20BY%20%3FfirstPublication" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<hr>
+<p>Last year, <a href="https://charlesjlee.com/post/20200707-sandworm-timeline/">I manually created a timeline for the events in the book <em>Sandworm</em></a> by dragging and dropping in LibreOffice Draw. I was enamoured with the timeline style in the Economist and wanted to replicate it:</p>
+<ul>
+<li>first year is four digits and subsequent year are two digits</li>
+<li>color-coded events</li>
+<li>utilizing both sides of the timeline, i.e. top tracks events and bottom tracks milestones</li>
+<li>bending the event stems to create rectangular nooks for long text</li>
+</ul>
+<p>This is what the final product looked like:
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20220115-timelines-sandworm-timeline.svg" data-lightbox="gallery" data-title="Sandworm timeline">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20220115-timelines-sandworm-timeline.svg"
+        alt="Sandworm timeline">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+
+(raw version <a href="../../img/20220115-timelines-sandworm-timeline.svg">here</a>)</p>
+<p>And this is what the same data looks like using <a href="https://github.com/walterra/d3-milestones">d3-milestones</a>:
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <a href="../../img/20220115-timelines-sandworm-timeline-d3-milestones.png" data-lightbox="gallery" data-title="Sandworm timeline (d3-milestones)">
+      <img
+        class="pure-img-responsive rounded-corners z-depth-1"
+        src="../../img/20220115-timelines-sandworm-timeline-d3-milestones.png"
+        alt="Sandworm timeline (d3-milestones)">
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+
+(raw version <a href="../../img/20220115-timelines-sandworm-timeline-d3-milestones.png">here</a>)</p>
+<p><em>ouch</em>. Not too good. I should have suspected that all the text on the right side would get squished because <a href="https://github.com/walterra/d3-milestones">d3-milestones</a> doesn&rsquo;t support elbow bends. 🤷</p>
+
+  
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://charlesjlee.com/post/20211231-cloud-gaming-review/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://charlesjlee.com/post/20211231-cloud-gaming-review/">Cloud gaming provider review</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://charlesjlee.com/js/ui.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38182774-1', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery-2.1.4.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/materialize.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/imagesloaded.pkgd.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/masonry.pkgd.min.js"></script>
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/lightbox.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery.infinitescroll.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/main.js"></script>
+
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</body>
+</html>

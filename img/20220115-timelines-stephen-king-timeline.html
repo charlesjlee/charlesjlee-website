@@ -1,0 +1,320 @@
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+    .mapping({
+      'timestamp': 'firstPublication',
+      'text': 'bookLabel',
+      // 'category': 'genres'
+      // 'entries': 'genres'
+    })
+    .optimize(true)
+    // .orientation('vertical')
+    .parseTime('%Y-%m-%d')
+    .aggregateBy('year')
+    .render([
+        {
+            "bookLabel":"Carrie",
+            "genres":"thriller, epistolary novel, horror fiction",
+            "firstPublication":"1974-04-05"
+        },
+        {
+            "bookLabel":"'Salem's Lot",
+            "genres":"vampire literature, horror fiction, gothic fiction",
+            "firstPublication":"1975-10-17"
+        },
+        {
+            "bookLabel":"The Shining",
+            "genres":"thriller, thriller, psychological horror, psychological horror, horror fiction, horror fiction, gothic fiction, gothic fiction",
+            "firstPublication":"1977-01-01"
+        },
+        {
+            "bookLabel":"The Stand",
+            "genres":"science fiction, fantasy, post-apocalyptic fiction, dystopian fiction, horror fiction",
+            "firstPublication":"1978-09-01"
+        },
+        {
+            "bookLabel":"The Long Walk",
+            "genres":"science fiction, dystopian fiction, horror fiction, psychological fiction",
+            "firstPublication":"1979-07-01"
+        },
+        {
+            "bookLabel":"The Dead Zone",
+            "genres":"thriller, horror fiction",
+            "firstPublication":"1979-08-01"
+        },
+        {
+            "bookLabel":"The Mist",
+            "genres":"science fiction, horror fiction",
+            "firstPublication":"1980-01-01"
+        },
+        {
+            "bookLabel":"Firestarter",
+            "genres":"science fiction, thriller, horror fiction",
+            "firstPublication":"1980-09-29"
+        },
+        {
+            "bookLabel":"Roadwork",
+            "genres":"",
+            "firstPublication":"1981-01-01"
+        },
+        {
+            "bookLabel":"Cujo",
+            "genres":"science fiction, thriller, horror fiction",
+            "firstPublication":"1981-09-08"
+        },
+        {
+            "bookLabel":"The Running Man",
+            "genres":"science fiction, dystopian fiction",
+            "firstPublication":"1982-05-01"
+        },
+        {
+            "bookLabel":"The Dark Tower: The Gunslinger",
+            "genres":"fantasy, horror fiction",
+            "firstPublication":"1982-06-10"
+        },
+        {
+            "bookLabel":"Christine",
+            "genres":"horror fiction",
+            "firstPublication":"1983-04-29"
+        },
+        {
+            "bookLabel":"The Eyes of the Dragon",
+            "genres":"fantasy",
+            "firstPublication":"1984-01-01"
+        },
+        {
+            "bookLabel":"The Talisman",
+            "genres":"horror fiction, fantasy novel",
+            "firstPublication":"1984-11-08"
+        },
+        {
+            "bookLabel":"The Dark Tower II: The Drawing of the Three",
+            "genres":"fantasy novel, horror novel",
+            "firstPublication":"1987-05-01"
+        },
+        {
+            "bookLabel":"Misery",
+            "genres":"suspense, psychological thriller, horror fiction",
+            "firstPublication":"1987-06-08"
+        },
+        {
+            "bookLabel":"The Tommyknockers",
+            "genres":"science fiction, horror fiction",
+            "firstPublication":"1987-11-10"
+        },
+        {
+            "bookLabel":"It",
+            "genres":"horror fiction",
+            "firstPublication":"1988-09-15"
+        },
+        {
+            "bookLabel":"The Dark Half",
+            "genres":"horror fiction",
+            "firstPublication":"1989-10-20"
+        },
+        {
+            "bookLabel":"The Dark Tower III: The Waste Lands",
+            "genres":"science fiction, horror fiction, fantasy",
+            "firstPublication":"1991-08-01"
+        },
+        {
+            "bookLabel":"Needful Things",
+            "genres":"crime fiction, horror fiction",
+            "firstPublication":"1991-10-01"
+        },
+        {
+            "bookLabel":"Gerald's Game",
+            "genres":"drama, thriller, horror fiction",
+            "firstPublication":"1992-05-01"
+        },
+        {
+            "bookLabel":"Dolores Claiborne",
+            "genres":"thriller, horror fiction",
+            "firstPublication":"1992-11-01"
+        },
+        {
+            "bookLabel":"Insomnia",
+            "genres":"horror fiction",
+            "firstPublication":"1994-09-15"
+        },
+        {
+            "bookLabel":"Rose Madder",
+            "genres":"suspense, fantasy, horror fiction",
+            "firstPublication":"1995-06-01"
+        },
+        {
+            "bookLabel":"Desperation",
+            "genres":"horror fiction",
+            "firstPublication":"1996-09-24"
+        },
+        {
+            "bookLabel":"The Dark Tower IV: Wizard and Glass",
+            "genres":"science fiction, fantasy, horror fiction",
+            "firstPublication":"1997-11-04"
+        },
+        {
+            "bookLabel":"Bag of Bones",
+            "genres":"horror fiction",
+            "firstPublication":"1998-01-01"
+        },
+        {
+            "bookLabel":"The Girl Who Loved Tom Gordon",
+            "genres":"horror fiction",
+            "firstPublication":"1999-04-06"
+        },
+        {
+            "bookLabel":"Dreamcatcher",
+            "genres":"science fiction, horror fiction",
+            "firstPublication":"2001-03-20"
+        },
+        {
+            "bookLabel":"From a Buick 8",
+            "genres":"science fiction, fantasy, horror fiction",
+            "firstPublication":"2002-09-24"
+        },
+        {
+            "bookLabel":"The Dark Tower V: Wolves of the Calla",
+            "genres":"science fiction, fantasy, horror fiction",
+            "firstPublication":"2003-11-04"
+        },
+        {
+            "bookLabel":"The Dark Tower VI: Song of Susannah",
+            "genres":"science fiction, fantasy, science fantasy, horror fiction",
+            "firstPublication":"2004-06-08"
+        },
+        {
+            "bookLabel":"The Dark Tower VII: The Dark Tower",
+            "genres":"science fiction, fantasy, horror fiction",
+            "firstPublication":"2004-09-21"
+        },
+        {
+            "bookLabel":"The Colorado Kid",
+            "genres":"crime fiction, mystery fiction",
+            "firstPublication":"2005-10-04"
+        },
+        {
+            "bookLabel":"Cell",
+            "genres":"science fiction, post-apocalyptic fiction, dystopian fiction, horror fiction",
+            "firstPublication":"2006-01-24"
+        },
+        {
+            "bookLabel":"Lisey's Story",
+            "genres":"fantasy, horror fiction, gothic fiction",
+            "firstPublication":"2006-10-24"
+        },
+        {
+            "bookLabel":"Pet Sematary",
+            "genres":"horror fiction",
+            "firstPublication":"2007-11-14"
+        },
+        {
+            "bookLabel":"Duma Key",
+            "genres":"psychological horror, horror fiction",
+            "firstPublication":"2008-01-22"
+        },
+        {
+            "bookLabel":"Under the Dome",
+            "genres":"post-apocalyptic fiction, horror fiction, political novel",
+            "firstPublication":"2009-11-10"
+        },
+        {
+            "bookLabel":"Full Dark, No Stars",
+            "genres":"thriller, horror literature",
+            "firstPublication":"2010-01-01"
+        },
+        {
+            "bookLabel":"1922",
+            "genres":"horror fiction",
+            "firstPublication":"2010-03-01"
+        },
+        {
+            "bookLabel":"Mile 81",
+            "genres":"horror fiction",
+            "firstPublication":"2011-09-01"
+        },
+        {
+            "bookLabel":"11/22/63",
+            "genres":"alternate history, dystopian fiction, time-travel fiction",
+            "firstPublication":"2011-11-08"
+        },
+        {
+            "bookLabel":"The Dark Tower: The Wind Through the Keyhole",
+            "genres":"science fiction, fantasy, Western novel, horror fiction",
+            "firstPublication":"2012-02-01"
+        },
+        {
+            "bookLabel":"Fair Extension",
+            "genres":"horror fiction",
+            "firstPublication":"2012-03-01"
+        },
+        {
+            "bookLabel":"Joyland",
+            "genres":"crime fiction, mystery fiction",
+            "firstPublication":"2013-06-04"
+        },
+        {
+            "bookLabel":"Doctor Sleep",
+            "genres":"horror fiction",
+            "firstPublication":"2013-09-24"
+        },
+        {
+            "bookLabel":"A Face in the Crowd",
+            "genres":"horror fiction",
+            "firstPublication":"2014-03-17"
+        },
+        {
+            "bookLabel":"Mr. Mercedes",
+            "genres":"crime fiction",
+            "firstPublication":"2014-06-03"
+        },
+        {
+            "bookLabel":"Revival",
+            "genres":"horror fiction",
+            "firstPublication":"2014-11-11"
+        },
+        {
+            "bookLabel":"Finders Keepers",
+            "genres":"crime fiction",
+            "firstPublication":"2015-01-01"
+        },
+        {
+            "bookLabel":"End of Watch",
+            "genres":"crime fiction",
+            "firstPublication":"2016-01-01"
+        },
+        {
+            "bookLabel":"Gwendy's Button Box",
+            "genres":"",
+            "firstPublication":"2017-05-16"
+        },
+        {
+            "bookLabel":"Sleeping Beauties",
+            "genres":"science fiction, horror fiction",
+            "firstPublication":"2017-09-26"
+        },
+        {
+            "bookLabel":"El pajas",
+            "genres":"crime fiction, horror fiction",
+            "firstPublication":"2018-05-22"
+        },
+        {
+            "bookLabel":"The Institute",
+            "genres":"science fiction, horror fiction",
+            "firstPublication":"2019-09-10"
+        },
+        {
+            "bookLabel":"Later",
+            "genres":"crime fiction",
+            "firstPublication":"2021-03-02"
+        },
+        {
+            "bookLabel":"Billy Summers",
+            "genres":"crime fiction",
+            "firstPublication":"2021-08-03"
+        }
+]);
+</script>
