@@ -1,0 +1,173 @@
+<!-- Note: I didn't save my original data so I just eye-balled the dates in the original timeline. -->
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline" style="margin-top:1185px; height:20px;"></div>
+
+<script>
+  milestones('#timeline')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'event',
+      // 'category': 'category'
+      // 'entries': 'genres'
+    })
+    .optimize(true)
+    .distribution('top')
+    // .orientation('vertical')
+    // .useLabels(false)
+    .parseTime('%B %Y')
+    .aggregateBy('month')
+    .labelFormat('%Y')
+    .render([
+        {
+            "category": "top",
+            "date": "February 2007",
+            "event": "Dmytro Oleksiuk aka Cr4sh sells <b>BlackEnergy</b>, a DDoS botnet tool, on Russian-language hacker forums for $40"
+        },
+        {
+            "category": "top",
+            "date": "April 2007",
+            "event": "Idaho National Laboratory’s **Project Aurora** demonstrates that it is possible to destroy a diesel generator by sending malicious code to the protective relay"
+        },
+        {
+            "category": "bot",
+            "date": "May 2007",
+            "event": "Estonia is hit with a month-long wave of DDoS attacks that take down most domestic websites"
+        },
+        {
+            "date": "August 2008",
+            "event": "As a prelude to and in coordination with physical attacks, Russia hits **Georgia** with four days of DDoS attacks controlled using **BlackEnergy**"
+        },
+        {
+            "date": "May 2009",
+            "event": "NSA’s **Stuxnet** malware accelerates Iran’s nuclear enrichment centrifuges until they destroy themselves"
+        },
+        {
+            "date": "April 2011",
+            "event": "Benjamin Delpy releases **Mimikatz**, a program that uses Windows’ WDigest feature to pull and decrypt credentials from memory"
+        },
+        {
+            "date": "March 2012",
+            "event": "Delpy posts source code for **Mimikatz** on GitHub and it becomes a universal tool in the hacker toolkit"
+        },
+        {
+            "date": "March 2014",
+            "event": "**CyberBerkut** disrupts **Ukraine**’s elections"
+        },
+        {
+            "date": "August 2014",
+            "event": "iSight Partners discovers a 5+ year espionage campaign by a Russian group they name **Sandworm**, which used a variant of **BlackEnergy** to target NATO and **Ukraine**"
+        },
+        {
+            "date": "September 2014",
+            "event": "ICS-CERT reports that **Sandworm** had penetrated and performed reconnaissance against critical infrastructure targets in Ukraine, Poland, and the USA"
+        },
+        {
+            "date": "October 2015",
+            "event": "**Sandworm** brings down systems at media companies, the country’s largest railway company, and Kiev’s main airport in **Ukraine** using all-purpose **BlackEnergy** for access and reconnaissance, **Mimikatz** for further access, and **KillDisk** for data destruction "
+        },
+        {
+            "date": "December 2015",
+            "event": "Sandworm takes down power grid in western Ukraine for six hours again using BlackEnergy, Mimikatz, and KillDisk"
+        },
+        {
+            "date": "May 2016",
+            "event": "**Cozy Bear** and **Fancy Bear** penetrate the US Democratic National Committee and leak stolen documents to disrupt US elections and shift attention away from the blackout attacks in Ukraine"
+        },
+        {
+            "date": "August 2016",
+            "event": "**Shadow Brokers** breach NSA’s Equation Group and release stolen hacking tools, some of which exploit zero-days, to embarrass the NSA and put a mirror up to American accusations of reckless hacking"
+        },
+        {
+            "date": "September 2016",
+            "event": "**Shadow Brokers** release IP addresses of NSA staging servers"
+        },
+        {
+            "date": "November 2016",
+            "event": "**Ukraine** receives even broader wave of attacks, probably rooted in **BlackEnergy** footholds secured the previous year then expanded using **Mimikatz**"
+        },
+        {
+            "date": "December 2016",
+            "event": "**Ukraine** attacks culminate in a one hour blackout achieved using ddl’s dubbed **Industroyer** or **Crash Override**"
+        },
+        {
+            "date": "March 2017",
+            "event": "**Shadow Brokers** release 20+ of the NSA’s hacking tools, including **EternalBlue**, which exploits a zero-day in practically every version of Windows prior to Windows 8"
+        },
+        {
+            "date": "May 2017",
+            "event": "**WannaCry** ransomware, attributed to North Korean hacker group **Lazarus**, spreads globally using **EternalBlue** until accidentally deactivated"
+        },
+        {
+            "date": "June 2017",
+            "event": "**NotPetya**, a direct descendant of the **KillDisk** attacks starting 2015 but combined with **EternalBlue**, starts spreading in **Ukraine** and is soon worldwide"
+        },
+        {
+            "date": "October 2017",
+            "event": "**Bad Rabbit** malware attack primarily hits Russian websites, which is speculated to be a smoke screen, and some targeted infrastructure in Ukraine"
+        },
+        {
+            "date": "January 2018",
+            "event": "**Olympic Destroyer** malware destroys Olympic’s staff’s domain controllers"
+        },
+        {
+            "date": "February 2018",
+            "event": "White House releases statement tying NotPetya to **Russia**, condemning the attack, acknowledging Russia’s cyberwar in **Ukraine**, and promising consequences"
+        },
+        {
+            "date": "March 2018",
+            "event": "US Treasury announces **new sanctions** against nineteen people and five organizations in Russia"
+        },
+        {
+            "date": "July 2018",
+            "event": "US DOJ indicts twelve GRU hackers for interfering in the 2016 US elections: nine from unit 26165 (suspected to be **Fancy Bear**) and three from unit 74455 (suspected to be **Sandworm**)"
+        }
+]);
+</script>
+
+<div id="timeline2"></div>
+
+<script>
+  milestones('#timeline2')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'event',
+      // 'category': 'category'
+      // 'entries': 'genres'
+    })
+    .optimize(true)
+    .distribution('bottom')
+    // .orientation('vertical')
+    // .useLabels(false)
+    .parseTime('%B %Y')
+    .aggregateBy('month')
+    .labelFormat('%Y')
+    .render([
+        {
+            "date": "May 2007",
+            "event": "First cyberwar"
+        },
+        {
+            "date": "August 2008",
+            "event": "First time a country openly combines hacker disruption with traditional warfare"
+        },
+        {
+            "date": "May 2009",
+            "event": "Crossed line from digital hacking to physical sabotage"
+        },
+        {
+            "date": "December 2015",
+            "event": "First known blackout caused by hackers; crossed line from military to civilian"
+        },
+        {
+            "date": "December 2016",
+            "event": "Second-ever piece of code in the wild to directly attack the physical world"
+        },
+        {
+            "date": "June 2017",
+            "event": "Most damaging malware in history at $10B in damages"
+        }
+]);
+</script>
