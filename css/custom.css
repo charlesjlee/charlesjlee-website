@@ -1,0 +1,14 @@
+blockquote {
+    border-left: 5px solid DarkGrey;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+body {
+    color: Black;
+}
+
+.small-print {
+    color: #777;
+}
