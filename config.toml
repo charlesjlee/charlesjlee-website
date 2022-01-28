@@ -28,6 +28,7 @@ paginate = 1000
     "css/mathjax.css",
     "css/lightbox.css",
     "css/gridside-main.css",
+    "css/custom.css",
   ]
 
 [outputs]
