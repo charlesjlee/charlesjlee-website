@@ -41,28 +41,28 @@ paginate = 1000
     pre = "<i class='fa fa-home fa-fw'></i>"
     weight = 1
     identifier = "home"
-    url = "/"
+    url = ""
 
   [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 2
     identifier = "post"
-    url = "/post/"
+    url = "post/"
 
   [[menu.main]]
     name = "Origami"
     pre = "<i class='fa fas fa-map'></i>"
     weight = 3
     identifier = "origami"
-    url = "/origami/"
+    url = "origami/"
 
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
     weight = 99
     identifier = "about"
-    url = "/about/"
+    url = "about/"
 
 [social]
   github = "charlesjlee"
