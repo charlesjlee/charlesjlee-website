@@ -1,7 +1,33 @@
 {{ partial "header.html" . }}
 
+<script type="text/javascript">
+  var path = '/img/404/';
+  var imgs = [
+    'coin lot.jpg',
+    'colorful abstract.jpg',
+    'graffiti.jpg',
+    'oranges.jpg',
+    'stained glass.jpg',
+    'steel wool.jpg',
+    'water droplets.jpg',
+  ];
+  var i = Math.floor(Math.random()*imgs.length);
+
+  function getImageTag() {
+    return "<img src='" + path + imgs[i] + "'>";
+  }
+</script>
+
 <div class="header">
   <h1>{{ .Title }}</h1>
+
+  <script type="text/javascript">
+    document.write(getImageTag());
+  </script>
+
+  <p><i>
+    created by upscaling <a href="https://knowyourmeme.com/memes/this-is-fine">a widened version</a> of the original <a href="http://gunshowcomic.com/648">This Is Fine</a> comic and feeding it through <a href="https://deepdreamgenerator.com/">Deep Dream Generator</a>
+  </i></p>
 </div>
 
 {{ partial "footer.html" . }}
