@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI safety on Charles Lee</title>
+    <link>https://charlesjlee.com/tags/ai-safety/</link>
+    <description>Recent content in AI safety on Charles Lee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://charlesjlee.com/tags/ai-safety/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conversations with an expert on AI Safety</title>
+      <link>https://charlesjlee.com/post/20220210-interview-ai-safety-expert/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20220210-interview-ai-safety-expert/</guid>
+      <description>edited excerpts from an interview with an expert on AI safety
+Charles: Some of our readers may be unfamiliar with AI safety. Can you start by describing what AI safety is?
+Expert: AI safety is the study and prevention of unintended consequences of artificial intelligence. This includes ensuring that AI is designed in a way that prevents accidents, such as those that could lead to loss of human life or serious damage to the environment.</description>
+    </item>
+    
+  </channel>
+</rss>
