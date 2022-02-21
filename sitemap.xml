@@ -3,22 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://charlesjlee.com/tags/blogging/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/post/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/tags/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://charlesjlee.com/post/20220221-what-to-post/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://charlesjlee.com/tags/ai-safety/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://charlesjlee.com/post/20220210-interview-ai-safety-expert/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://charlesjlee.com/post/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://charlesjlee.com/tags/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
