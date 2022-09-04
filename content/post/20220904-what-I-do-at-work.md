@@ -2,9 +2,10 @@
 title = "What I do at work"
 description = ""
 tags = [
-	"data visualization",
-	"timeline",
+  "data visualization",
+  "timeline",
   "d3",
+  "career",
 ]
 date = "2022-09-04"
 categories = [
@@ -77,7 +78,7 @@ _(hover for links)_
       {
         name: "Amazon",
         times: [{"starting_time": 1598918400000, "ending_time": Date.now()}],
-        // post: "/post/20220901-amazon/",
+        // post: "",
       },
     ];
     var width = '100%';
