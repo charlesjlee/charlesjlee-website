@@ -6,11 +6,7 @@
     <description>Recent content in story generation on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://charlesjlee.com/tags/story-generation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://charlesjlee.com/tags/story-generation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TALE-SPIN in Prolog</title>
       <link>https://charlesjlee.com/post/20200606-tale-spin-prolog/</link>

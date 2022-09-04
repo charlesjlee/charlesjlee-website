@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.93.0" />
 
   <title>d3-milestones timeline library &middot; Charles Lee</title>
 
@@ -259,23 +259,23 @@
 
   <p>While working on a d3 timeline for another post, I came across a beautiful timeline library, <a href="https://github.com/walterra/d3-milestones">d3-milestones</a>, and knew that I wanted to use it. I’ve also wanted to play with <a href="https://en.wikipedia.org/wiki/Wikidata">WikiData</a> for a long time, so I combined these two interests by grabbing data from Wikidata and visualizing it using <a href="https://github.com/walterra/d3-milestones">d3-milestones</a>. There&rsquo;s another chart that I want to try out later in this post, so this first example will be straightforward: Stephen King novels by publication date.</p>
 <p>After scrolling through <a href="https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial">this tutorial</a>, I was able to modify <a href="https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples#Books_by_a_given_Author_including_genres_and_year_of_first_publication">this sample query</a> to get what I wanted:</p>
-<pre><code>SELECT DISTINCT
+<pre tabindex="0"><code>SELECT DISTINCT
   ?book
   ?bookLabel
   ?authorLabel
-  (GROUP_CONCAT(?genre_label; SEPARATOR = &quot;, &quot;) AS ?genres)
+  (GROUP_CONCAT(?genre_label; SEPARATOR = &#34;, &#34;) AS ?genres)
   (MIN(?publicationDate) AS ?firstPublication)
 WHERE {
-  ?author rdfs:label &quot;Stephen King&quot;@en.
+  ?author rdfs:label &#34;Stephen King&#34;@en.
   ?book wdt:P50 ?author.
   OPTIONAL {
     ?book wdt:P136 ?genre.
     ?genre rdfs:label ?genre_label.
-    FILTER((LANG(?genre_label)) = &quot;en&quot;)
+    FILTER((LANG(?genre_label)) = &#34;en&#34;)
   }
   ?book wdt:P7937 wd:Q8261;
     wdt:P577 ?publicationDate.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language &quot;en&quot;. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language &#34;en&#34;. }
 }
 GROUP BY ?book ?bookLabel ?authorLabel
 ORDER BY ?firstPublication
@@ -475,3 +475,5 @@ MathJax.Hub.Config({
 
 </body>
 </html>
+
+

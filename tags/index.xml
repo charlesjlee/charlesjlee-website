@@ -6,10 +6,33 @@
     <description>Recent content in Tags on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://charlesjlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>d3</title>
+      <link>https://charlesjlee.com/tags/d3/</link>
+      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/tags/d3/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://charlesjlee.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>data visualization</title>
+      <link>https://charlesjlee.com/tags/data-visualization/</link>
+      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/tags/data-visualization/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>timeline</title>
+      <link>https://charlesjlee.com/tags/timeline/</link>
+      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/tags/timeline/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blogging</title>
@@ -30,38 +53,11 @@
     </item>
     
     <item>
-      <title>d3</title>
-      <link>https://charlesjlee.com/tags/d3/</link>
-      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/tags/d3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data visualization</title>
-      <link>https://charlesjlee.com/tags/data-visualization/</link>
-      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/tags/data-visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>meditation</title>
       <link>https://charlesjlee.com/tags/meditation/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://charlesjlee.com/tags/meditation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>timeline</title>
-      <link>https://charlesjlee.com/tags/timeline/</link>
-      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/tags/timeline/</guid>
       <description></description>
     </item>
     
@@ -192,15 +188,6 @@
     </item>
     
     <item>
-      <title>GitHub</title>
-      <link>https://charlesjlee.com/tags/github/</link>
-      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://charlesjlee.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>GitHub Actions</title>
       <link>https://charlesjlee.com/tags/github-actions/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
@@ -233,6 +220,15 @@
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://charlesjlee.com/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://charlesjlee.com/tags/github/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/tags/github/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>origami on Charles Lee</title>
+    <link>https://charlesjlee.com/categories/origami/</link>
+    <description>Recent content in origami on Charles Lee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://charlesjlee.com/categories/origami/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Five Variations of Five Intersecting Tetrahedra</title>
+      <link>https://charlesjlee.com/post/20201005-fit-variations/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20201005-fit-variations/</guid>
+      <description>Overview Thomas Hull founded the field of origami wireframes (or polypolyhedra per Robert Lang) when he created the classic Five Intersecting Tetrahedra (FIT) model. FIT is comprised of five tetrahedra (aka triangular pyramids), each constructed using a unit for each of six edges, that share a center-point and all intersect without overlapping. The existence of FIT has inspired many folders to design their own wireframe models, some of which I&amp;rsquo;ve re-created in my gallery.</description>
+    </item>
+    
+    <item>
+      <title>OrigamiUSA Unconvention 2020</title>
+      <link>https://charlesjlee.com/post/20200705-ousa-unconvention/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20200705-ousa-unconvention/</guid>
+      <description>I attended the OrigamiUSA convention this year from June 26-27. The convention is usually held on a college campus, but this year, instead of canceling it, OUSA decide to reduce the number of events and host it on Zoom. I attended an in-person convention a few years and actually preferred this year&amp;rsquo;s online one:
+ I could participate from my sofa instead of commuting 1.5+ hours each way and day I had all my tools and supplies readily available I actually got to attend the classes I wanted.</description>
+    </item>
+    
+    <item>
+      <title>Using the Silhouette Cameo to cut and precrease origami tessellations and modulars</title>
+      <link>https://charlesjlee.com/post/20171221-precrease-modulars-tessellations/</link>
+      <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20171221-precrease-modulars-tessellations/</guid>
+      <description>Opportunity for automation After a 7-year hiatus, I recently started folding origami again and decided to focus on tessellations and modulars. I used to fold mostly representational models, i.e. animals and humans, and wanted to explore some new areas. Luckily for me, origami advanced greatly while I was away and the first good books on tessellations1 and wireframe modulars2 were published by Eric Gjerde and Byriah Loper, respectively. I bought both books, dove straight into making models, and immediately found myself repeating the same steps hundreds of times.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.93.0" />
 
   <title>Chopsticks in Prolog &middot; Charles Lee</title>
 
@@ -295,67 +295,67 @@
 <p>My original vision was to test <em>all</em> possible variations to find rulesets (there is at least <a href="https://kipkis.com/Always_Win_Chopsticks">one</a>) with forced wins. I actually got as far as implementing all the variations with configurable toggles everywhere, but the code was horribly bug-infested and I threw it in the garbage. I might return to this one day when I&rsquo;m better at Prolog. In the meantime, this simple, straightforward code will have to suffice.</p>
 <h2 id="the-program">The Program</h2>
 <p>We first define helper predicate <code>tap/3</code> that calculates new finger counts and some facts about valid <code>split</code> and <code>lost</code> states.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-prolog" data-lang="prolog"><span style="color:#a6e22e">tap</span>(From, To, ToNew) :-
-	From <span style="color:#e6db74">\=</span> <span style="color:#ae81ff">0</span>,
-	Total <span style="color:#f92672">is</span> From <span style="color:#f92672">+</span> To,
-	ToNew <span style="color:#f92672">is</span> <span style="color:#f92672">mod</span>(Total, <span style="color:#ae81ff">5</span>).
-
-<span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>).
-<span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>).
-<span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>).
-<span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>).
-
-<span style="color:#a6e22e">lost</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>).
-</code></pre></div><p>There are five possible moves (LL, RR, LR, RL, split) on a player&rsquo;s turn. <code>get_next/3</code> is comprised of a rule for each move for each player for a total of ten rules.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-prolog" data-lang="prolog"><span style="color:#75715e">% get_next(hand(TopLeft,TopRight,BottomLeft,BottomRight,Turn), Next, Seen)</span>
-<span style="color:#75715e">% calculates the Next unSeen state given it is Turn&#39;s move</span>
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BL,TL,TL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL_New,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BR,TR,TR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR_New,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BL,TR,TR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR_New,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BR,TL,TL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL_New,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TL,BL,BL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL_New,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TR,BR,BR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL,BR_New,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TR,BL,BL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL_New,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TL,BR,BR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL,BR_New,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">split</span>(BL,BR,S), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,S,S,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">split</span>(TL,TR,S), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(S,S,BL,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
-</code></pre></div><p>The final and most interesting predicate <code>forced_win/2</code> has two base cases and one recursive case. I was proud of myself 😂 for figuring out the recursive case and feel that it nicely captures the expressive power of Prolog.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#a6e22e">tap</span>(From, To, ToNew) :-
+</span></span><span style="display:flex;"><span>	From <span style="color:#e6db74">\=</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	Total <span style="color:#f92672">is</span> From <span style="color:#f92672">+</span> To,
+</span></span><span style="display:flex;"><span>	ToNew <span style="color:#f92672">is</span> <span style="color:#f92672">mod</span>(Total, <span style="color:#ae81ff">5</span>).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">split</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lost</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>).
+</span></span></code></pre></div><p>There are five possible moves (LL, RR, LR, RL, split) on a player&rsquo;s turn. <code>get_next/3</code> is comprised of a rule for each move for each player for a total of ten rules.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% get_next(hand(TopLeft,TopRight,BottomLeft,BottomRight,Turn), Next, Seen)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% calculates the Next unSeen state given it is Turn&#39;s move</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BL,TL,TL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL_New,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BR,TR,TR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR_New,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BL,TR,TR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR_New,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(BR,TL,TL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL_New,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TL,BL,BL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL_New,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TR,BR,BR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL,BR_New,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TR,BL,BL_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL_New,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">tap</span>(TL,BR,BR_New), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,BL,BR_New,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Next, Seen) :- <span style="color:#a6e22e">split</span>(BL,BR,S), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(TL,TR,S,S,<span style="color:#e6db74">top</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Next, Seen) :- <span style="color:#a6e22e">split</span>(TL,TR,S), Next<span style="color:#f92672">=</span><span style="color:#a6e22e">hand</span>(S,S,BL,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#e6db74">\+</span><span style="color:#a6e22e">member</span>(Next,Seen).
+</span></span></code></pre></div><p>The final and most interesting predicate <code>forced_win/2</code> has two base cases and one recursive case. I was proud of myself 😂 for figuring out the recursive case and feel that it nicely captures the expressive power of Prolog.</p>
 <p>The <code>\+</code> operator can be read as &ldquo;not&rdquo;. The <code>!</code> operator is a &ldquo;cut&rdquo;, which means &ldquo;don&rsquo;t try to re-satisfy any of the previous clauses&rdquo;. We use this because we are interested in only the first forced win.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-prolog" data-lang="prolog"><span style="color:#75715e">% current player already won</span>
-<span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,<span style="color:#66d9ef">_</span>,<span style="color:#66d9ef">_</span>,<span style="color:#e6db74">bottom</span>), <span style="color:#66d9ef">_</span>) :- <span style="color:#a6e22e">lost</span>(TL, TR), !.
-<span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#66d9ef">_</span>,<span style="color:#66d9ef">_</span>,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#66d9ef">_</span>) :- <span style="color:#a6e22e">lost</span>(BL, BR), !.
-
-<span style="color:#75715e">% current player can win in a single move</span>
-<span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Seen) :-
-	<span style="color:#e6db74">\+</span> <span style="color:#a6e22e">lost</span>(BL, BR),
-	<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#a6e22e">hand</span>(TL_2,TR_2,BL,BR,<span style="color:#e6db74">top</span>), Seen),
-	<span style="color:#a6e22e">lost</span>(TL_2, TR_2),
-	!.
-<span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Seen) :-
-	<span style="color:#e6db74">\+</span> <span style="color:#a6e22e">lost</span>(TL, TR),
-	<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#a6e22e">hand</span>(TL,TR,BL_2,BR_2,<span style="color:#e6db74">bottom</span>), Seen),
-	<span style="color:#a6e22e">lost</span>(BL_2, BR_2),
-	!.
-
-<span style="color:#75715e">% current player has a branch that always ends in a win</span>
-<span style="color:#a6e22e">forced_win</span>(H1, Seen) :-
-	<span style="color:#75715e">% can the current player choose a move...</span>
-	<span style="color:#a6e22e">get_next</span>(H1, H2, Seen),
-	<span style="color:#a6e22e">append</span>(Seen, H1, NewSeen),
-
-	<span style="color:#75715e">% s.t. all of the opponent&#39;s possible moves result in a forced win?</span>
-	<span style="color:#a6e22e">setof</span>(H3, <span style="color:#a6e22e">get_next</span>(H2, H3, NewSeen), Hs),
-	<span style="color:#a6e22e">forall</span>(<span style="color:#a6e22e">member</span>(H, Hs), <span style="color:#a6e22e">forced_win</span>(H, NewSeen)),
-	!.
-</code></pre></div><h2 id="the-query">The Query</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% current player already won</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,<span style="color:#66d9ef">_</span>,<span style="color:#66d9ef">_</span>,<span style="color:#e6db74">bottom</span>), <span style="color:#66d9ef">_</span>) :- <span style="color:#a6e22e">lost</span>(TL, TR), !.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#66d9ef">_</span>,<span style="color:#66d9ef">_</span>,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#66d9ef">_</span>) :- <span style="color:#a6e22e">lost</span>(BL, BR), !.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% current player can win in a single move</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), Seen) :-
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">\+</span> <span style="color:#a6e22e">lost</span>(BL, BR),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">bottom</span>), <span style="color:#a6e22e">hand</span>(TL_2,TR_2,BL,BR,<span style="color:#e6db74">top</span>), Seen),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">lost</span>(TL_2, TR_2),
+</span></span><span style="display:flex;"><span>	!.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), Seen) :-
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">\+</span> <span style="color:#a6e22e">lost</span>(TL, TR),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">get_next</span>(<span style="color:#a6e22e">hand</span>(TL,TR,BL,BR,<span style="color:#e6db74">top</span>), <span style="color:#a6e22e">hand</span>(TL,TR,BL_2,BR_2,<span style="color:#e6db74">bottom</span>), Seen),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">lost</span>(BL_2, BR_2),
+</span></span><span style="display:flex;"><span>	!.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% current player has a branch that always ends in a win</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">forced_win</span>(H1, Seen) :-
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">% can the current player choose a move...</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">get_next</span>(H1, H2, Seen),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">append</span>(Seen, H1, NewSeen),
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">% s.t. all of the opponent&#39;s possible moves result in a forced win?</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">setof</span>(H3, <span style="color:#a6e22e">get_next</span>(H2, H3, NewSeen), Hs),
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">forall</span>(<span style="color:#a6e22e">member</span>(H, Hs), <span style="color:#a6e22e">forced_win</span>(H, NewSeen)),
+</span></span><span style="display:flex;"><span>	!.
+</span></span></code></pre></div><h2 id="the-query">The Query</h2>
 <p>Finally we run our completed program to see if there exist forced wins for the first or second players.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-prolog" data-lang="prolog"><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">top</span>), []).
-<span style="color:#e6db74">false</span>.
-
-<span style="color:#e6db74">?-</span> <span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">bottom</span>), []).
-<span style="color:#e6db74">false</span>.
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">top</span>), []).
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">false</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">forced_win</span>(<span style="color:#a6e22e">hand</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">bottom</span>), []).
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">false</span>.
+</span></span></code></pre></div>
   
   
 <div class="prev-next-post pure-g">
@@ -458,3 +458,5 @@ MathJax.Hub.Config({
 
 </body>
 </html>
+
+

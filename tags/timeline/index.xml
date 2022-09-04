@@ -6,10 +6,15 @@
     <description>Recent content in timeline on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://charlesjlee.com/tags/timeline/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 04 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://charlesjlee.com/tags/timeline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I do at work</title>
+      <link>https://charlesjlee.com/post/20220904-what-i-do-at-work/</link>
+      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20220904-what-i-do-at-work/</guid>
+      <description>A few years ago, I participated in my high school’s career day. I talked about my work at a blockchain start-up and preached the gospel of Bitcoin. It felt like a waste of everyone&amp;rsquo;s time because I don’t think the students understood what I was saying. How could they understand what it means to “improve API performance” when they don&amp;rsquo;t understand what an API is? I was certainly lost when I was in their shoes and attended my career day.</description>
+    </item>
     
     <item>
       <title>d3-milestones timeline library</title>

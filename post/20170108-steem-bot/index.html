@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="a simple, random upvoter">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.93.0" />
 
   <title>Creating a Steem bot using Python, Piston, and Heroku &middot; Charles Lee</title>
 
@@ -269,7 +269,7 @@
 <li>Bot will wake up every 10 minutes, but only run 5% of the time. This is to give new posts a chance to appear and to preserve voting power</li>
 <li>If the bot runs, it will randomly upvote one of the 20 most recent posts with weight 100. The weight can be adjusted if you want to experiment with voting more often but with less weight. Every vote decreases your voting power, which regenerates over time, and hence the rewards you can potentially earn</li>
 </ol>
-<p>Our bot will be built using GitHub, Heroku, and <a href="https://steemit.com/@xeroc">@xeroc</a>&lsquo;s excellent Steem library, <a href="https://github.com/xeroc/piston">steem-piston</a>. We&rsquo;ll build this in two steps:</p>
+<p>Our bot will be built using GitHub, Heroku, and <a href="https://steemit.com/@xeroc">@xeroc</a>&rsquo;s excellent Steem library, <a href="https://github.com/xeroc/piston">steem-piston</a>. We&rsquo;ll build this in two steps:</p>
 <ol>
 <li>Create accounts (will need email, cellphone, credit card)</li>
 <li>Setup and deploy Heroku project</li>
@@ -499,3 +499,5 @@ MathJax.Hub.Config({
 
 </body>
 </html>
+
+
