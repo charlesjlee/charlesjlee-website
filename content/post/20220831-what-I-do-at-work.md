@@ -7,7 +7,7 @@ tags = [
   "d3",
   "career",
 ]
-date = "2022-09-04"
+date = "2022-08-31"
 categories = [
     "",
 ]
@@ -28,11 +28,11 @@ _(hover for links)_
 ### Table view
 {{<pure_table
   "Company | Role | Dates worked | Link to Post"
-  "GAL Inc | Web Developer Intern | July-Aug 2008 | <a href=/post/20220905-gal-inc/>link</a>"
-  "LMI | Co-op | Jan-May 2010<br>Sep-Dec 2010 | <a href=/post/20220906-lmi/>link</a>"
-  "JPMorgan Chase | Application Developer | July 2011 - Sept 2013 | <a href=/post/20220907-jpmorgan-chase/>link</a>"
-  "Novantas | Database Developer | June 2014 - Aug 2016<br>Sept 2016 - March 2017 | <a href=/post/20220908-novantas/>link</a>"
-  "Axoni | Software Developer | Dec 2017 - March 2020 | <a href=/post/20220909-axoni/>link</a>"
+  "GAL Inc | Web Developer Intern | July - Aug 2008 | <a href=/post/20220901-gal-inc/>link</a>"
+  "LMI | Co-op | Jan - May 2010<br>Sep - Dec 2010 | <a href=/post/20220902-lmi/>link</a>"
+  "JPMorgan Chase | Application Developer | July 2011 - Sept 2013 | <a href=/post/20220903-jpmorgan-chase/>link</a>"
+  "Novantas | Database Developer | June 2014 - Aug 2016<br>Sept 2016 - March 2017 | <a href=/post/20220904-novantas/>link</a>"
+  "Axoni | Software Developer | Dec 2017 - March 2020 | <a href=/post/20220905-axoni/>link</a>"
   "Amazon | Software Developer| Sept 2020 - now | <i>coming later</i>"
 >}}
 
@@ -42,7 +42,7 @@ _(hover for links)_
       {
         name: "GAL Inc",
         times: [{"starting_time": 1214870400000, "ending_time": 1217548800000}],
-        post: "/post/20220905-gal-inc/",
+        post: "/post/20220901-gal-inc/",
       },
       // LMI: Jan-May 2010, Sep-Dec 2010
       {
@@ -51,13 +51,13 @@ _(hover for links)_
           {"starting_time": 1262304000000, "ending_time": 1272672000000},
           {"starting_time": 1283299200000, "ending_time": 1291161600000},
         ],
-        post: "/post/20220906-lmi/",
+        post: "/post/20220902-lmi/",
       },
       // JPMC: July 2011 - Sept 2013
       {
         name: "JPMorgan Chase",
         times: [{"starting_time": 1309478400000, "ending_time": 1377993600000}],
-        post: "/post/20220907-jpmorgan-chase/",
+        post: "/post/20220903-jpmorgan-chase/",
       },
       // Novantas: June 2014 - Aug 2016, Sept 2016 - March 2017
       {
@@ -66,13 +66,13 @@ _(hover for links)_
           {"starting_time": 1401580800000, "ending_time": 1470009600000},
           {"starting_time": 1472688000000, "ending_time": 1488326400000},
         ],
-        post: "/post/20220908-novantas/",
+        post: "/post/20220904-novantas/",
       },
       // Axoni: Dec 2017 - March 2020
       {
         name: "Axoni",
         times: [{"starting_time": 1512086400000, "ending_time": 1583020800000}],
-        post: "/post/20220909-axoni/",
+        post: "/post/20220905-axoni/",
       },
       // Amazon: Sept 2020
       {
