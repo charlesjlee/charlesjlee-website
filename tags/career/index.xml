@@ -6,13 +6,63 @@
     <description>Recent content in career on Charles Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://charlesjlee.com/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://charlesjlee.com/tags/career/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What I do at work</title>
-      <link>https://charlesjlee.com/post/20220904-what-i-do-at-work/</link>
+      <title>My time as a Software Developer at Axoni</title>
+      <link>https://charlesjlee.com/post/20220905-axoni/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20220905-axoni/</guid>
+      <description>todo  delete reference notes  part of the series What I do at work
+Application Process I got started in crypto when my friend, Alice, introduced me to Bitcoin back around 2016. I was drawn in more by the interesting new technology and less by the vision of how it would change the world. Soon after, I worked through the excellent Bitcoin Coursera, which taught me 95% of what I know about Bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>My time as a Database Developer at Novantas</title>
+      <link>https://charlesjlee.com/post/20220904-novantas/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://charlesjlee.com/post/20220904-what-i-do-at-work/</guid>
+      <guid>https://charlesjlee.com/post/20220904-novantas/</guid>
+      <description>part of the series What I do at work
+Overview At the time I joined, Novantas (now Curinos after merging with a competitor) was a mid-sized financial consulting company that primarily worked with banks to price and analyze their deposit and loan products. A long time ago, Alice the analyst created a massive Excel workbook that to help a client price their deposit products, e.g. savings, checking, CD’s. This workbook became popular and was later ported to a Microsoft SQL Server and Adobe Flex web application and christened PriceTek Deposits.</description>
+    </item>
+    
+    <item>
+      <title>My time as an Application Developer at JPMorgan Chase</title>
+      <link>https://charlesjlee.com/post/20220903-jpmorgan-chase/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20220903-jpmorgan-chase/</guid>
+      <description>part of the series What I do at work
+Application Process I received an offer from JPMorgan Chase (JPMC) by working with my university&amp;rsquo;s career services. At the time I was attending Cornell University as part of the class of 2011, companies were in an escalating race to recruit students earlier and earlier. In the coding world, the ideal path was to intern at Google the summer before your senior year and then, after you finish your internship, to receive a full-time offer to start the summer after your senior year about 10 months later.</description>
+    </item>
+    
+    <item>
+      <title>My time as a Co-op at LMI</title>
+      <link>https://charlesjlee.com/post/20220902-lmi/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20220902-lmi/</guid>
+      <description>part of the series What I do at work
+Co-op program During my time in college, I spent two semesters working at Logistics Management Institute (LMI) as part of my college&amp;rsquo;s co-op program. The &amp;ldquo;Engineering Cooperative Education Experience&amp;rdquo; aka co-op was a special internship program where the school worked with employers to make sure that the co-op work was meaningful and relevant to your course of study. Timing-wise, this worked out well for me because skipping two semesters of classes (and tuition) allowed me to graduate at the same as my friends, when I otherwise would have graduated a year early because of the ~20 AP credits I had collected during high school (a rare example of having something &amp;ldquo;just in case&amp;rdquo; actually coming in handy).</description>
+    </item>
+    
+    <item>
+      <title>My time as a Web Developer Intern at GAL Inc</title>
+      <link>https://charlesjlee.com/post/20220901-gal-inc/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20220901-gal-inc/</guid>
+      <description>part of the series What I do at work
+The summer after my second year in college, I worked for two months at GAL Inc, a local web development shop near my hometown in New Jersey. I was desperate to get work experience and was happy that this job post on Craigslist worked out. GAL Inc specializes in Search Engine Optimization (SEO) &amp;ndash; getting websites to rank highly on search engines aka Google.</description>
+    </item>
+    
+    <item>
+      <title>What I do at work</title>
+      <link>https://charlesjlee.com/post/20220831-what-i-do-at-work/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://charlesjlee.com/post/20220831-what-i-do-at-work/</guid>
       <description>A few years ago, I participated in my high school’s career day. I talked about my work at a blockchain start-up and preached the gospel of Bitcoin. It felt like a waste of everyone&amp;rsquo;s time because I don’t think the students understood what I was saying. How could they understand what it means to “improve API performance” when they don&amp;rsquo;t understand what an API is? I was certainly lost when I was in their shoes and attended my career day.</description>
     </item>
     

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.93.0" />
+
+  <title>My time as a Database Developer at Novantas &middot; Charles Lee</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://charlesjlee.com//css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://charlesjlee.com//css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://charlesjlee.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/mathjax.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/lightbox.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/gridside-main.css">
+    
+  
+    
+        <link rel="stylesheet" href="https://charlesjlee.com/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://charlesjlee.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://charlesjlee.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://charlesjlee.com/origami/"><i class='fa fas fa-map'></i>Origami</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://charlesjlee.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/charlesleeonline" rel="me" target="_blank">&nbsp;<i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/charlesjlee" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div class="pure-menu">
+	<ul class="pure-menu-list">
+	  <div class="small-print">
+	    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+	    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+	  </div>
+	</ul>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>My time as a Database Developer at Novantas</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>September 04, 2022</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://charlesjlee.com/tags/career">career</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p><em>part of the series <a href="../../post/20220831-what-i-do-at-work/">What I do at work</a></em></p>
+<h2 id="overview">Overview</h2>
+<p>At the time I joined, Novantas (now Curinos after <a href="https://curinos.com/about-us/">merging with a competitor</a>) was a mid-sized financial consulting company that primarily worked with banks to price and analyze their deposit and loan products. A long time ago, Alice the analyst created a massive Excel workbook that to help a client price their deposit products, e.g. savings, checking, CD’s. This workbook became popular and was later ported to a Microsoft SQL Server and Adobe Flex web application and christened PriceTek Deposits. Soon after, PriceTek Loans was also born. Deposits and Loans together grew into half of the company&rsquo;s headcount and Novantas became a strange 50/50 consulting/platform hybrid. I was the first full time SQL developer hire and reported to Alice. With me on the team, Alice could focus on customer sales and relations.</p>
+<p>PriceTek Deposits did two major things:</p>
+<ol>
+<li>Import and transform customer data</li>
+<li>Visualize customer data and run simulations</li>
+</ol>
+<p>Customers gave us data in the form of anonymized monthly balances per account and product. However, they were still interested in cash flows between accounts and products, so Novantas built a complicated tangle of hand-crafted rules to predict cash flows between months. At one point, a study was done to compare the estimated vs actual flows and the error rate was small (~2%) so the rules worked pretty well. Why did the clients force us to estimate cash flows when they could have just given us the actual transaction-level data? I don&rsquo;t remember the official answer, but it was probably for convenience: transaction-level data would have been magnitudes larger and much harder to anonymize. These days, complexity and size are much less of a concern and I wonder if things could have turned out differently. I also wonder if PriceTek Deposits is still alive after the company merged with a competitor…</p>
+<p>Alice and some other analysts built the simulation tools. Like most parts of PriceTek, the tricky part was the business logic and not the technical design or writing the SQL. This part of PriceTek didn&rsquo;t change much while I was at Novantas.</p>
+<p>Users of PriceTek were typically bank analysts who priced products once a month. They only needed to use PriceTek for a few hours at a time, and this was a huge improvement over their previous work processes. At the time I left in 2019, there were two exciting developments underway:</p>
+<ol>
+<li>Incorporating big data tools into workflows for faster runtimes
+<ul>
+<li>The existing cash flow prediction workflows were sequential because subsequent months depended on previous months, e.g. we need to know Bob&rsquo;s checking account balance at the end of January before we can start thinking about flows into and out of his checking account in February. The workflows also took a long time to run. Sometimes, like after making an algorithm change, we needed to re-run the workflows on all of a client&rsquo;s historical data. This would take weeks for the largest clients.</li>
+<li>At the time this idea was floating around, it was hard to imagine how the existing cash flow workflows could be parallelized to fit into the big data paradigm. Nevertheless, I expect that someone figured it out. The introduction of these big data tools probably also sparked new ideas and methods that weren&rsquo;t possible before.</li>
+</ul>
+</li>
+<li>Aggregating and showing industry-level data
+<ul>
+<li>PriceTek was very successful and had many major banks as customers. We had enough data to show meaningful aggregate trends, such as how the industry was pricing 6-month CD&rsquo;s for the two past years. This would allow our customers to see how they were pricing relative to our other customers. This was a new product idea that management wanted to sell to existing customers and was technically straightforward but legally complicated. When I left, legal negotiations were still in-progress.</li>
+</ul>
+</li>
+</ol>
+<h2 id="pricetek-deposits">PriceTek Deposits</h2>
+<p>All of the logic for PriceTek Deposits lived in the database as stored procedures. The front-end was a wrapper that made stored procedure calls to get and display data. While some of clients&rsquo; custom business logic lived as data in tables (e.g. list of products, algorithm configurations), most of it lived as code in <strong>custom placeholders</strong> scattered everywhere. There was so much custom code that each client&rsquo;s installation of PriceTek was like a separate application. This setup made comprehensive testing impossible and deployment issues frequent. Each quarterly deployment of new front-end and back-end changes required extensive manual testing from the entire team before and after the deployment.</p>
+<div class="mermaid">flowchart TD
+    update_quarterly_front([quarterly front-end updates])
+    update_quarterly_back([quarterly back-end updates])
+    update_monthly([monthly account data])
+    db[(Database)]
+
+    subgraph etl[ETL & processing]
+        etl_processing[SQL stored procedures]
+        etl_step1[Step 1] --> etl_step1_custom[Custom placeholder]
+        etl_step2[Step 2] --> etl_step2_custom[Custom placeholder]
+        etl_stepn[Step <i>n</i>] --> etl_stepn_custom[Custom placeholder]
+        etl_processing --> etl_step1 & etl_step2 & etl_stepn
+    end
+
+    subgraph dashboard[PriceTek Deposits]
+        pricetek[Dashboard]
+        page1[Page 1]
+        page2[Page 2]
+        pagen[Page <i>n</i>]
+
+        page1 --> page1_data[Get data] --> page1_data_custom[Custom placeholder]
+        page1 --> page1_analysis[Do analysis] --> page1_analysis_custom[Custom placeholder]
+
+        page2 --> page2_data[Get data] --> page2_data_custom[Custom placeholder]
+        page2 --> page2_analysis[Do analysis] --> page2_analysis_custom[Custom placeholder]
+        
+        pagen --> pagen_data[Get data] --> pagen_data_custom[Custom placeholder]
+        pagen --> pagen_analysis[Do analysis] --> pagen_analysis_custom[Custom placeholder]
+
+        pricetek --> page1 & page2 & pagen
+    end
+
+    etl --> db --> dashboard
+    update_quarterly_front --> dashboard
+    update_quarterly_back --> db
+    update_monthly --> etl
+
+	class etl_step1_custom,etl_step2_custom,etl_stepn_custom,page1_data_custom,page2_data_custom,pagen_data_custom,page1_analysis_custom,page2_analysis_custom,pagen_analysis_custom custom
+    classDef custom fill:#fc9
+
+    class update_quarterly_front,update_quarterly_back,update_monthly update
+	classDef update fill:lightgreen 
+</div>
+<h2 id="projects-i-worked-on">Projects I worked on</h2>
+<h3 id="drop-down-dependencies">Drop-down dependencies</h3>
+<p>Most pages on PriceTek started with a series of drop-downs (DD&rsquo;s) to narrow down the particular products you wanted to look at, e.g. DD1 was Line of Business, DD2 was Product Type, DD3 was Product Subtype, etc. The problem was that each drop-down required its own database call so that selecting a value in a drop-down (e.g. DD1) would trigger a database call to get updated values for the next downstream drop-down (i.e. DD2), and then since <em>that</em> dropdown (i.e. DD2) was just updated then the next downstream drop-down (i.e. DD3) would get triggered and so on. For most clients this behavior was a minor inconvenience that caused a short delay on page load and then a screen flicker every time they selected a drop-down value. However, for our largest client, the delay per DD selection was ~10 seconds and a poor user experience. The solution was just to calculate and return all drop-down values in a single database call. For example, changing DD2 would trigger a single database call that returned the updated values for <em>all</em> downstream dropdowns, i.e. DD3, DD4, etc. I completed this project relatively quickly and there was a big celebration as customers experienced a 10x improvement in DD load speeds.</p>
+<p>Then edge cases started popping up because I failed to take into account customer-specific requirements, e.g. custom sort orders and filtering. My design was hard to customize and hacks were required to implement these unforeseen requirements. Instead of sketching a working solution and then jumping into coding, I should have done more design upfront by talking to people, gathering requirements, and getting feedback.</p>
+<h3 id="deployment-improvements">Deployment improvements</h3>
+<p>Every three months or so, the entire development team and some people from client services would gather in a room after work, order pizza, and do production deployments for a few hours. Since every customer instance had so much custom code that they were all like different applications, we needed client services on-hand (they wrote the custom code) to help with client-specific issues. Coupled with a broken process to replicate production environments to dry-run deployments beforehand, this meant that every deployment was high risk. Deployments themselves were primarily logic changes in SQL stored procedures and so executed in a few minutes. The reason for the large gathering and late nights was that we had a long manual checklist to work through and often found problems that we needed patch on the spot.</p>
+<p>As a consulting company, Novantas&rsquo;s relationship with clients was white-glove and high-touch. The company&rsquo;s approach to building PriceTek was naturally the same and this worked well when there were a few customers. However, by the time I left, we had about 20 customers and running through a checklist 20x was just too much. My main contributions to the deployment process were to make deployment scripts re-runnable and to prepare roll-back scripts for emergencies.</p>
+<h2 id="the-end-parts-1--2">The End (Parts 1 &amp; 2)</h2>
+<p>While the consulting side of Novantas seemed cutthroat at times as expected, the PriceTek side was calm and collegial &ndash; Deposits particularly so. This was because of great management and protection by Alice, the manager of and only remaining original developer (there was some drama) of PriceTek Deposits. I still remember a time when I failed to properly test a feature and someone from client services (rightfully) sent an angry email saying that they had to spend several hours late at night fixing a bug and questioning whether I tested properly. Alice immediately called out the hostile tone and brought the three of us together the following day to talk about what happened. Two other examples of Alice helping people:</p>
+<ul>
+<li>fighting to keep our database admin rights when IT (perhaps rightfully) wanted to revoke them even though there hadn&rsquo;t been any problems or abuse</li>
+<li>helping a client services associate transition to a more technical role working on the company&rsquo;s website. She later completed her career change by joining Google as a Software Developer</li>
+</ul>
+<p>Though our career paths diverged, I still thank and respect Alice for her technical ability and leadership.</p>
+<p>I complained a lot above about PriceTek&rsquo;s technical debt and lack of automation, but I too was contributing to the problem. It&rsquo;s unfair to fault a non-software company for poor software practices, and if <em>I</em> were to do PriceTek Deposits over again today, I would probably do worse.</p>
+<p>In the end, I became another big fish in a small pond, just like on my <a href="../../post/20220903-jpmorgan-chase">previous team at JPMC</a>. I witnessed the unofficial spin-off of the development half of the company (we were moved to a different building!) and increased hiring of software developers (primarily for big data projects I was not involved with). I helped hire my co-worker, Carol, who was a fantastic developer and perfect successor. If I had stuck around, I could have slowly grown into a development lead-like role, where I would mentor junior developers and help hire senior developers who would in turn mentor me. These new people would bring in new ideas that would solve (or obviate) the existing problems. However, I didn&rsquo;t want to wait and was too tired. I needed a break from work and from feeling like my efforts were pointless because nobody used what I worked on. Though I knew this was not strictly true and was just a symptom of my burn-out, knowing alone is little relief.</p>
+<p>When the CTO, Dave, caught wind that I was resigning, he sat me down for a chat at the fancy bar across the street. This was the end of an era when being a digital nomad (someone who works remotely, travels a lot, and posts photos about how great their life is) was super cool and it was still something that I wished I could try. And so, when Dave asked me how he could convince me to stay, I proposed a 2-month break (negotiated to 1-month) followed by part-time, remote (negotiated to occasional office visits) contract work at some hourly rate that was also negotiated down. I underestimated this demure, smooth-talking man and he convinced me, against my best interests, to continue working at Novantas. My life as a digital nomad comprised of laying in bed for hours dreading work, being unable to concentrate, and delivering low quality work. When my contract ended after 6 months and I finally left, no one tried to stop me.</p>
+<p>While I joined Novantas because I liked working with data, I became disturbed that I had forgotten how to code because I was writing SQL everyday. It was only two years prior that I was fluent in C# and I had forgotten all of it. I decided to learn Python next. It was a long, slow, and humbling process to learn how to code again from the beginning. I spent the next few months resting, grinding <a href="https://leetcode.com/">LeetCode</a> (a website to practice algorithm questions commonly asked during interviews), and working on side projects so I could be a software developer again.</p>
+
+  
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://charlesjlee.com/post/20220903-jpmorgan-chase/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://charlesjlee.com/post/20220903-jpmorgan-chase/">My time as an Application Developer at JPMorgan Chase</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://charlesjlee.com/post/20220905-axoni/">My time as a Software Developer at Axoni</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://charlesjlee.com/post/20220905-axoni/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://charlesjlee.com/js/ui.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38182774-1', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery-2.1.4.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/materialize.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/imagesloaded.pkgd.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/masonry.pkgd.min.js"></script>
+
+
+
+
+<script src="https://charlesjlee.com/js/gridside/lightbox.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/jquery.infinitescroll.min.js"></script>
+
+
+<script src="https://charlesjlee.com/js/gridside/main.js"></script>
+
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</body>
+</html>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  <style>
+    .mermaid svg { 
+      max-width: 100%; 
+      height: auto;
+    }
+  </style>
+
