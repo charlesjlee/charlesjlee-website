@@ -1,0 +1,9 @@
+{{ range $param := .Params }}
+  {{ $items := split $param "|" }}
+    <img
+      src="{{ index $items 0 }}"
+      width="33%"
+      alt="{{ index $items 1 }}"
+      style="float:left; margin: 13px 15px 5px 0px"
+    />
+{{ end }}
