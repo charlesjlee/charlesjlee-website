@@ -5,7 +5,7 @@ sidemenu = "true"
 description = ""
 +++
 
-My name is Charles Lee. This website is built using the static site generator [Hugo](https://gohugo.io/) and lives in [a  GitHub repo](https://github.com/charlesjlee/charlesjlee-website). I write stuff here.
+My name is Charles Lee. This website is built using the static site generator [Hugo](https://gohugo.io/) and lives in [a  GitHub repo](https://github.com/charlesjlee/charlesjlee-website).
 
 You can reach me at charleslee592<span style="display:none">foo</span>@gmail.com
 
