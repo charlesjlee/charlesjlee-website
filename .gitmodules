@@ -1,3 +1,6 @@
 [submodule "themes/blackburn"]
 	path = themes/blackburn
 	url = https://github.com/yoshiharuyamashita/blackburn
+[submodule "themes/grid-side"]
+	path = themes/grid-side
+	url = https://github.com/chipsenkbeil/grid-side
