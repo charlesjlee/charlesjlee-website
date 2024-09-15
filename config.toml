@@ -58,6 +58,13 @@ paginate = 1000
     url = "origami/"
 
   [[menu.main]]
+    name = "Sculpture"
+    pre = "<i class='fa fas fa-cubes'></i>"
+    weight = 4
+    identifier = "sculpture"
+    url = "sculpture/"
+
+  [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
     weight = 99

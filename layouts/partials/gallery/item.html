@@ -6,10 +6,17 @@
 {{ $folded := .Params.folded }}
 {{ $description := .Description }}
 
+{{ $designerInfo := "" }}
+{{ if and $designed $folded }} <!-- origami -->
+    {{ $designerInfo = printf "<br> Designed by %s, folded by %s (%s) <br> %s" $designed $folded $date $description}}
+{{ else }} <!-- sculpture -->
+    {{ $designerInfo = printf "<br> %s (%s)" $description $date}}
+{{ end }}
+
 <!-- TODO: Figure out why line height causes issues here -->
 <div class="flex-item flex-item-spacing no-line-height">
     <div class="relative rounded-corners z-depth-1 lazyload" data-noscript="">
-            <a href="{{ $image }}" data-lightbox="gallery" data-title="{{ $title }} <br> Designed by {{ $designed }}, folded by {{ $folded }} ({{ $date }}) <br> {{ $description }}">
+            <a href="{{ $image }}" data-lightbox="gallery" data-title="{{ $title }} {{ $designerInfo }}">
                 <img src="{{ $image }}"
                      class="fill-container-width rounded-corners z-depth-1" />
                 <div class="highlight-block rounded-corners">
